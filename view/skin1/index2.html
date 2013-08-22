@@ -1,0 +1,310 @@
+{template header}<!--head结束-->
+<div class="box">
+    <!--内容左一栏 begin-->
+    <div class="boxone">
+        <div class="boxone1">
+            <div class="boxtop">最佳回答采纳率：</div>
+            <div class="boxone1down1">
+            <!--{eval $statistics=$this->fromcache('statistics');}-->
+                <h1>{$statistics['bestadopt']}%</h1>
+                <p class="boxone1down2">已解决问题数：{$statistics['solves']}</p>
+                <p class="boxone1down3">待解决问题数：{$statistics['nosolves']}</p>
+            </div>
+        </div>
+        <div class="blank10"></div>
+        <div class="boxone1">
+            <div class="boxtop">问答分类</div>
+            <div class="boxone1down4 ">
+            	 <!--{eval $categorylist=$this->fromcache('categorylist');}-->
+                <!--{loop $categorylist  $category1}-->
+                <h2><a href="{url category/view/$category1['id']}">{$category1['name']}</a><span>({$category1['questions']})</span></h2>
+                <ul>
+                    <!--{loop $category1['sublist'] $index $category2}-->
+                    <li><a href="{url category/view/$category2['id']}">{$category2['name']}<span>({$category2['questions']})</span></a></li>
+                    <!--{/loop}-->
+                </ul>
+                <!--{/loop}-->
+            </div>
+        </div>
+        <div class="blank10"></div>
+        <div class="boxone3">
+            <div class="boxone3anxian1">
+                <a href="mailto:{$setting['admin_email']}" target="_blank" ><strong>意见反馈</strong></a>
+            </div>
+            <div class="boxone3anxian2">
+                <a href="{url index/help}#如何提问" target="_blank" ><strong>如何提问</strong></a>
+            </div>
+            <div class="boxone3anxian3">
+                <a href="{url index/help}#如何回答" target="_blank" ><strong>如何回答</strong></a>
+            </div>
+        </div>
+    </div>
+
+    <!--内容左二栏 begin-->
+    <div class="boxtwo">
+        <div class="boxtwo1">
+            <div class="boxtop">
+                <span><a href="{url category/recommend/1}" target="_blank">更多&gt;&gt;</a></span>精彩推荐
+            </div>
+            <div class="boxtwo1down">
+                <div class="boxtwo1downright blue">
+                    <ul>
+                    	<!--{eval $recommendlist=$this->fromcache('recommendlist');}-->
+                        <!--{loop $recommendlist $index $recommend}-->
+                        <li id="recommend{$index}">
+                            <span class="font_gray3">[<a href="{url category/view/$recommend['cid']}" target="_blank">{$recommend['category_name']}</a>]</span>
+                            <a href="{$recommend['url']}" title="{$recommend['title']}" target="_blank">{eval echo cutstr($recommend['title'],22);}</a>
+                        </li>
+                        <!--{/loop}-->
+                    </ul>
+                </div>
+                <div style class="boxtwo1downleft">
+                <!--{loop $recommendlist $index $recommend}-->
+					<!--{if 0==$index}-->
+                    	<a  id="recommend{$index}img" href="{url question/view/$recommend['qid']}" target="_blank"><img height="106" width="160" src="$recommend['image']"></a>
+                    <!--{else}-->
+                    	<a 	id="recommend{$index}img" href="{url question/view/$recommend['qid']}" target="_blank" style="display:none"><img height="106" width="160" src="$recommend['image']"></a>
+                    <!--{/if}-->
+				<!--{/loop}-->
+                </div>
+            </div>
+        </div>
+
+        <div class="blank10"></div>
+        <!--广告位1-->
+        <!--{if (isset($adlist['index']['middle1']) && trim($adlist['index']['middle1']))}-->
+        {$adlist['index']['middle1']}
+        <div class="blank10"></div>
+        <!--{/if}-->
+
+        <div class="boxtwo1">
+            <div class="boxtop blue">
+            <span><a href="{url category/list/1}">更多&gt;&gt;</a></span>
+                <a id="wf0" onmousemove="show_max_num(0)" class="boxtop_W2B">最新处方共享</a> <a id="wf1" onmousemove="show_max_num(1)" class="boxtop_W2B">最新处方咨询</a> <a id="wf2"  onmousemove="show_max_num(2)" class="boxtop_W2B">最疾病问答</a> <a id="wf3" onmousemove="show_max_num(3)" class="boxtop_W2B">最新病案讨论</a>
+            </div>
+            <div class="boxtwo3down blue">
+                <ul id="ww0">
+                    <!--{eval $nosolvelist=$this->fromcache('index_ask_area_2');}-->
+                    <!--{loop $nosolvelist $index $question}-->
+		            <!--{eval ++$index;}-->
+                    <li><span>[<a href="{url category/view/$question['cid']}">{$question['category_name']}</a>]</span>·<a href="{$question['url']}" title="{$question['title']}" target="_blank">{eval echo cutstr($question['title'],49);}</a></li>
+                    <!--{if 0==$index%5}-->
+                    <li class="boxtwo3downline"></li>
+                    <!--{/if}-->
+                    <!--{/loop}-->
+                </ul>
+                <ul id="ww1" style="display:none">
+                	<!--{eval $nosolvelist=$this->fromcache('index_ask_area_1');}-->
+                    <!--{loop $nosolvelist $index $question}-->
+		            <!--{eval ++$index;}-->
+                    <li><span>[<a href="{url category/view/$question['cid']}">{$question['category_name']}</a>]</span>·<a href="{$question['url']}" title="{$question['title']}" target="_blank">{eval echo cutstr($question['title'],49);}</a></li>
+                    <!--{if 0==$index%5}-->
+                    <li class="boxtwo3downline"></li>
+                    <!--{/if}-->
+                    <!--{/loop}-->
+                </ul>
+                <ul id="ww2" style="display:none">
+                	<!--{eval $nosolvelist=$this->fromcache('index_ask_area_0');}-->
+                    <!--{loop $nosolvelist $index $question}-->
+		            <!--{eval ++$index;}-->
+                    <li><span>[<a href="{url category/view/$question['cid']}">{$question['category_name']}</a>]</span>·<a href="{$question['url']}" title="{$question['title']}" target="_blank">{eval echo cutstr($question['title'],49);}</a></li>
+                    <!--{if 0==$index%5}-->
+                    <li class="boxtwo3downline"></li>
+                    <!--{/if}-->
+                    <!--{/loop}-->
+                </ul>
+                <ul id="ww3" style="display:none">
+                	<!--{eval $nosolvelist=$this->fromcache('index_ask_area_3');}-->
+                    <!--{loop $nosolvelist $index $question}-->
+		            <!--{eval ++$index;}-->
+                    <li><span>[<a href="{url category/view/$question['cid']}">{$question['category_name']}</a>]</span>·<a href="{$question['url']}" title="{$question['title']}" target="_blank">{eval echo cutstr($question['title'],49);}</a></li>
+                    <!--{if 0==$index%5}-->
+                    <li class="boxtwo3downline"></li>
+                    <!--{/if}-->
+                    <!--{/loop}-->
+                </ul>
+            </div>
+        </div>
+        <div class="blank10"></div>
+        
+        <!--广告位2-->
+        <!--{if (isset($adlist['index']['middle2']) && trim($adlist['index']['middle2']))}-->
+        {$adlist['index']['middle2']}
+        <div class="blank10"></div>
+        <!--{/if}-->
+        
+        <div class="boxtwo1">
+            <div class="boxtop blue"><span><a href="{url category/list/4}">更多&gt;&gt;</a></span>赏金求答案</div>
+            <div class="boxtwo3down blue">
+                <ul>
+                	<!--{eval $rewardlist=$this->fromcache('rewardlist');}-->
+                    <!--{loop $rewardlist $question}-->
+                    <li>
+                        <span>[<a href="{url category/view/$question['cid']}">{$question['category_name']}</a>]</span>
+                        <div class="boxtwo3downleft">{$question['price']}</div>
+                        <a href="{$question['url']}" title="{$question['title']}" target="_blank">{eval echo cutstr($question['title'],49);}</a>
+                    </li>
+                    <!--{/loop}-->
+                </ul>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="boxthree">
+        <!--{if !$user['uid']}-->
+        <div id="divLoginContainer">
+            <div class="boxthree1">
+                <a style="text-decoration: none;" target="_blank" href="{url user/register}"><span class="login_btn">免费注册</span><br><span>免费注册快乐问答</span></a>
+                <a target="_blank" href="{url user/login}" style="text-decoration: none; margin-right: 0px;"><span class="login_btn">登 录</span><br><span>开启知识之旅</span></a>
+            </div>
+            <div class="blank10">
+            </div>
+        </div>
+        <!--{/if}-->
+        <div class="boxthree2">
+            <div class="boxtop">
+                <div id="linkMore" style="font-size: 12px; font-weight: normal;" class="boxtop1_more">
+                    <a target="_blank" href="{URL note/list}">更多&gt;&gt;</a></div>公告
+            </div>
+            <div id="searchresult" class="boxthree2down">
+                <ul class="blue">
+                	<!--{eval $notelist=$this->fromcache('notelist');}-->
+                    <!--{loop $notelist $note}-->
+                    <li>·<a {if $note['url']}href="{$note['url']}" target="_blank" {else} href="{url note/view/$note['id']}" {/if} ><strong>{$note['title']}</strong></a></li>
+                    <!--{/loop}-->
+                </ul>
+            </div>
+        </div>
+        <div class="blank10">
+        </div>
+        <div class="boxthree2">
+            <div class="boxtop">热点关键词</div>
+            <div class="boxthree2down blue" id="divHotKey">
+                <!--{loop $wordslist $hotword}-->
+                <a {if $hotword['qid']}href="{url question/view/$hotword['qid']}" {else}href="{url question/search/3/{$hotword['w']}}"{/if}>{$hotword['w']}</a>
+                <!--{/loop}-->
+            </div>
+        </div>
+        <div class="blank10"></div>
+        
+        <!--广告位3-->
+        <!--{if (isset($adlist['index']['right1']) && trim($adlist['index']['right1']))}-->
+        {$adlist['index']['right1']}
+        <div class="blank10"></div>
+        <!--{/if}-->
+        
+        <div class="boxthree2">
+            <div class="boxtop">问答名人堂</div>
+            <div class="boxthree3down">
+            	<!--{eval $famouslist=$this->fromcache('famouslist');}-->
+                <!--{loop $famouslist $famous}-->
+                <div style class="boxthree2down0">
+                    <div class="boxthree3down0right">
+                        <h3 class="blue"><a href="{url user/space/$famous['uid']}" target="_blank">{$famous['username']}</a></h3>
+			精彩解答：<span class="blake1"><a href="{url question/view/$famous['qid']}" target="_blank">{$famous['title']}</a></span>
+                    </div>
+                    <a href="{url user/space/$famous['uid']}"><img src="{$famous['avatar']}" width="51" height="51"></a>
+                </div>
+                <!--{/loop}-->
+                <br /><br />
+            </div>
+        </div>
+        <div class="blank10">
+        </div>
+        <div class="boxthree2">
+            <div class="boxtop">
+                <div id="linkMore" style="font-size: 12px; font-weight: normal;" class="boxtop1_more">
+                    <a target="_blank" href="{url expert}">更多&gt;&gt;</a></div>推荐专家
+            </div>
+            <div class="boxthree2down">
+            	<!--{eval $expertlist=$this->fromcache('expertlist');}-->
+                <!--{loop $expertlist $expert}-->
+                <div style class="boxthree2down0">
+                    <div class="boxthree3down0right">
+                        <h3 class="blue"><a href="{url user/space/$expert['uid']}" target="_blank">{$expert['username']}</a></h3>
+                        擅长分类：<span class="blake1">{$expert['categoryname']}</span><br />
+                        积分：<span class="blake1">{$expert['credit1']}</span>&nbsp;&nbsp;回答数：<span class="blake1">{$expert['answers']}</span>
+                        <br />
+                    </div>
+                    <a href="{url user/space/$expert['uid']}"><img src="{$expert['avatar']}" width="51" height="51"></a>
+                </div>
+                <!--{/loop}-->
+            </div>
+        </div>
+        <div class="blank10"></div>
+        
+        <!--广告位4-->
+        <!--{if (isset($adlist['index']['right2']) && trim($adlist['index']['right2']))}-->
+        {$adlist['index']['right2']}
+        <div class="blank10"></div>
+        <!--{/if}-->
+        
+        <div class="boxthree4">
+            <div class="boxtop2">
+                <div class="boxtop2B" id="zbf021" onmouseover="show_tabz(21)">达人飙升榜</div>
+                <div class="boxtop2x"></div>
+                <div class="boxtop2A" id="zbf022" onmouseover="show_tabz(22)">总积分榜</div>
+            </div>
+            <div style="display: none;" id="zbli021">
+                <table class="blue" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td width="11%"></td>
+                        <td width="68%"><strong>用户名</strong></td>
+                        <td style="text-align: right;" width="21%"><strong>得分</strong></td>
+                    </tr>
+                    <!--{eval $weekuserlist=$this->fromcache('weekuserlist');}-->
+                    <!--{loop $weekuserlist $index $weekuser}-->
+					<!--{eval ++$index;}-->
+                    <tr>
+                        <td><div class="boxthree4paihang1">{$index}</div></td>
+                        <td><a  href="{url user/space/$weekuser['uid']}"  target="_blank">{$weekuser['username']}</a><a></a></td>
+                        <td class="b888" style="text-align: right;">{$weekuser['credit1']}</td>
+                    </tr>
+                    <!--{/loop}-->
+                </table>
+                <div style="text-align: right; padding-right: 5px; line-height: 22px;"><a target="_blank" href="{url user/scorelist/1}">更多&gt;&gt;</a></div>
+            </div>
+            <div id="zbli022" style="display: block;">
+                <table class="blue" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td width="11%">　</td>
+                        <td width="68%"><strong>用户名</strong></td>
+                        <td style="text-align: right;" width="21%"><strong>得分</strong></td>
+                    </tr>
+                    <!--{eval $alluserlist=$this->fromcache('alluserlist');}-->
+                    <!--{loop $alluserlist $index $alluser}-->
+					<!--{eval ++$index;}-->
+                    <tr>
+                        <td><div class="boxthree4paihang1">{$index}</div></td>
+                        <td><a  href="{url user/space/$alluser['uid']}"  target="_blank">{$alluser['username']}</a><a></a></td>
+                        <td class="b888" style="text-align: right;">{$alluser['credit1']}</td>
+                    </tr>
+                    <!--{/loop}-->
+                </table>
+                <div style="text-align: right; padding-right: 5px; line-height: 22px;"><a target="_blank" href="{url user/scorelist/0}">更多&gt;&gt;</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<script type="text/javascript">
+ //精彩推荐
+ $("li[id^='recommend']").bind("mouseover", function(){
+ 	var id=$(this).attr('id') ;
+	$("a[id^='recommend']").hide();
+ 	$('#'+id+'img').show();
+}); 
+//
+//最新最新处方共享 最新处方咨询 最疾病问答 最新病案讨论 切换
+function show_max_num(num){
+	for(var i=0;i<4;i++){	
+		document.getElementById("ww"+i).style.display = "none";
+		$("#wf"+i).attr('class','boxtop_W2B'); 
+	}
+	//document.getElementById("ww"+num).setAttribute("className", "boxtop_W2A");
+	document.getElementById("ww"+num).style.display = "block";
+	$("#wf"+num).attr('class','boxtop_W2A'); 
+}
+</script>
+
+{template footer}

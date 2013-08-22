@@ -1,0 +1,58 @@
+{eval global $starttime,$querynum;$mtime = explode(' ', microtime());$runtime=number_format($mtime[1] + $mtime[0] - $starttime,6); $setting=$this->setting;$user=$this->user;$headernavlist=$this->nav;$regular=$this->regular;}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={TIPASK_CHARSET}"/>
+<title>{$navtitle} {$setting['site_name']} {$setting['seo_title']}</title>
+<meta name="keywords" content="{$metakeywords}{$setting['seo_keywords']}" />
+<meta name="description" content="$metadescription {$setting['site_name']} {$setting['seo_description']}" />
+<script type="text/javascript">
+g_site_url='{SITE_URL}';g_prefix='{$setting['seo_prefix']}';g_suffix='{$setting['seo_suffix']}';editor_items='{$setting['editor_items']}';
+</script>
+<script src="/js/jquery.js" type="text/javascript"></script>
+<script src="/js/dialog.js" type="text/javascript"></script>
+<script src="/js/common.js" type="text/javascript"></script>
+<link href="/css/default/ask2.css" rel="stylesheet" type="text/css">
+<link href="/skin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/ask_base.css" type="text/css" rel="stylesheet" />
+<link href="/skin/css/tiezi.css" type="text/css" rel="stylesheet" /><? $toolbars="'".str_replace(",", "','", $setting['editor_toolbars'])."'"; ?>          <script type="text/javascript">
+                g_site_url='/';g_prefix='<?=$setting['seo_prefix']?>';g_suffix='<?=$setting['seo_suffix']?>';editor_options={toolbars:[[<?=$toolbars?>]],wordCount:<?=$setting['editor_wordcount']?>,elementPathEnabled:<?=$setting['editor_elementpath']?>};messcode='<?=$setting['code_message']?>';</script>
+
+<?=$setting['seo_headers']?>
+</head>
+<body>
+<div class="wrap">
+  <DIV id=userbar class=new_nav>
+    <DIV class=new_nav>
+      <DIV class=new_navtext><SPAN><A href="/">首页</A><a href="/?user/ask.html" >我的提问</a> <a href="javascript:void(0)" onclick="SetHomepage()">设为首页</a> <a href="javascript:void(0)" onclick="addfavorite()">收藏夹</a></SPAN></DIV>
+      <DIV class=new_navlogin>
+        <DIV><!--{if 0!=$user['uid']}-->您好,<a href="{url user/default}" target=_blank>{$user['username']}</A><SPAN>|</SPAN><a href="{url user/ask}">我的提问</A><SPAN>|</SPAN><a href="{url user/default}" target=_blank>个人管理</A><SPAN>|<!--{if $user['groupid']<=3}--></SPAN><a href="{SITE_URL}index.php?admin_main">系统设置</a><SPAN>|<!--{/if}--></SPAN><a href="{url message/new}">短消息(<B class=orange>{$user['newmsg']}</B>/<B>1</B>)</A><IMG alt=采纳答案 src="/skin/images/icon_zhang1.gif">{$user['credit1']}<IMG alt=积分 src="/skin/images/icon_bi.gif"><a href="{url user/default}" target=_blank>{$user['credit2']}</A><IMG alt=提问数 src="/skin/images/icon_q.gif">{$user['questions']}<IMG alt=回答数 src="/skin/images/icon_a.gif">{$user['answers']}<SPAN>|</SPAN><a href="{url user/logout}" target=_self>退出</A><SPAN>|</SPAN><a href="{url gift}" style="color:#F00">预约号兑换</A><!--{else}--> 
+          您好，欢迎来{$setting['site_name']}！[<a  href="{url user/login}">请登录</a>] [<a  href="{url user/register}">免费注册</a>]<!--{/if}--></DIV>
+      </DIV>
+    </DIV>
+  </DIV>
+</div>
+<div class="wrap1">
+  <div class="ask-top"> <span class="bgleft"> <span class="bgright"> <span class="topcon"> <span class="conup"> <span class="asklogo"><a href="/" title="健康问答">健康问答</a></span>
+    <form name="searchform"  action="{url question/search/3}" method="post">
+      <input id="kw" type="text" class="inputtext"  value="请在此提交您的问题" onfocus="if (this.value=='请在此提交您的问题'){this.value='';}; this.style.color='#333';" onblur="if (this.value==''){this.value='请在此提交您的问题';this.style.color='#bbb';}" style="color:#bbb;" name="word" />
+      <input type="submit" class="inputbut inputbut1" onmouseover="this.className='inputbut inputbut2'" onmouseout="this.className='inputbut inputbut1'" value="搜 索"  >
+      <input type="button" class="inputbut inputbut1" onmouseover="this.className='inputbut inputbut2'" onmouseout="this.className='inputbut inputbut1'" value="提 问" onclick="ask_submit();" />
+      <input type="button" name="" value="性爱健康" class="inputbut inputbut3" onmouseover="this.className='inputbut inputbut4'" onmouseout="this.className='inputbut inputbut3'" onclick=""  />
+    </form>
+    </span> <span class="condown">
+    <ul class="ul1 color666">
+     <script type="text/javascript">/*468*15，创建于2011-9-30*/ var cpro_id = 'u630079';</script><script src="http://cpro.baidu.com/cpro/ui/c.js" type="text/javascript"></script>
+     
+      
+    </ul>
+    <ul class="ul2 color666">
+      <li><a href="/" target="_self" title="kaw">健康中心</a></li>
+    </ul>
+    </span> </span> </span> </span> </div>
+</div>
+<!--提问&频道入口end--> 
+<!---通栏1-->
+<div class="wrap1"> 960*60 </div>
+<!---通栏1end-->
+

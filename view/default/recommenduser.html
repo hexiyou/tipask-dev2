@@ -1,0 +1,79 @@
+{template header}
+<div class="content">
+    <div class="leftbox">
+        <!--{loop $famouslist $famous}-->
+        <div class="zjtjt">
+            <li class="zjtja1"><div class="juzhong">&nbsp;第{$famous['id']}届推荐之星</div></li>
+            <li class="zjtja2"><a href="{url question/add/$famous['uid']}" ><img  src="css/default/ask_ta.png"></a></li>
+            <li class="zjtja3"></li>
+            <div class="clr"></div>
+        </div>
+        <div class="zjtjc">
+            <div class="zjtjct">
+                <div class="zjtjctimg">
+                    <a title="{$famous['username']}" target="_top" href="{url user/space/$famous['uid']}"><img  alt="{$famous['username']}" src="{$famous['avatar']}" width="80px" height="80px;"/></a>
+                </div>
+                <h1>本期知道之星：{$famous['username']}</h1>
+                <p style="color:#4894F3;">提问数：{$famous['questions']}&nbsp;&nbsp;回答数：{$famous['answers']}&nbsp;&nbsp;经验：{$famous['credit1']}&nbsp;&nbsp;财富：{$famous['credit2']}&nbsp;&nbsp;魅力：{$famous['credit3']}</p>
+                <p>
+                    {if $famous['signature']}$famous['signature']{else}TA还没有填写自我介绍!{/if}
+                    <span class="ckxx"><a  href="{url user/space/$famous['uid']}">查看详细介绍&gt;&gt;</a></span>
+                </p>
+                <img width="630px" height="6px" src="css/default/gx.gif">
+                <h3>获选理由：</h3>
+                <p class="reason">{$famous['reason']}</p>
+            </div>
+            <div class="clr"></div>
+            <div class="zjtjcpj">
+                <span class="title1">精选解答:</span><br>
+                <ul>
+                    <!--{loop $famous['bestanswer'] $answer}-->
+                    <li><a href="{url question/view/$answer['qid']}" target='_blank' title="{$answer['title']}">{eval echo cutstr($answer['title'],28,'');}</a></li>
+                    <!--{/loop}-->
+                </ul>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="zjtjb">
+            <li class="zjtjc1"></li>
+            <li class="zjtjc2"></li>
+            <li class="zjtjc3"></li>
+            <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+        <!--{/loop}-->
+        <div class="scott">$departstr</div>
+        <div class="clr"></div>
+    </div>
+    <div class="right1">
+        <div class="gg">
+            <div class="ggtitle">
+                <ul>
+                    <li class="gga1"></li>
+                    <li class="gga2">
+                        <div class="juzhong">推荐之星最新解答</div>
+                    </li>
+                    <li class="gga3"></li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+            <div class="ggcon">
+                <ul>
+                    <!--{loop $questionlist $question}-->
+                    <li> <a href="{url question/view/$question['qid']}" title="{$question['title']}">{eval echo cutstr($question['title'],24);}</a></li>
+                    <!--{/loop}-->
+                </ul>
+            </div>
+            <div class="ggbuttom">
+                <ul>
+                    <li class="ggba1"></li>
+                    <li class="ggba2"></li>
+                    <li class="ggba3"></li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+</div>
+<div class="clr"></div>
+{template footer}

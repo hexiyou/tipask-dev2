@@ -1,0 +1,84 @@
+{template header}
+<div class="content">
+    <div class="leftbox">
+        <!--{loop $expertlist $expert}-->
+        <div class="wenti">
+            <div class="wttitle">
+                <ul>
+                    <li class="wta1"></li>
+                    <li class="wta2">问答专家</li>
+                    <li class="wta3"><a href="{url question/add/$expert['uid']}"><img style="padding-top:8px;"  src="css/default/ask_expert.png" /></a></li>
+                    <li class="wta4"></li>
+                </ul>
+                <div class="clr"></div> 
+            </div>
+            <div class="clr"></div>
+            <div class="plc">
+                <div class="expertcont">
+                    <div class="zjtjct">
+                        <div class="zjtjctimg">
+                            <a href="{url user/space/$expert['uid']}" target="_top" title="admin"><img width="80px" height="80px;" src="{$expert['avatar']}" alt="{$expert['username']}"></a>
+                        </div>
+                        <h1><a href="{url user/space/$expert['uid']}">{$expert['username']}</a></h1>
+                        <p>回答数：$expert['answers']&nbsp;&nbsp;&nbsp;&nbsp;提问数：$expert['questions']</p>
+                        <p>简介：{if $expert['signature']}$expert['signature']{else}TA还没有填写自我介绍!{/if}</p>
+                        <img width="700px" height="6px" src="css/default/gx.gif">
+                    </div>
+                    <div class="clr"></div>
+                    <div class="zjtjcpj">
+                        <span class="title1">精选解答:</span><br>
+                        <ul>
+                            <!--{loop $expert['bestanswer'] $answer}-->
+                            <li><a href="{url question/view/$answer['qid']}" target='_blank' title="{$answer['title']}">{eval echo cutstr($answer['title'],28,'');}</a></li>
+                            <!--{/loop}-->
+                        </ul>
+                        <div class="clr"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clr"></div>
+            <div class="qtbuttom">
+                <ul>
+                    <li class="qtba1"></li>
+                    <li class="qtba2"></li>
+                    <li class="qtba3"></li>
+                    <li class="qtba4"></li>
+                </ul>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <!--{/loop}-->
+        <div class="clr"></div>
+    </div>
+    <div class="right1">
+        <div class="gg">
+            <div class="ggtitle">
+                <ul>
+                    <li class="gga1"></li>
+                    <li class="gga2">
+                        <div class="juzhong">专家最近解答</div>
+                    </li>
+                    <li class="gga3"></li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+            <div class="ggcon">
+                <ul>
+                    <!--{loop $questionlist $question}-->
+                    <li> <a href="{url question/view/$question['qid']}" title="{$question['title']}">{eval echo cutstr($question['title'],24);}</a></li>
+                    <!--{/loop}-->
+                </ul>
+            </div>
+            <div class="ggbuttom">
+                <ul>
+                    <li class="ggba1"></li>
+                    <li class="ggba2"></li>
+                    <li class="ggba3"></li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+</div>
+<div class="clr"></div>
+{template footer}

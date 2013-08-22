@@ -1,0 +1,338 @@
+.gpboxs { display:block; width:230px; overflow:hidden; background:url(http://www.120center.com/skin/images/ask_tie_others.png) no-repeat 0 0; margin-top:10px}
+.gpboxs strong { display:block; width:210px; height:17px; padding:13px 0 0 25px; overflow:hidden; font:bold 12px SimSun; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -120px; color:#666; }
+.gpboxs .cons { display:block; width:228px; overflow:hidden; border:1px solid #C9DFED; border-top:none; background:#fff; }
+.gpboxs .cons ul { width:228px; overflow:hidden; font:12px SimSun; }
+.gpboxs .cons ul li { float:left; margin-left:10px; display:inline; padding-left:8px; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat; }
+.gpboxs .cons .ul1 { padding:4px 0 5px; line-height:20px; }
+.gpboxs .cons .ul1 li { width:98px; padding:0; background:none; }
+.gpboxs .cons .ul2 { padding:7px 0 8px; line-height:22px; }
+.gpboxs .cons .ul2 li { width:200px; background-position:0 -168px; }
+.gpboxs .cons .ul3 { padding:4px 0 5px; line-height:20px; }
+.gpboxs .cons .ul3 li { width:54px; background-position:0 -169px; }
+.gpboxs .cons .ul4 { padding:8px 0 9px; line-height:24px; }
+.gpboxs .cons .ul4 li { width:200px; background-position:0 -165px }
+.gpboxs .cons ul li a { color:#333; text-decoration:none; }
+.gpboxs .cons ul li a:hover { color:#f60; text-decoration:underline; }
+
+.looks2 {display:block; width:228px; height:280px; overflow:hidden; border:1px solid #C9DFED; margin-top:10px}
+.looks2 strong {display:block; width:210px; height:21px; padding:9px 0 0 25px; overflow:hidden; font:bold 12px SimSun; background:#F2F6FA url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -124px; border-bottom:1px solid #E0EDF5; color:#666;}
+.looks2 .imgbox {display:block; width:214px; padding:9px 0 1px 14px; overflow:hidden;}
+.looks2 .imgbox1 img {float:left; width:200px; height:90px;}
+.looks2 .imgbox1 p {float:left; width:200px; padding-top:7px; font:12px SimSun; text-align:center;}
+.looks2 .imgbox1 p a {color:#666; text-decoration:none;} .looks2 .imgbox1 p a:hover{color:#f60; text-decoration:underline;}
+
+* {margin:0; padding:0;} img {border:none;} li {list-style:none;} .clearer {clear:both; height:0; overflow:hidden;}
+/* ask-sub */
+.ask-sub {width:970px; overflow:hidden; font:12px/18px SimSun;}
+.ask-sub .subleft {float:left; padding-left:10px; color:#999;} .ask-sub .subright {float:right; padding-right:10px;}
+/* ask-tie */
+.ask-tie {width:970px; height:auto; overflow:hidden;}
+.ask-tie .xtl {float:left; width:590px; height:auto; margin-top:15px; overflow:hidden;} .ask-tie .xtl iframe {width:590px;}
+.ask-tie .mtl {float:left; width:730px; height:auto; overflow:hidden;}
+.ask-tie .gg220 {display:block; width:220px; height:auto; overflow:hidden;}
+.ask-tie .gg230 {display:block; width:230px; height:auto; overflow:hidden;}
+.ask-tie .gg730 {float:left; width:730px; height:auto; overflow:hidden;}
+/* tie-left */
+.tie-left {float:left; width:730px; height:auto;}
+.tie-left .tboxs {float:left; width:728px; height:auto; margin-top:10px; border:1px solid #fff; border-top:none; background:url(http://www.120center.com/skin/images/ask_tie_leftbgs.png) repeat-y;}
+.tie-left .tboxs b {font-size:12px; font-family:Verdana; font-weight:normal; color:#999;}
+.tie-left .tboxs .tbtop {float:left; width:728px; height:32px; background:url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x;}
+.tie-left .tboxs .tbtop dl {float:left; height:30px; padding:2px 0 0 44px; font:12px/30px SimSun; background:url(http://www.120center.com/skin/images/ask_tie_tops.png) no-repeat;}
+.tie-left .tboxs .tbtop dl dt {float:left; font-size:14px; font-weight:bold;}
+.tie-left .tboxs .tbtop dl dd {float:left; color:#999;}
+.tie-left .tboxs .tbtop dl dd span {font-size:12px; font-family:Verdana; font-weight:normal; color:#999;}
+.tie-left .tboxs .tbtop ul {float:right; height:32px; font:12px/22px SimSun;}
+.tie-left .tboxs .tbtop ul li {float:left; width:75px; height:22px; padding-right:10px; margin:5px 0 0 0;}
+.tie-left .tboxs .tbtop ul li a {display:block; width:75px; height:21px; padding-top:1px; overflow:hidden; text-align:center; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -170px -144px; color:#333; text-decoration:none;}
+.tie-left .tboxs .tbtop ul li a:hover {background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -170px -166px; color:#333; text-decoration:none; }
+.tie-left .tboxs .tblef {float:left; width:120px; height:auto; padding:18px 0 20px; font:12px SimSun; position:relative; z-index:2;}
+.tie-left .tboxs .tblef .touxiang {float:left; width:120px; height:62px; text-align:center; position:relative; z-index:1;}
+.tie-left .tboxs .tblef .touxiang .xinxibox {display:inline-block; width:60px; height:60px; padding:0 20px; position:relative; z-index:2;}
+.tie-left .tboxs .tblef .touxiang .xinxibox .yonghu {display:block; width:60px; height:60px; border:1px solid #F1F1F1; background:url(http://www.120center.com/skin/images/ask_tie_others.png) no-repeat 0 -30px;}
+.tie-left .tboxs .tblef .touxiang .xinxibox .yisheng {display:block; width:60px; height:60px; border:1px solid #F1F1F1; background:url(http://www.120center.com/skin/images/ask_tie_others.png) no-repeat 0 -90px;}
+.tie-left .tboxs .tblef .touxiang .xinxibox img {width:60px; height:60px;}
+.tie-left .tboxs .tblef .touxiang .xinxi {display:block; width:300px; height:184px; position:absolute; z-index:3; top:-17px; left:98px; background:url(http://www.120center.com/skin/images/ask_tie_xinxi.png) no-repeat; display:none;}
+.tie-left .tboxs .tblef .touxiang .xinxi .point2 {display:block; width:12px; height:21px; overflow:hidden; background:url(http://www.120center.com/skin/images/ask_tie_spans.gif) no-repeat 0 -189px; position:absolute; z-index:8; top:38px; left:-7px;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl {display:block; width:290px; height:170px; overflow:hidden; margin:4px; border:1px solid #6EB0E5; background:#fff;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl dd {float:left; overflow:hidden; font:12px SimSun; text-align:left;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl .imgbox {width:74px; height:62px; padding:12px 0 0 12px;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl .name {width:200px; height:18px; padding-top:14px; font-weight:bold;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl .jj {width:200px; height:16px; padding-top:5px;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl .js {width:266px; height:52px; padding:5px 0 0 12px; font:12px/22px Verdana; color:#666;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl .js a {text-decoration:underline;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl .tw {width:266px; padding-left:12px;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl .tw a {float:left; height:20px; padding-top:2px; margin-right:10px; font:12px/20px SimSun; text-align:center; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat; color:#333; text-decoration:none;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl .tw a.a1 {width:83px; background-position:-59px 0;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl .tw a.a1:hover {background-position:-59px -22px; color:#333; text-decoration:none;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl .tw a.a2 {width:123px; background-position:-142px 0;}
+.tie-left .tboxs .tblef .touxiang .xinxi dl .tw a.a2:hover {background-position:-142px -22px; color:#333; text-decoration:none;}
+.tie-left .tboxs .tblef .touxiang .showxx .xinxi {display:block;}
+.tie-left .tboxs .tblef .touxiang .point {display:block; width:12px; height:21px; overflow:hidden; background:url(http://www.120center.com/skin/images/ask_tie_spans.gif) no-repeat; position:absolute; z-index:1; top:20px; left:108px;}
+.tie-left .tboxs .tblef .username {float:left; width:110px; padding:2px 5px 0; font:12px/20px Verdana; text-align:center;}
+.tie-left .tboxs .tblef .ziliao {float:left; width:110px; padding:0 5px; font:12px/20px Verdana; text-align:center; color:#666;}
+.tie-left .tboxs .tblef .ziliao a {text-decoration:underline;}
+.tie-left .tboxs .tblef .phone {float:left; width:106px; margin:6px 5px 4px; padding:8px 2px; font:12px/14px Verdana; text-align:left; border-top:1px dashed #D0EDAF; border-bottom:1px dashed #D0EDAF; color:#666;}
+.tie-left .tboxs .tblef .phone span {float:left; width:86px; height:14px; padding-left:20px; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -710px;}
+.tie-left .tboxs .tblef .phone b{float:left; width:106px; height:14px; margin-top:5px; color:#666;}
+.tie-left .tboxs .tblef .tiwen {float:left; width:110px; height:22px; margin-left:5px; display:inline; overflow:hidden; padding-top:6px; text-align:center;}
+.tie-left .tboxs .tblef .tiwen a {display:inline-block; width:83px; height:22px; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -170px -100px;}
+.tie-left .tboxs .tblef .tiwen a:hover {background-position:-170px -122px;}
+.tie-left .tboxs .tblef .tiwen .tw {width:59px; background-position:-183px -44px;}
+.tie-left .tboxs .tblef .tiwen .tw:hover {background-position:-183px -66px;}
+.tie-left .tboxs .tblef .tiwen .qq {width:21px; margin-left:3px; background-position:-244px -44px;}
+.tie-left .tboxs .tblef .tiwen .qq:hover {background-position:-244px -66px;}
+.tie-left .tboxs .tbrig {float:right; width:590px; height:auto; padding:0 9px 20px; font:14px/26px SimSun; background:#fff; position:relative; z-index:1;}
+.tie-left .tboxs .tbrig .tousu {float:left; width:590px; height:20px; padding-top:12px; font:12px SimSun; text-align:right; color:#999;}
+.tie-left .tboxs .tbrig .tousu a {text-decoration:underline;}
+.tie-left .tboxs .tbrig .tousu span {float:left; padding-left:10px;}
+.tie-left .tboxs .tbrig .tousu span a {color:#06b; text-decoration:none;} .tie-left .tboxs .tbrig .tousu span a:hover {color:#f60; text-decoration:underline;}
+.tie-left .tboxs .tbrig h1 {float:left; width:552px; padding-left:38px; font:bold 16px/26px SimSun; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -655px;}
+.tie-left .tboxs .tbrig p {float:left; width:570px; overflow:hidden; padding:0 10px; margin-top:4px; font:14px/26px SimSun;}
+.tie-left .tboxs .tbrig p a {font-size:12px; color:#06b; text-decoration:none;} .tie-left .tboxs .tbrig p a:hover {color:#f60; text-decoration:underline;}
+.tie-left .tboxs .tbrig p span {font-weight:bold;} .tie-left .tboxs .tbrig p img {border:1px solid #E3E3E3;}
+.tie-left .tboxs .tbrig p textarea {width:563px; height:94px; overflow:hidden; overflow-y:auto; padding:3px 0 3px 5px; font:14px/22px SimSun; border:1px solid #C2C2C2;}
+.tie-left .tboxs .tbrig p .xgbuts {display:inline-block; width:568px; height:44px; text-align:center;}
+.tie-left .tboxs .tbrig p .xgbuts .cbbut {width:67px; height:25px; margin:12px 7px 0; border:none; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat; cursor:pointer;}
+.tie-left .tboxs .tbrig p .xgbuts .cbbut1 {background-position:-83px -79px;}
+.tie-left .tboxs .tbrig p .xgbuts .cbbut2 {background-position:-83px -104px;}
+.tie-left .tboxs .tbrig p.pingjia {width:auto; margin:10px 10px; display:inline; padding:5px 10px; font:12px/22px Verdana; border:1px solid #FBD089; background:#FEFDF9; position:relative; z-index:1;}
+.tie-left .tboxs .tbrig p.pingjia .point {display:block; width:14px; height:8px; overflow:hidden; background:url(http://www.120center.com/skin/images/ask_tie_spans.gif) no-repeat 0 -160px; position:absolute; z-index:2; top:-8px; left:40px;}
+.tie-left .tboxs .tbrig span.pingjia {display:block; width:260px; overflow:hidden; margin:10px 0; padding:5px 10px; font:12px/22px Verdana; border:1px solid #FBD089; background:#FEFDF9;}
+.tie-left .tboxs .tbrig .buchong {float:left; width:590px; padding:4px 0; border-top:1px dashed #E3E3E3;}
+.tie-left .tboxs .tbrig .anniu {float:left; width:570px; padding:0 10px;}
+.tie-left .tboxs .tbrig .anniu .wolai {float:left; width:170px; height:48px; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat 0 -100px;}
+.tie-left .tboxs .tbrig .anniu .wolai:hover {background-position:0 -148px;}
+.tie-left .tboxs .tbrig .anniu .bucho {float:left; width:170px; height:48px; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -265px -96px;}
+.tie-left .tboxs .tbrig .anniu .bucho:hover {background-position:-265px -144px;}
+.tie-left .tboxs .tbrig ul {float:left; width:590px; font-size:0; overflow:hidden;}
+.tie-left .tboxs .tbrig ul li {float:left; margin-left:10px; font:12px/24px SimSun; display:inline; white-space:nowrap;} .tie-left .tboxs .tbrig ul li a {text-decoration:underline;}
+.tie-left .tboxs .tbrig .fenxiang {float:left; width:590px; padding-top:12px; border-top:1px dashed #E3E3E3; color:#666;}
+.tie-left .tboxs .tbrig .fenxiang .fxbox {float:right; width:156px; height:16px; overflow:hidden;}
+.tie-left .tboxs .tbrig .annius {float:left; width:570px; padding:20px 10px 4px;}
+.tie-left .tboxs .tbrig .annius .caina {float:left; width:85px; height:26px; padding-top:2px; margin-right:12px; font-size:14px; text-align:center; line-height:26px; color:#333; text-decoration:none; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat 0 -44px;}
+.tie-left .tboxs .tbrig .annius .caina:hover {color:#333; text-decoration:none; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat 0 -72px;}
+.tie-left .tboxs .tbrig .annius .nocaina {float:left; width:85px; height:26px; padding-top:2px; margin-right:12px; font-size:14px; text-align:center; line-height:26px; color:#999; text-decoration:none; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -336px -364px; cursor:default;}
+.tie-left .tboxs .tbrig .wtt .wttit {font-family:"微软雅黑";font-size: 15px;font-weight: bolder;margin-top: 10px;}
+.tie-left .tboxs .tbrig .wtt {padding-left: 1px;padding-top: 5px;text-align: left;vertical-align: middle;}
+.tie-left .tboxs .tbrig .wtt .xs{ font-size:12px; margin-top:7px;}
+.tie-left .tboxs .tbrig .wtt .xs .xsj{ color:#FC6603;}
+.tie-left .tboxs .tbrig .wtt .xs .twsj{ color:#666666;}
+.tie-left .tboxs .tbrig .wtt .wtcont {font-size: 15px;line-height: 23px;margin-top: 5px;text-align: left;width: 579px;word-wrap: break-word;}
+.tie-left .tboxs .tbrig .wtt .qtags{background: none repeat scroll 0 0 #F4F6FF;float: left;margin: 0 5px 5px 0;padding: 0 10px;text-decoration: none;border-radius:5px 5px 5px 5px;}
+.tie-left .tboxs .tbrig .wtt .qtags:hover{background: none repeat scroll 0 0 #3F92F8;color: #FFFFFF;text-decoration: none;}
+.wtleft {float: left;font-size: 12px;padding-top: 10px;text-align: center;width: 134px;}
+.touxiang {margin: 0 auto 3px;}
+.touxiang img{width: expression(this.width < 100 ? true: 100); max-width: 100px;height: expression(this.height < 100 ? true:100 ); max-height: 100px;}
+.hyxinxi{text-align: center;}
+.userinfo{background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #BDCFDD;box-shadow: 4px 4px 0 #E4E4E4;position: absolute;width: 350px;height:150px;_height:133px;margin-top:-10px;z-index: 9;}
+.readFace{float:left;}
+.userinfoR{float: left;line-height: 20px;text-align: left;width: 215px;}
+.zjpl {border: 0 none;margin-bottom: 10px;padding: 0;width: 100%;}
+.zjpl .zjpltitle {background: none repeat scroll 0 0 #FBFBFB;height: 37px;margin: 0;padding: 0;position: relative;text-align: left;width: 750px;}
+.zjpl .zjpltitle .zjpla1 {background: url("pinglun1.gif") no-repeat scroll 0 0 transparent;width: 4px;}
+.zjpl .zjpltitle li {display: inline;float: left; height: 37px;line-height: 37px;overflow: hidden;}
+.zjpl .zjpltitle .zjpla2 {background: url("pinglun2.gif") repeat-x scroll 0 0 transparent;font-size: 14px;font-weight: bolder;text-align: left;width: 743px;}
+.zjpl .zjpltitle .zjpla3 {background: url("pinglun3.gif") no-repeat scroll 0 0 transparent;width: 3px;}
+.zjpl .zjpjbuttom {height: 4px;text-align: left;width: 750px;}
+.zjpl .zjpjbuttom li {display: inline;float: left;height: 4px;line-height: 4px;overflow: hidden;}
+.zjpl .zjpjbuttom .zjplba1 {background: url("pinglun4.gif") no-repeat scroll 0 0 transparent;width: 4px;}
+.zjpl .zjpjbuttom .zjplba2 {border-bottom: 1px solid #D6D6D6;width: 742px;}
+.zjpl .zjpjbuttom .zjplba3 {background: url("pinglun5.gif") no-repeat scroll 0 0 transparent;width: 4px;}
+.zjplcon {border-left: 1px solid #D6D6D6;border-right: 1px solid #D6D6D6;line-height: 27px;padding-bottom: 10px;text-align:left;width: 748px;height:300px;}
+.zjplcon .zjplbr {color: #999999;font-size: 14px;sline-height: 27px;margin-right: 11px;margin-top: 7px;vertical-align: middle;text-align: right;}
+.zjplbr .code{margin-right: 10px;}
+.blank10 {clear: both;height: 10px;overflow: hidden;}
+
+
+.tie-left .tboxs .tbrig .annius .shezhi {float:left; width:98px; height:26px; padding-top:2px; margin-right:12px; font-size:14px; text-align:center; line-height:26px; color:#333; text-decoration:none; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -85px -44px;}
+.tie-left .tboxs .tbrig .annius .shezhi:hover {color:#333; text-decoration:none; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -85px -72px;}
+.tie-left .tboxs .tbrig .annius .zhichi {float:right; width:92px; height:25px; /*position:relative;*/ z-index:1;}
+.tie-left .tboxs .tbrig .annius .zhichi a {display:block; width:66px; height:24px; padding:1px 0 0 26px; text-align:center; font-size:12px; line-height:24px; color:#333; text-decoration:none; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat 0 -196px;}
+.tie-left .tboxs .tbrig .annius .zhichi a:hover {color:#333; text-decoration:none; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat 0 -221px;}
+.tie-left .tboxs .tbrig .annius .zhichi .jiayi {width:85px; height:22px; padding-left:28px; font:12px/22px Verdana; border:1px solid #F9CA65; background:url(http://www.120center.com/skin/images/ask_tie_others.png) no-repeat -208px -128px; color:#f60; position:absolute; top:-27px; left:-23px;}
+.tie-left .tboxs .tbrig .cainabox {float:left; width:568px; height:200px; margin:5px 0 0 10px; _margin-left:5px; display:inline; border:1px solid #F9CA65; font:12px SimSun; color:#333;}
+.tie-left .tboxs .tbrig .cainabox .cbtop {float:left; width:568px; height:29px; background:url(http://www.120center.com/skin/images/ask_tc.gif) repeat-x;}
+.tie-left .tboxs .tbrig .cainabox .cbtop .cbbt {float:left; margin:8px 0 0 10px; display:inline; color:#999;}
+.tie-left .tboxs .tbrig .cainabox .cbtop .cbbt span {color:#f00;}
+.tie-left .tboxs .tbrig .cainabox .cbtop strong {color:#333; font-weight:bold;}
+.tie-left .tboxs .tbrig .cainabox .cbtop .guanbi {float:right; width:17px; height:16px; margin:6px 10px 0 0; display:inline; background:#ccc;}
+.tie-left .tboxs .tbrig .cainabox .cbtop .guanbi a {display:block; width:17px; height:16px; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -100px;}
+.tie-left .tboxs .tbrig .cainabox .cbtop .guanbi a:hover {background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -116px;}
+.tie-left .tboxs .tbrig .cainabox .cbdown {display:block; width:568px; height:171px; overflow:hidden; position:relative;}
+.tie-left .tboxs .tbrig .cainabox .cbdown textarea {float:left; width:530px; height:106px; padding-left:4px; margin:12px 0 0 16px; display:inline; font:14px/26px SimSun; overflow:hidden; overflow-y:aotu; border:1px solid #C2C2C2;}
+.tie-left .tboxs .tbrig .cainabox .cbdown .cbbuts {float:left; width:568px; height:37px; text-align:center;}
+.tie-left .tboxs .tbrig .cainabox .cbdown .cbbut {width:67px; height:25px; margin:12px 7px 0; border:none; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat; cursor:pointer;}
+.tie-left .tboxs .tbrig .cainabox .cbdown .cbbut1 {background-position:-83px -79px;}
+.tie-left .tboxs .tbrig .cainabox .cbdown .cbbut2 {background-position:-83px -104px;}
+.tie-left .tboxs .tbrig .cainabox .cbdown .cuowu {clear:both; width:524px; height:24px; overflow:hidden; padding:0 5px 0; border:1px solid #FFD0C9; background:#FFF9F8; position:absolute; top:94px; left:16px;}
+.tie-left .tboxs .tbrig .cainabox .cbdown .cuowu span {display:block; height:24px; line-height:24px; padding:1px 0 0 20px; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat -165px -101px; color:#f20;}
+.tie-left .tbstyle110 {border-color:#B8D5E8; background-position:0 0;}
+.tie-left .tbstyle110 .tbtop, .tie-left .tbstyle110 .tbtop dl {background-position:0 0;}
+.tie-left .tbstyle110 .tblef .touxiang .point {background-position:0 0;}
+.tie-left .tbstyle220 {border-color:#F9CA65; background-position:-800px 0;}
+.tie-left .tbstyle220 .tbtop, .tie-left .tbstyle220 .tbtop dl {background-position:0 -32px;}
+.tie-left .tbstyle220 .tblef .touxiang .point {background-position:0 -40px;}
+/*.tie-left .tbstyle2 {border-color:#FABEBE; background-position:-1600px 0;}
+.tie-left .tbstyle2 .tbtop, .tie-left .tbstyle2 .tbtop dl {background-position:0 -64px;}
+.tie-left .tbstyle2 .tblef .touxiang .point {background-position:0 -80px;}*/
+.tie-left .tbstyle3 {border-color:#B6E086; background-position:-2400px 0;}
+.tie-left .tbstyle3 .tbtop, .tie-left .tbstyle3 .tbtop dl {background-position:0 -96px;}
+.tie-left .tbstyle3 .tblef .touxiang .point {background-position:0 -120px;}
+.tie-left .tbstyle1 {border-color:#B6E086; background-position:-2400px 0;}
+.tie-left .tbstyle1 .tbtop{background-position:0 -96px;} .tie-left .tbstyle1 .tbtop dl {background-position:0 -128px;}
+.tie-left .tbstyle1 .tblef .touxiang .point {background-position:0 -120px;}
+.tie-left .tbstyle2 {border-color:#B6E086; background-position:-2400px 0;}
+.tie-left .tbstyle2 .tbtop{background-position:0 -96px;} .tie-left .tbstyle2 .tbtop dl {background-position:0 -128px;}
+.tie-left .tbstyle2 .tblef .touxiang .point {background-position:0 -120px;}
+.tie-left .tbstyle6 {margin-top:0; border-color:#B6E086; background-position:-2400px 0;}
+.tie-left .tbstyle6 .tblef .touxiang .point {background-position:0 -120px;}
+.tie-left .tbstyle7 {border-color:#B8D5E8; background-position:0 0;}
+.tie-left .tbstyle7 .tbtop {background-position:0 -128px;} .tie-left .tbstyle7 .tbtop dl {background-position:0 -160px;}
+.tie-left .tbstyle7 .tblef .touxiang .point {background-position:0 0;}
+.tie-left .tbstyle8 {margin-top:0; border-color:#B8D5E8; background-position:0 0;}
+.tie-left .tbstyle8 .tblef .touxiang .point {background-position:0 0;}
+.tie-left .tbstyle9 {margin-top:0; border-color:#FABEBE; background-position:-1600px 0;}
+.tie-left .tbstyle9 .tblef .touxiang .point {background-position:0 -80px;}
+.tie-left .huida {float:left; width:708px; padding:0 10px; overflow:hidden; border:1px solid #B8D5E8; background:#EEF3F8 url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x 0 -214px;}
+.tie-left .huida .hdleft {float:left; width:470px; height:34px; overflow:hidden; position:relative; z-index:1;}
+.tie-left .huida .hdleft .hdbt {display:block; width:444px; height:30px; padding:16px 0 0 26px; overflow:hidden; font:12px/22px SimSun; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -743px; color:#999;}
+.tie-left .huida .hdleft .hdbt span {color:#333; font:bold 14px/22px SimSun;}
+.tie-left .huida .hdleft form {float:left; width:470px; height:268px; overflow:hidden;}
+.tie-left .huida .hdleft form textarea {float:left; width:450px; height:186px; padding-left:5px; margin-left:5px; display:inline; font:14px/26px SimSun; overflow-y:auto; border:1px solid #C2C2C2; position:relative; z-index:2;}
+.tie-left .huida .hdleft form label {float:left; width:144px; margin:20px 0 0 153px; display:inline;}
+.tie-left .huida .hdleft form label input {float:left; width:143px; height:42px; border:none; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat; cursor:pointer;}
+.tie-left .huida .hdleft form label input.tjhd {background-position:0 -246px} 
+.tie-left .huida .hdleft form label input.tjhd2 {background-position:0 -288px} 
+.tie-left .huida .hdleft form span {float:left; height:42px; padding-top:35px; font-size:12px; color:#999; white-space:nowrap;}
+.tie-left .huida .hdleft .cuowu {width:445px; height:24px; overflow:hidden; padding:0 5px 0; border:1px solid #FFD0C9; background:#FFF9F8; position:absolute; top:208px; left:5px; z-index:3;}
+.tie-left .huida .hdleft .cuowu span {display:block; height:24px; line-height:24px; padding:1px 0 0 20px; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat -165px -101px; color:#f20;}
+.tie-left .huida .hdright {float:right; width:220px; height:294px; padding:14px 4px 0 0; overflow:hidden;}
+
+.tie-left .huida .ask_content{ float:left; width:440px; margin:0; padding:15px; }
+.tie-left .huida .ask_content .tjhd{width:143px; height:42px; border:none; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat; cursor:pointer; background-position:0 -246px; margin:10px 0 0 100px;} 
+.tie-left .huida .ask_content .tjhd{width:143px; height:42px; border:none; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat; cursor:pointer; background-position:0 -288px} 
+.tie-left .huida .ask_content .askimg{ float:right; width:220px; }
+
+
+.tie-left .chongxin {float:left; width:710px; height:72px; padding:0 10px; overflow:hidden;}
+.tie-left .chongxin .cx {float:left; width:230px; height:57px; padding-top:15px; overflow:hidden;}
+.tie-left .chongxin .cx a {display:block; width:214px; height:48px; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -265px 0;}
+.tie-left .chongxin .cx a:hover {background-position:-265px -48px;}
+.tie-left .chongxin .bz {float:left; width:230px; height:38px; padding-top:34px; overflow:hidden; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 139px -898px; color:#666;}
+.tie-left .chongxin .bz a {text-decoration:underline;}
+.tie-left .ulbox {float:left; width:728px; height:auto; margin-top:10px; border:1px solid #B8D5E8; border-top:none;}
+.tie-left .ulbox .ultop {float:left; width:708px; height:30px; padding:2px 10px 0; font:bold 14px/30px SimSun; background:url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x 0 -128px;}
+.tie-left .ulbox .ultop span {display:block; padding-left:24px; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat;}
+.tie-left .ulbox .ultop span.zui {background-position:0 -814px}
+.tie-left .ulbox .ultop span.hud {background-position:0 -874px}
+.tie-left .ulbox .ul1 {float:left; width:728px; overflow:hidden; padding:10px 0; font:14px/30px SimSun; color:#bbb;}
+.tie-left .ulbox .ul1 li {float:left; width:320px; padding-left:10px; margin:0 15px; display:inline; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -164px;}
+.tie-left .ulbox .ul1 li .tit {float:left; width:220px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.tie-left .ulbox .ul1 li .otr {float:right; width:90px; overflow:hidden; font:12px/30px Verdana; text-align:right;}
+.tie-left .ulbox .tuwen {float:left; width:142px; height:140px; overflow:hidden; margin-left:10px; display:inline;}
+.tie-left .ulbox .tuwen .imgbox {float:left; width:140px; height:90px; margin-top:10px; border:1px solid #DEDEDE;}
+.tie-left .ulbox .tuwen .imgbox img {width:140px; height:90px;}
+.tie-left .ulbox .tuwen p {float:left; width:142px; padding-top:2px; font:14px/30px SimSun; text-align:center;}
+.tie-left .ulbox .ul2 {float:left; width:420px; overflow:hidden; padding:10px 0; font:14px/30px SimSun;}
+.tie-left .ulbox .ul2 li {float:left; width:176px; padding-left:10px; margin-left:20px; display:inline; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -164px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.tie-left .ggtext {float:left; width:728px; border:1px solid #D6E6F0; background:#FCFEFF;}
+.tie-left .ggtext ul {float:left; width:161px; padding:5px 10px; margin-left:-1px; display:inline; font:12px/22px SimSun; border-left:1px solid #E5EFF6;}
+.tie-left .ggtext ul li {float:left; width:150px; padding-left:10px; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -168px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.tie-left .ggtext ul li a {color:#333; text-decoration:none;} .ggtext ul li a:hover {color:#f60; text-decoration:underline;}
+/* tie-right */
+.tie-right {float:right; width:230px; height:auto; overflow:hidden;}
+.tie-right strong a {color:#666; text-decoration:none;} .tie-right strong a:hover {color:#f60; text-decoration:underline;}
+.tie-right .spboxs {display:block; width:230px; margin-top:10px; overflow:hidden; background:url(http://www.120center.com/skin/images/ask_tie_others.png) no-repeat 0 0;}
+.tie-right .spboxs strong {display:block; width:210px; height:17px; padding:13px 0 0 25px; overflow:hidden; font-weight:bold; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -120px; color:#666;}
+.tie-right .spboxs .cons {display:block; width:228px; overflow:hidden; border-color:#C9DFED; background:#fff;}
+.tie-right .spboxs .cons ul {width:228px; overflow:hidden; padding:6px 0 10px; line-height:24px;}
+.tie-right .spboxs .cons ul li {float:left; margin-left:10px; display:inline; padding-left:8px; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -165px;}
+.tie-right .spboxs .cons .ul1 li {width:98px; padding:0; background:none;}
+.tie-right .spboxs .cons .ul2 li {width:200px;} .tie-right .spboxs .cons .ul3 li {width:54px;}
+.tie-right .spboxs .cons .banzhu {display:block; width:218px; height:110px; margin:0 0 3px 5px; border-bottom:1px dashed #E3E3E3;}
+.tie-right .spboxs .cons .banzhu .p1 {float:left; width:218px; overflow:hidden;}
+.tie-right .spboxs .cons .banzhu .p1 .imgbox {float:left; width:80px;}
+.tie-right .spboxs .cons .banzhu .p1 .imgbox img {width:60px; height:60px; border:1px solid #DEDEDE; margin:10px 0 0 6px;}
+.tie-right .spboxs .cons .banzhu .p1 .name {float:left; width:128px; height:20px; padding-top:6px; line-height:20px;}
+.tie-right .spboxs .cons .banzhu .p1 .jj {float:left; width:128px; height:24px; line-height:24px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.tie-right .spboxs .cons .banzhu .p1 .tiwen {float:left; width:128px; height:22px;}
+.tie-right .spboxs .cons .banzhu .p1 .tiwen a {display:block; width:83px; height:22px; background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -170px -100px;}
+.tie-right .spboxs .cons .banzhu .p1 .tiwen a:hover {background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -170px -122px;}
+.tie-right .spboxs .cons .banzhu .p2 {float:left; width:204px; padding:8px 0 0 6px; overflow:hidden; font-family:Verdana;}
+.tie-right .spboxs .cons .banzhu .p2 b {font-weight:normal;}
+.tie-right .spboxs .cons .banzhu .p2 b a {color:#666; text-decoration:underline;}
+.tie-right .spboxs .cons .banzhu .p2 b a:hover {color:#f60;}
+.tie-right .spboxs .cons .banzhu2 {border:none;}
+.tie-right .gpboxs {display:block; width:230px; overflow:hidden; background:url(http://www.120center.com/skin/images/ask_tie_others.png) no-repeat 0 0;}
+.tie-right .gpboxs strong {display:block; width:210px; height:17px; padding:13px 0 0 25px; overflow:hidden; font:bold 12px SimSun; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -120px; color:#666;}
+.tie-right .gpboxs .cons {display:block; width:228px; overflow:hidden; border:1px solid #C9DFED; border-top:none; background:#fff;}
+.tie-right .gpboxs .cons ul {width:228px; overflow:hidden; font:12px SimSun;}
+.tie-right .gpboxs .cons ul li {float:left; margin-left:10px; display:inline; padding-left:8px; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat;}
+.tie-right .gpboxs .cons .ul1 {padding:4px 0 5px; line-height:20px;} .tie-right .gpboxs .cons .ul1 li {width:98px; padding:0; background:none;}
+.tie-right .gpboxs .cons .ul2 {padding:7px 0 8px; line-height:22px;} .tie-right .gpboxs .cons .ul2 li {width:200px; background-position:0 -168px;}
+.tie-right .gpboxs .cons .ul3 {padding:4px 0 5px; line-height:20px;} .tie-right .gpboxs .cons .ul3 li {width:54px; background-position:0 -169px;}
+.tie-right .gpboxs .cons .ul4 {padding:8px 0 9px; line-height:24px;} .tie-right .gpboxs .cons .ul4 li {width:200px; background-position:0 -165px}
+.tie-right .gpboxs .cons ul li a {color:#333; text-decoration:none;} .tie-right .gpboxs .cons ul li a:hover {color:#f60; text-decoration:underline;}
+.tie-right .looks {display:block; width:228px; height:473px; overflow:hidden; border:1px solid #C9DFED;}
+.tie-right .looks strong {display:block; width:210px; height:21px; padding:9px 0 0 25px; overflow:hidden; font-weight:bold; background:#F2F6FA url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -124px; border-bottom:1px solid #E0EDF5; color:#666;}
+.tie-right .looks .imgbox {display:block; width:214px; padding:9px 0 8px 14px; overflow:hidden; border-bottom:1px solid #E0ECF3;}
+.tie-right .looks .imgbox1 img {float:left; width:200px; height:90px;}
+.tie-right .looks .imgbox1 p {float:left; width:200px; padding-top:7px; font:12px SimSun; text-align:center;}
+.tie-right .looks .imgbox2 {padding-top:6px;}
+.tie-right .looks .imgbox2 img {float:left; width:70px; height:70px; margin-top:2px;}
+.tie-right .looks .imgbox2 p {float:left; width:124px; margin-left:10px; display:inline; font:12px/18px SimSun; color:#999;}
+.tie-right .looks .imgbox2 p a {font-weight:bold;}
+.tie-right .looks ul {width:228px; height:48px; overflow:hidden; padding-top:4px; font:12px/22px SimSun; background:url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x 0 -160px;}
+.tie-right .looks ul li {float:left; width:198px; margin-left:10px; display:inline; padding-left:10px; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 8px;}
+.tie-right .looks2 {display:block; width:228px; height:280px; overflow:hidden; border:1px solid #C9DFED;}
+.tie-right .looks2 strong {display:block; width:210px; height:21px; padding:9px 0 0 25px; overflow:hidden; font-weight:bold; background:#F2F6FA url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -124px; border-bottom:1px solid #E0EDF5; color:#666;}
+.tie-right .looks2 .imgbox {display:block; width:214px; padding:9px 0 1px 14px; overflow:hidden;}
+.tie-right .looks2 .imgbox1 img {float:left; width:200px; height:90px;}
+.tie-right .looks2 .imgbox1 p {float:left; width:200px; padding-top:7px; font:12px SimSun; text-align:center;}
+/* 看得眼睛都花了的弹窗代码 */
+.ts1, .ts5, .jd1, .sc2 {width:395px;  border:1px solid #FAA525; font:12px SimSun; color:#333; background:#fff;}
+.ts1, .ts5 {height:164px;} .jd1, .sc2 {height:200px;}
+.ts1 a, .ts5 a, .jd1 a, .sc2 a {color:#06b; text-decoration:none;} .ts1 a:hover, .ts5 a:hover, .jd1 a:hover, .sc2 a:hover {color:#f60; text-decoration:underline;}
+.ts1 .ts1-top, .ts5 .ts5-top, .jd1 .jd1-top, .sc2 .sc2-top {width:395px; height:29px; background:url(http://www.120center.com/skin/images/ask_tc.gif) repeat-x;}
+.ts1 .ts1-top strong, .ts5 .ts5-top strong, .jd1 .jd1-top strong, .sc2 .sc2-top strong {float:left; margin:8px 0 0 10px; display:inline;}
+.ts1 .ts1-top span, .ts5 .ts5-top span, .jd1 .jd1-top span, .sc2 .sc2-top span {float:right; width:17px; height:16px; margin:6px 10px 0 0; display:inline;}
+.ts1 .ts1-top span a, .ts5 .ts5-top span a, .jd1 .jd1-top span a, .sc2 .sc2-top span a {display:block; width:17px; height:16px; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -100px;}
+.ts1 .ts1-top span a:hover, .ts5 .ts5-top span a:hover, .jd1 .jd1-top span a:hover, .sc2 .sc2-top span a:hover {background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -116px;}
+.ts1 .ts1-down, .ts5 .ts5-down, .jd1 .jd1-down, .sc2 .sc2-down {width:395px; overflow:hidden;}
+.ts1 .ts1-down .cg {width:395px; height:50px; padding-top:20px; font:14px/36px SimSun; text-align:center;}
+.jd1 .jd1-down .cg, .sc2 .sc2-down .cg {width:395px; height:100px; text-align:center;}
+.jd1 .jd1-down span, .sc2 .sc2-down span {display:inline-block; height:36px; margin-top:40px; padding-left:40px; font:bold 16px/36px SimSun; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -160px; color:#f60;}
+.ts1 .ts1-down .anniu, .ts5 .ts5-down .anniu, .jd1 .jd1-down .anniu, .sc2 .sc2-down .anniu {width:395px; margin-top:6px; text-align:center;}
+.ts1 .ts1-down .anniu .buts, .ts5 .ts5-down .anniu .buts, .jd1 .jd1-down .anniu .buts, .sc2 .sc2-down .anniu .buts {height:25px; font-size:12px; padding-bottom:1px; line-height:28px; border:none; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat; cursor:pointer;}
+.ts1 .ts1-down .anniu .buts, .ts5 .ts5-down .anniu .buts {width:83px;} .jd1 .jd1-down .anniu .buts {margin:0 5px;} .sc2 .sc2-down .anniu .buts {width:103px;}
+.ts1 .ts1-down .anniu .buts1, .ts5 .ts5-down .anniu .buts1 {background-position:0 -29px;}
+.ts1 .ts1-down .anniu .buts2, .ts5 .ts5-down .anniu .buts2 {background-position:0 -54px;}
+.ts5 .ts5-down .tousu {width:395px; height:78px; padding-top:14px;}
+.ts5 .ts5-down .tousu .touleft {float:left; width:82px; height:75px; padding-top:3px; font:14px SimSun; text-align:right;}
+.ts5 .ts5-down .tousu textarea {float:left; width:286px; height:72px; padding:0 5px; font:14px/22px SimSun; border:1px solid #C2C2C2;}
+.jd1 .jd1-down .anniu .buts1, .sc2 .sc2-down .anniu .buts1 {background-position:-83px -29px;}
+.jd1 .jd1-down .anniu .buts2, .sc2 .sc2-down .anniu .buts2 {background-position:-83px -54px;}
+.jd1 .jd1-down .anniu .buts1, .jd1 .jd1-down .anniu .buts2 {width:103px;}
+.jd1 .jd1-down .anniu .buts3 {width:83px; background-position:0 -29px;}
+.jd1 .jd1-down .anniu .buts4 {width:83px; background-position:0 -54px;}
+/* others */
+#baiduad {float:left; width:730px; height:104px; overflow:hidden;}
+
+#dealQuestion  {background:none repeat scroll 0 0 #F8F8F8;margin-top:10px;padding:10px;}
+.boxtop1_title{float:left;font-size:14px;color:#000; font-weight:bold; margin-right:20px;}
+
+
+/*字体设置*/
+.boxtop1_title{float:left;font-size:14px;color:#000; font-weight:bold; margin-right:20px;}
+.boxtop2_title{font-size:14px; color:#000; }
+.blue1, .blue1 a:link, .blue1 a:active{color:#0364a4;font-size:14px;}
+.blue1 a:visited{color:#800080; font-size:14px;}
+.blue1 a:hover{color:#ff6600; font-size:14px;}
+.blue2{color:#0364a4;font-size:12px;}
+.blue2 a:link, .blue2 a:visited, .blue2 a:active{color:#0364a4; font-size:12px; text-decoration:underline;}
+.blue2 a:hover{color:#ff6600; text-decoration:underline;}
+.blue3{color:#0364a4;font-size:18px; font-family:Arial, Helvetica, sans-serif;}
+.blue4{color:#0364a4;font-size:12px; font-family:Arial, Helvetica, sans-serif;}
+.blue4 a:link, .blue4 a:visited{color:#0364a4;font-size:12px; font-family:Arial, Helvetica, sans-serif; text-decoration:none;}
+.blue4 a:hover{ text-decoration:underline;}
+.font_black{ font-size:12px; color:#000;}

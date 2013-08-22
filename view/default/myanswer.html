@@ -1,0 +1,63 @@
+{template header}
+<div class="content">
+    <div class="uleft">
+        <div class="tximg"><img width="100px" height="100px" src="{$user['avatar']}" alt="{$user['username']}" title="{$user['username']}"></div>
+        <div class="txname">
+            {$user['username']}
+            <!--{if $user['islogin']}-->
+            <img src="css/default/online.gif" align="absmiddle" title="当前在线" alt="当前在线"/>
+            <!--{else}-->
+            <img src="css/default/outline.gif" align="absmiddle" title="当前离线" alt="当前离线"/>
+            <!--{/if}-->
+        </div>
+        <div class="clr"></div>
+        <div class="list">
+            <h1><a title="我的主页" target="_top" href="{url user/score}"><img width="16" height="16" align="absmiddle" src="css/default/myhome.gif" /> &nbsp;我的主页</a></h1>
+            <h1 class="on"><a title="我的问答" target="_top" href="{url user/ask/2}"><img width="16px" height="15px" align="absmiddle" src="css/default/myanswer.gif" /> &nbsp;我的问答</a></h1>
+            <ul id="huida">
+                <li id="hui1" ><a title="我的提问" target="_top" href="{url user/ask/2}">我的提问</a></li>
+                <li id="hui2" class="ac"><a title="我的回答" target="_top" href="{url user/answer/1}">我的回答</a></li>
+            </ul>            
+            <h1 class=""><a title="我的消息" target="_top" href="{url message/new}"><img width="16px" height="16px" align="absmiddle" src="css/default/mymsg.gif" /> &nbsp;我的消息</a></h1>
+            <h1 class=""><a title="我收藏的问题" target="_top" href="{url user/favorite}"><img width="14" height="15" align="absmiddle" src="css/default/mycollect.gif" /> &nbsp;我的收藏</a></h1>
+        </div>
+    </div>
+    <div class="uright">
+        <div class="tab2" id="tab">
+            <ul>
+                <li {if $status==1}class="on"{/if}>
+                    <a href="{url user/answer/1}">未采纳的回答</a>
+                </li>
+                <li {if $status==2}class="on"{/if}>
+                    <a href="{url user/answer/2}">已采纳的回答</a>
+                </li>
+                <li {if $status==0}class="on"{/if}>
+                    <a href="{url user/answer/0}">待审核的回答</a>
+                </li>
+            </ul>
+            <div class="clr"></div>
+        </div>
+        <div class="wdhd2">
+            <ul class="bt">
+                <li class="bt1">标题</li>
+                <li class="b2">支持/反对</li>
+                <li class="b3">已采纳</li>
+                <li class="b4">回答时间</li>
+            </ul>
+            <!--{loop $answerlist $answer}-->
+            <ul>
+                <li class="b1">
+                    <a href="{url question/view/$answer['qid']}" target="_blank" title="{$answer['title']}">{eval echo cutstr($answer['title'],48)}</a>
+                </li>
+                <li class="b2">0/0</li>
+                <li class="b3">{if $answer['adopttime']>0}<font color="red">是</font>{else}<font color="green">否</font>{/if}</li>
+                <li class="b4">{$answer['time']}</li>
+            </ul>
+            <!--{/loop}-->
+        </div>
+        <div class="blank20"></div>
+        <div class="pages"><div class="scott">{$departstr}</div></div>
+    </div>
+</div>
+<div class="clr"></div>
+{template footer}

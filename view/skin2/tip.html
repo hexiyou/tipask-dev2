@@ -1,0 +1,42 @@
+{template header}
+<div class="box">
+    <div class="box_left_nav font_gray" style="font-size: 12px;">
+		→ <a href="{SITE_URL}">{$setting['site_name']}</a> &gt; 操作提示</div>
+    <!--内容 begin-->
+    <div class="box_allwidth">
+        <table align="center" class="ask_ok_ok" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="boxtop2_title" height="60"><strong>{$message}</strong></td>
+            </tr>
+            <!--{if $redirect == 'BACK'}-->
+            <tr>
+                <td>
+                    <span>
+                        <a class="question" href="javascript:history.go(-1);">返回原处</a>&nbsp;&nbsp;
+                        <a class="question" href="{url user/ask}">我的提问</a>&nbsp;&nbsp;
+                        <a class="question" href="{SITE_URL}">回到首页</a>
+                    </span>
+                </td>
+            </tr>
+            <!--{elseif $redirect}-->
+            <tr>
+                <td>
+                    <span>
+                        页面将在3秒后自动跳转到下一页，你也可以直接点 <a href="$redirect" >立即跳转</a>。
+                        <script type="text/javascript">
+                            function redirect(url, time) {
+                                setTimeout("window.location='" + url + "'", time * 1000);
+                            }
+                            redirect('$redirect', 3);
+                        </script>
+                    </span>
+                </td>
+            </tr>
+            <!--{/if}-->
+        </table>
+    </div>
+    <!--内容 end-->
+    <div class="clear">
+    </div>
+</div>
+{template footer}

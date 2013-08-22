@@ -1,0 +1,29 @@
+{template header}
+<div class="box">
+	<!--内容 begin-->
+	<div class="box_allwidth">
+		<div class="box_allwidth_top">
+			<div class="boxtop1_title">公告列表</div>
+		</div>
+		<div id="Userorder1_plNo0">
+			<table class="leibiao_nr" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr class="leibiao_nr_title">
+					<td>编号</td>
+					<td>标题</td>
+					<td>发布时间</td>
+				</tr>
+                                 <!--{loop $notelist $index $note}-->
+                        <tr class="hh">
+                            <td>{echo $index+1}</td>
+                            <td><a target="_blank"  {if $note['url']}href="{$note['url']}" target="_blank" {else} href="{url note/view/$note['id']}" {/if}>{$note['title']}</a></td>
+                            <td>{$note['time']}</td>
+                        </tr>
+                                <!--{/loop}-->
+			</table>
+		</div>
+	</div>
+	<!--内容 end-->
+	<div class="clear">
+	</div>
+</div>
+{template footer}

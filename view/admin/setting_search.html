@@ -1,0 +1,61 @@
+<!--{template header,admin}-->
+<script src="{SITE_URL}js/jquery.js" type="text/javascript"></script>
+<div style="width:100%; height:15px;color:#000;margin:0px 0px 10px;">
+    <div style="float:left;"><a href="index.php?admin_main/stat{$setting['seo_suffix']}" target="main"><b>控制面板首页</b></a>&nbsp;&raquo;&nbsp;搜索设置</div>
+</div>
+<!--{if isset($message)}-->
+<!--{eval $type=isset($type)?$type:'correctmsg'; }-->
+<table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder">
+    <tr>
+        <td class="{$type}">{$message}</td>
+    </tr>
+</table>
+<!--{/if}-->
+<table width="100%" cellspacing="1" cellpadding="4" align="center" class="tableborder">
+    <tbody><tr class="header"><td>设置说明</td></tr>
+        <tr><td>1、开启全文检索之前系统要开启了PHP iconv库,否则系统不支持<br />
+        		2、全文检索目前是用的是mysql的fulltext，需要设置mysql的全文检索长度（mysql的配置文件中加入ft_min_word_len=1）。
+        </td></tr>
+    </tbody></table>
+<br />
+<form action="index.php?admin_setting/search{$setting['seo_suffix']}" method="post">
+    <a name="基本设置"></a>
+    <table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder">
+        <tr class="header">
+            <td colspan="2">参数设置</td>
+        </tr>
+        <tr>
+            <td class="altbg1" width="45%"><b>开启全文检索:</b><br><span class="smalltxt">需要系统支持iconv库，否则只能LIKE查询</span></td>
+            <td class="altbg2">
+                <input class="radio"  type="radio"  {if 1==$setting['allow_fulltext'] }checked{/if}  value="1" name="allow_fulltext"><label for="yes">是</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="radio"  type="radio"  {if 0==$setting['allow_fulltext'] }checked{/if} value="0" name="allow_fulltext"><label for="no">否</label>
+                {if $setting['allow_fulltext'] && $nofulltext}<label for="questions"><font color="red"><b>{$nofulltext}</b>个问题没有建立全文检索</font>&nbsp;[<a href="javascript:void(0);" onclick="createfulltext();">开始建立全文检索</a>]</label>{/if}
+            </td>
+        </tr>
+    </table>
+    <br>
+    <center><input type="submit" class="button" name="submit" value="提 交"></center><br>
+</form>
+<br>
+<table width="100%" cellspacing="1" cellpadding="4" align="center" class="tableborder">
+    <tbody>
+        <tr class="altbg1"><td style="color:green"><span id="msg"></span></td></tr>
+    </tbody>
+</table>
+<script type="text/javascript">
+    function createfulltext(){        
+        var t;
+        $.ajax({
+            type: "POST",
+            url:"index.php?admin_setting/makewords{$setting['seo_suffix']}",
+            success: function(msg){
+                if(msg == 'ok'){
+                    clearTimeout(t);
+                }
+                $("#msg").html(msg);        
+            }
+        });
+        t=setTimeout("createfulltext()",1000);
+    }
+</script>
+<!--{template footer,admin}-->

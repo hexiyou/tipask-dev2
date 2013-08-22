@@ -1,0 +1,188 @@
+{template header}
+<script type="text/javascript" src="{SITE_URL}js/jquery.imgareaselect.min.js"></script>
+<script type="text/javascript" src="{SITE_URL}js/swfupload.js"></script>
+<script type="text/javascript" src="{SITE_URL}js/handlers.js"></script>
+<!--{if !$imgstr}-->
+<script type="text/javascript">
+    var swfu;
+    window.onload = function () {
+        swfu = new SWFUpload({
+            // Backend Settings
+            upload_url: "{url user/editimg}",
+            post_params: {"PHPSESSID": "1"},
+            // File Upload Settings
+            file_size_limit : "1 MB",
+            file_types : "*.jpg;*.png;*.gif;",
+            file_types_description : "JPG;PNG;GIF;",
+            file_upload_limit : 0,
+
+            // Event Handler Settings - these functions as defined in Handlers.js
+            //  The handlers are not part of SWFUpload but are part of my website and control how
+            //  my website reacts to the SWFUpload events.
+            swfupload_preload_handler : preLoad,
+            swfupload_load_failed_handler : loadFailed,
+            file_queue_error_handler : fileQueueError,
+            file_dialog_complete_handler : fileDialogComplete,
+            upload_progress_handler : uploadProgress,
+            upload_error_handler : uploadError,
+            upload_success_handler : uploadSuccess,
+            upload_complete_handler : uploadComplete,
+
+            // Button Settings
+            button_image_url : "{SITE_URL}css/common/uploadtool.png",
+            button_placeholder_id : "spanButtonPlaceholder",
+            button_width: 100,
+            button_height: 18,
+            button_text : '上传头像 ',
+            button_text_style : '.button { font-family: Helvetica, Arial, sans-serif; font-size: 12pt; } .buttonSmall { font-size: 10pt; }',
+            button_text_top_padding: 0,
+            button_text_left_padding: 18,
+            button_window_mode: SWFUpload.WINDOW_MODE.TRANSPARENT,
+            button_cursor: SWFUpload.CURSOR.HAND,
+
+            // Flash Settings
+            flash_url : "{SITE_URL}css/common/swfupload.swf",
+
+            custom_settings : {
+                upload_target : "divFileProgressContainer",
+                thumbnail_height: 400,
+                thumbnail_width: 400,
+                thumbnail_quality: 100
+            },
+
+            // Debug Settings
+            debug: false
+        });
+    };
+
+    function preview(img, selection) {
+        var scaleX = 100 / (selection.width || 1);
+        var scaleY = 100 / (selection.height || 1);
+
+        $('#litimg').css({
+            width: Math.round(scaleX * imgwidth) + 'px',
+            height: Math.round(scaleY * imgheight) + 'px',
+            marginLeft: '-' + Math.round(scaleX * selection.x1) + 'px',
+            marginTop: '-' + Math.round(scaleY * selection.y1) + 'px'
+        });
+    }
+   
+    $(document).ready(function (){
+        $('#bigimg').imgAreaSelect({aspectRatio: '1:1',onSelectChange: preview,onSelectEnd:getpos});
+        function getpos(img, selection) {
+            $('#x1').val(selection.x1);
+            $('#y1').val(selection.y1);
+            $('#x2').val(selection.x2);
+            $('#y2').val(selection.y2);
+            $('#w').val(selection.width);
+            $('#h').val(selection.height);
+        }
+    });
+</script>
+<!--{/if}-->
+<div class="box">
+    <div class="box_left_nav font_gray" style="font-size: 12px;">→ <a href="{SITE_URL}">{$setting['site_name']}</a> &gt; <a>我的积分</a> </div>
+    <!--内容 begin-->
+    <div class="ps_content">
+        <!--左边 begin -->
+        <div class="ps_contentl">
+            <!--用户信息-->
+            <!--左边 begin -->
+            <!-- 个人信息 开始-->
+            <div class="ps_box1">
+                <div class="person_name">{$user['username']} </div>
+                <div class="user_info">
+                    <div class="person_pic"><img id="headPic" src="{$user['avatar']}" alt="{$user['username']}" title="{$user['username']}"></div>
+                    <div class="user_subinfo">
+                        <span>{$user['grouptitle']}</span>
+                    </div>
+                </div>
+                <div class="user_info">
+                    {if 2==$user['grouptype']}
+                    <div>
+                        {eval $credit1percent=round(($user['credit1']/$user['creditshigher'])*100);}
+                        {eval $credit1percentleft = 100-$credit1percent-1}
+                        升级进度<img src="css/default/jindutiao_yellow.gif" alt="" style="vertical-align: middle;" width="{$credit1percent}" height="7"><img src="css/default/jindutiao_white-02.gif" alt="" style="vertical-align: middle;" width="{$credit1percentleft}" height="7"><img src="css/default/jindutiao_end.gif" alt="" style="vertical-align: middle;" width="1" height="7"><span class="font_gray">({$user['credit1']}/{$user['creditshigher']})</span>
+                    </div>
+                    {/if}
+                </div>
+            </div>
+            <!-- 个人信息 结束-->
+            <div class="nav_bar">
+                <dl>
+                    <dd class="nav_link" id="myscore"><a href="{url user/score}">我的积分</a></dd>
+                    <dd class="hover" id="myask"><a href="{url user/profile}">个人资料</a></dd>
+                    <dd class="nav_link" id="myask"><a href="{url user/ask}">我的提问</a></dd>
+                    <dd class="nav_link" id="myanswer"><a href="{url user/answer}">我的回答</a></dd>
+                    <dd class="nav_link" id="myanswer"><a href="{url user/favorite}">我的收藏</a></dd>
+                    <dd class="nav_link" id="mymsg"><a href="{url message/new}">我的消息</a></dd>
+                </dl>
+            </div>
+            <!--左边 end -->
+            <!--最近留言-->
+            <div id="newMessage" class="user_info" ></div>
+            <!--最近来访--></div>
+        <!--左边 end -->
+
+        <!--右边 begin -->
+        <!-- 提问 回答-->
+        <div class="ps_contentr">
+            <div class="main_userCenter main_msg">
+                <div class="box_msg">
+                    <div class="topNav_msg clearfix">
+                        <span class="backmsg"><a href="{url user/profile}">个人资料</a></span>
+                        <span class="backmsg"><a href="{url user/uppass}">修改密码</a></span>
+                        <span class="backmsg"><a href="{url user/editimg}">修改头像</a></span>
+                    </div>
+                    <div class="box_msg_lan">
+                        <div class="cont01">
+                            <div class="write">
+                                <!--{if isset($imgstr)}-->
+                                {$imgstr}
+                                <!--{else}-->
+                                <div class="leftbk">
+                                    <div class="fjr">
+                                        <div id="cutimg" style="display:none">
+                                            <form method="post" action="{url user/saveimg}">
+                                                <input type="hidden" value="" name="x1" id="x1">
+                                                <input type="hidden" value="" name="y1" id="y1">
+                                                <input type="hidden" value="" name="x2" id="x2">
+                                                <input type="hidden" value="" name="y2" id="y2">
+                                                <input type="hidden" name="w" value="" id="w" />
+                                                <input type="hidden" name="h" value="" id="h" />
+                                                <input type="hidden" name="ext" value="" id="ext" />  
+                                                <div class="fL" id="thumbnails"><img id="bigimg" alt="bigimg" src="" /></div>
+                                                <b>头像预览</b>
+                                                <div class="retext fR" style="position: relative; overflow: hidden; width: 100px; height: 100px;"><img  src="" alt="litimg" id="litimg"></div><br />
+                                                <div class="retext fR"><input class="" type="submit" value="确认剪切并保存" name="submit"></div>
+                                            </form>
+                                            <br /><br /><br /><br /><br />
+                                        </div>
+                                        <div class="retext fR">
+                                            <form>
+                                                <div style="float: left;width: 100px; height: 18px; border: solid 1px #7FAAFF; background-color: #C5D9FF; padding: 2px;">
+                                                    <span id="spanButtonPlaceholder"></span>
+                                                </div>
+                                            </form>
+                                        </div><br />
+                                        <div id="divFileProgressContainer" class="retext fR"></div>
+                                    </div>
+                                </div>
+                                <!--{/if}-->
+                            </div>
+                            <div class="clearbth">
+                            </div>
+                            <div class="clearbth">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右边 end --></div>
+    <!--内容 end-->
+    <div class="clear">
+    </div>
+</div>
+{template footer}

@@ -1,0 +1,81 @@
+{template header}
+<div class="content">
+    <div class="uleft">
+        <div class="tximg"><img width="100px" height="100px" src="{$member['avatar']}" alt="{$member['username']}" title="{$member['username']}"></div>
+        <div class="txname">
+            {$member['username']}
+            <!--{if $member['islogin']}-->
+            <img src="css/default/online.gif" align="absmiddle" title="当前在线" alt="当前在线"/>
+            <!--{else}-->
+            <img src="css/default/outline.gif" align="absmiddle" title="当前离线" alt="当前离线"/>
+            <!--{/if}-->
+        </div>
+        <!--{if $user['uid'] != $member['uid']}-->
+        <div class="txname">           
+            <input  type="button" class="button1" onclick="javascript:sendmsg('{$member['username']}');" value="发短消息"/>
+        </div>
+        <div class="clr"></div>
+        <div class="txname">           
+            <input type="button" class="button1" value="向TA提问" onclick="javascript:document.location='{url question/add/$member['uid']}'"/>
+        </div>
+        <!--{/if}-->
+        <div class="clr"></div>
+        <div class="list">
+            <h1 class="on"><a title="TA的主页" target="_top" href="{url user/space/$member['uid']}}"><img width="16" height="16" align="absmiddle" src="css/default/myhome.gif"> &nbsp;TA的主页</a></h1>
+            <h1><a title="TA的回答" target="_top" href="{url user/space_answer/$member['uid']}"><img width="16px" height="15px" align="absmiddle" src="css/default/myanswer.gif"> &nbsp;TA的问答</a></h1>
+        </div>
+    </div>
+    <div class="uright">
+        <div class="grzl">
+            <h2>详细资料</h2>
+            <div class="grxqt"></div>
+            <div class="grxqc">
+                <h1>{$member['username']}&nbsp;</h1>
+                <ul>
+                    <li>用户组：{$membergroup['grouptitle']}</li>
+                    <li>上次登录：{$member['lastlogin']}</li>
+                    <li>提问数：{$member['questions']}</li>
+                    <li>回答数：{$member['answers']}</li>
+                    <li>性别：{if 1 == $member['gender']}男{elseif 0 == $member['gender']}女{else}保密{/if}</li>
+                    <li>生日：{$member['bday']}</li>
+                    <li>总经验值：{$member['credit1']}</li>
+                    <li>总财富值：{$member['credit2']}</li>
+                    <li>魅力值：{$member['credit3']}</li>
+                    <li>采纳率：{$adoptpercent}%</li>
+                    <li>QQ：{$member['qq']}</li>
+                    <li>MSN:{$member['msn']} </li>                    
+                </ul>
+                <div class="clr"></div>
+            </div>
+            <div class="grxqb"></div>
+        </div>
+
+        <div class="clr"></div>
+        <div class="jianjie"><img width="18" height="16" align="absmiddle" src="css/default/userinfo.gif">&nbsp;个人简介</div>
+        <div class="fg"><img width="780px;" height="6px" src="css/default/gx.gif"></div>
+        <div class="jf">{if $member['signature']}{$member['signature']}{else}TA很懒，还没有进行自我介绍!{/if}</div>
+        <div class="jianjie">&nbsp;最近解答</div>
+        <div class="fg"><img width="780px;" height="6px" src="css/default/gx.gif"></div>
+        <div class="grxqt"></div>
+        <div class="wdhd2">
+            <ul class="bt">
+                <li class="bt1">标题</li>
+                <li class="b2">支持/反对</li>
+                <li class="b3">已采纳</li>
+                <li class="b4">回答时间</li>
+            </ul>
+            <!--{loop $answerlist $answer}-->
+            <ul>
+                <li class="b1">
+                    <a href="{url question/view/$answer['qid']}" target="_blank" title="{$answer['title']}">{eval echo cutstr($answer['title'],48)}</a>
+                </li>
+                <li class="b2">0/0</li>
+                <li class="b3">{if $answer['adopttime']>0}<img src="css/common/icn_2.gif" />{/if}</li>
+                <li class="b4">{$answer['time']}</li>
+            </ul>
+            <!--{/loop}-->
+        </div>
+    </div>
+</div>
+<div class="clr"></div>
+{template footer}

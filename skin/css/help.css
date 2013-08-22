@@ -1,0 +1,59 @@
+* { margin:0; padding:0; }
+img { border:none; }
+li { list-style:none; }
+.clearer { clear:both; height:0; overflow:hidden; }
+.help-left { float:left; width:178px; height:auto; overflow:hidden; border:1px solid #C9DFED; }
+.help-left h2 { float:left; width:148px; height:26px; padding:2px 0 0 30px; overflow:hidden; font:bold 12px/26px SimSun; border-bottom:1px solid #D7E6F4; background:#F2F6FA url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 8px -924px; }
+.help-left dl { float:left; width:178px; overflow:hidden; padding-top:10px; font:14px SimSun; }
+.help-left dt { float:left; width:148px; padding:0 0 0 30px; height:28px; overflow:hidden; font-weight:bold; line-height:26px; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 14px -1593px; }
+.help-left dd { float:left; width:138px; padding:0 0 0 40px; overflow:hidden; line-height:26px; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 30px 10px; }
+.help-left dd a { color:#06b; text-decoration:none; }
+.help-left dd a:hover { color:#f60; text-decoration:underline; }
+.help-left dd a.now { font-weight:bold; }
+.help-left p { float:left; width:168px; height:100px; overflow:hidden; padding:6px 0 15px 10px; margin-top:15px; font:12px/26px Verdana; border-top:1px solid #D7E6F4; }
+.help-left p span { color:#999; }
+.help-right { float:right; width:778px; padding-bottom:20px; overflow:hidden; border:1px solid #C9DFED; }
+.help-right .helpbt { float:left; width:748px; height:26px; padding:2px 0 0 30px; overflow:hidden; font:bold 14px/26px SimSun; border-bottom:1px solid #D7E6F4; background:#F2F6FA url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 12px -1630px; }
+.help-right p { float:left; width:742px; overflow:hidden; padding:15px 0 10px; margin-left:18px; display:inline; font:14px/26px SimSun; }
+.help-right p.psp { width:400px; padding:15px 0 15px 55px; margin-top:8px; border:1px solid #E5EDF3; }
+.help-right p span { color:#f60; }
+.help-right p a { color:#f60; text-decoration:none; }
+.help-right p a:hover { color:#f60; text-decoration:underline; }
+.help-right .imgbox { float:left; width:752px; overflow:hidden; margin-left:13px; display:inline; }
+.help-right .imgbox img { width:752px; }
+.help-tiwen {width:970px; height:auto; overflow:hidden; padding:78px 0 30px; background:#F1F8FC url(http://www.120center.com/skin/images/ask_help.png) no-repeat 0 -118px; }
+#guide-step { float:left; width:164px; margin-left:10px; display:inline; overflow:hidden; position:relative; }
+#guide-step ul { padding-top:33px; }
+#guide-step ul li { _width:100%; height:39px; _display:inline; line-height:39px; zoom:1; _overflow:hidden; background:url(http://www.120center.com/skin/images/ask_help.png) no-repeat 0 -79px; }
+#guide-step ul li a { display:block; width:120px; padding:14px 0 0 44px; overflow:hidden; font:bold 14px SimSun; cursor:pointer; color:#333; text-decoration:none; }
+#guide-step ul li a:hover { color:#f60; text-decoration:none; }
+#guide-step ul li .arrow { display:block; width:13px; height:9px; margin-top:6px; overflow:hidden; position:relative; background:url(../images/ask_help_arrow.gif) no-repeat -13px 0; left:-26px; }
+#guide-step ul li .nub { zoom:1; font:bold 14px Verdana; color:#fff; position:absolute; left:19px; }
+#guide-step ul li .nub1 { top:45px; }
+#guide-step ul li .nub2 { top:84px; }
+#guide-step ul li .nub3 { top:123px; }
+#guide-step ul li .nub4 { top:162px; }
+#guide-step ul li .nub5 { top:201px; }
+#guide-step ul li .nub6 { top:240px; }
+#guide-step ul li .nub7 { top:279px; }
+#guide-step ul li .nub8 { top:318px; }
+#guide-step ul li.current { background:url(http://www.120center.com/skin/images/ask_help.png) no-repeat 0 -40px; }
+#guide-step ul li.current a { color:#fff; }
+#guide-step ul li.current .arrow { background:url(http://www.120center.com/skin/images/ask_help_arrow.gif) no-repeat 0 0; }
+#guide-step ul li.current .nub { color:#5584A8; }
+#guide-content { float:left; width:786px; background:#86B3D6; }
+#guide-content .gui-topbox { width:786px; height:33px; overflow:hidden; background:url(http://www.120center.com/skin/images/ask_help.png) no-repeat 0 0; }
+#guide-content .gui-topbox h3 { float:left; overflow:hidden; margin:10px 0 0 17px; display:inline; font:bold 14px SimSun; color:#fff; }
+#guide-content .gui-topbox #guide-step-tool { float:right; width:156px; height:24px; overflow:hidden; margin:5px 7px 0 0; display:inline; }
+#guide-content .gui-topbox a { float:left; height:22px; padding-top:2px; overflow:hidden; font:bold 12px/22px SimSun; cursor:pointer; background:url(http://www.120center.com/skin/images/ask_help.png) no-repeat; color:#333; text-decoration:none; }
+#guide-content .gui-topbox a:hover { color:#333; text-decoration:none; }
+#guide-content .gui-topbox a#previous-control { width:48px; padding-left:30px; background-position:-164px -40px; }
+#guide-content .gui-topbox a#next-control { width:70px; padding-left:8px; background-position:-242px -40px; }
+#guide-content #guide-slide { width:772px; height:auto; margin:0 auto; overflow:hidden; background:#fff; position:relative; height:1100px; }
+#guide-content #guide-slide #guide-slide-content { position:absolute; left:0; top:0; width:10444px; }
+#guide-content #guide-slide #guide-slide-content .slide-items { float:left; width:752px; padding:0 10px; height:auto; overflow:hidden; display:inline; position:relative; }
+#guide-content #guide-slide p { float:left; width:732px; padding:15px 10px 10px; overflow:hidden; font:14px/26px SimSun; }
+#guide-content #guide-slide img { float:left; width:752px; }
+#guide-content .gui-bottombox { width:786px; height:7px; overflow:hidden; background:url(http://www.120center.com/skin/images/ask_help.png) no-repeat 0 -33px; }
+.clearfix { display:inline-table; zoom:1; }
+.clearfix { _height:1%; display:block; }

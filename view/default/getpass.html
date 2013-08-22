@@ -1,0 +1,60 @@
+{template header}
+<div class="content">
+    <div class="dh">找回密码</div>
+    <div class="loginleft">
+        <div class="zhuce">
+            <div class="zhucet"></div>
+            <div class="zhucec">
+                <h1>友情贴士：</h1>
+                <ul>
+                    <li>·请正确填写相关信息以帮您找回密码。</li>  
+                </ul>
+            </div>
+            <div class="zhuceb"></div>
+        </div>
+    </div>
+    <div class="loginright">
+        <div class="lgbdright">
+            <ul>
+                <li class="a1"></li>
+                <li class="a2"></li>
+                <li class="a3"></li>
+            </ul>
+        </div>
+        <div class="clr"></div>
+        <div class="lgrightc">
+            <div class="dl">
+                <form name="getpassform"  action="{url user/getpass}" method="post">
+                    <div class="dlc">
+                        <div class="shur">
+                            <h2>&nbsp;&nbsp;用户名：</h2> <input type="text" name="username" id="username" class="input3">
+                        </div>
+                        <div class="clr"></div>
+                        <div class="shur">
+                            <h2>电子邮件：</h2> <input type="text" name="email"  id="email" class="input3" />
+                        </div>
+                        <!--{if $setting['code_login']}-->
+                        <div class="clr"></div>
+                        <div class="shur">
+                            <h2>&nbsp;&nbsp;验证码：</h2> <input type="text"  name="code" id="code" class="input4" />&nbsp;<img align="absmiddle" id="verifycode" onclick="javascript:updatecode();" src="{url user/code}"/><a href="javascript:updatecode();">&nbsp;换一个</a>
+                        </div>
+                        <!--{/if}-->
+                        <div class="clr"></div>
+                        <div class="shur1">
+                            <input type="submit" name="submit" class="button4"  value="提&nbsp;交"/></div>
+                    </div>
+                </form>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="lgbdright2">
+            <ul>
+                <li class="a1"></li>
+                <li class="a2"></li>
+                <li class="a3"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="clr"></div>
+{template footer}

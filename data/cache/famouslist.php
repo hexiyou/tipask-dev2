@@ -1,0 +1,118 @@
+<?php
+return array (
+  0 => 
+  array (
+    'uid' => '1',
+    'username' => 'admin',
+    'truename' => '周新敏',
+    'questions' => '23',
+    'answers' => '0',
+    'signature' => '',
+    'credit1' => '250',
+    'credit2' => '106',
+    'credit3' => '0',
+    'id' => '3',
+    'reason' => '顶级专家',
+    'time' => '8小时前',
+    'title' => '测试性质的问题已经提出来了',
+    'qid' => '23',
+    'avatar' => 'http://182.245.101.85/css/default/avatar.gif',
+    'bestanswer' => 
+    array (
+    ),
+  ),
+  1 => 
+  array (
+    'uid' => '16',
+    'username' => 'xiaohao',
+    'truename' => '李晓丽',
+    'questions' => '35',
+    'answers' => '2',
+    'signature' => '',
+    'credit1' => '29',
+    'credit2' => '27',
+    'credit3' => '0',
+    'id' => '2',
+    'reason' => '原因暂无',
+    'time' => '8小时前',
+    'title' => '测试灌水',
+    'qid' => '35',
+    'avatar' => 'http://182.245.101.85/css/default/avatar.gif',
+    'bestanswer' => 
+    array (
+      0 => 
+      array (
+        'id' => '16',
+        'qid' => '23',
+        'title' => '请在此提交您的问题，即有万名医生10分钟内为您解答',
+        'author' => 'xiaohao',
+        'authorid' => '16',
+        'time' => '1377252784',
+        'adopttime' => '1377416429',
+        'content' => '<p>这是一个比较新的回答<br /></p>',
+        'comment' => '谢谢您的解答！',
+        'status' => '1',
+        'ip' => '127.0.0.1',
+        'tag' => '',
+        'support' => '0',
+        'against' => '0',
+      ),
+    ),
+  ),
+  2 => 
+  array (
+    'uid' => '14',
+    'username' => 'testuser',
+    'truename' => '王孙明',
+    'questions' => '28',
+    'answers' => '10',
+    'signature' => '',
+    'credit1' => '107',
+    'credit2' => '24',
+    'credit3' => '0',
+    'id' => '1',
+    'reason' => '暂时没有',
+    'time' => '8小时前',
+    'title' => '这是普通咨询下的测试问题',
+    'qid' => '28',
+    'avatar' => 'http://182.245.101.85/css/default/avatar.gif',
+    'bestanswer' => 
+    array (
+      0 => 
+      array (
+        'id' => '19',
+        'qid' => '42',
+        'title' => '这是病案讨论下的问题',
+        'author' => 'testuser',
+        'authorid' => '14',
+        'time' => '1377418438',
+        'adopttime' => '1377419271',
+        'content' => '<p>测试灌水内容<br /></p>',
+        'comment' => '谢谢您的解答！',
+        'status' => '1',
+        'ip' => '127.0.0.1',
+        'tag' => '',
+        'support' => '0',
+        'against' => '0',
+      ),
+      1 => 
+      array (
+        'id' => '18',
+        'qid' => '43',
+        'title' => '水水水水水水水水',
+        'author' => 'testuser',
+        'authorid' => '14',
+        'time' => '1377417351',
+        'adopttime' => '1377419253',
+        'content' => '<p>这是人体常识下面的问答<br /></p>',
+        'comment' => '谢谢您的解答！',
+        'status' => '1',
+        'ip' => '127.0.0.1',
+        'tag' => '',
+        'support' => '0',
+        'against' => '0',
+      ),
+    ),
+  ),
+);
+?>

@@ -1,0 +1,31 @@
+{template header}
+<div class="content">
+    <div class="zdgg">
+        <div class="zdggt">
+            <ul>
+                <li class="a1"></li>
+                <li class="a2">公告列表</li>
+                <li class="a3"></li>
+            </ul>
+        </div>
+        <div class="clr"></div>
+        <div class="zdggc">
+<div class="notelist">
+            <ul style="margin-left: 10px;">
+                <li class="li1"><span id="loading">公告标题</span></li>
+                <li class="li2">发布时间</li>
+            </ul>
+			<!--{loop $notelist $index $note}-->
+            <ul style="margin-left: 10px;">
+                <li class="li1"><a {if $note['url']}href="{$note['url']}" target="_blank" {else} href="{url note/view/$note['id']}" {/if} title="{$note['title']}">{eval echo cutstr({$note['title']},60);}</a></li>
+                <li class="li2">{$note['time']}</li>
+            </ul>
+            <!--{/loop}-->
+        </div>
+        </div>
+        <div class="zdggb"></div>
+    </div>
+    <div class="clr"></div>
+</div>
+<div class="clr"></div>
+{template footer}

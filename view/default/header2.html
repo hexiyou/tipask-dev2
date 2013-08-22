@@ -1,0 +1,86 @@
+{eval global $starttime,$querynum;$mtime = explode(' ', microtime());$runtime=number_format($mtime[1] + $mtime[0] - $starttime,6); $setting=$this->setting;$user=$this->user;$headernavlist=$this->nav;$regular=$this->regular;}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={TIPASK_CHARSET}"/>
+<title>{$navtitle} {$setting['site_name']} {$setting['seo_title']}</title>
+<meta name="keywords" content="{$metakeywords}{$setting['seo_keywords']}" />
+<meta name="description" content="$metadescription {$setting['site_name']} {$setting['seo_description']}" />
+<meta name="generator" content="Tipask {TIPASK_VERSION} {TIPASK_RELEASE}" />
+<meta name="author" content="Tipask Team" />
+<meta name="copyright" content="2011 Tipask.com." />
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<link href="css/default/ask.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+g_site_url='index.php';g_prefix='{$setting['seo_prefix']}';g_suffix='{$setting['seo_suffix']}';editor_items='{$setting['editor_items']}';
+</script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/dialog.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+{$setting['seo_headers']}
+</head>
+<body>
+<div class="top">
+
+	<div class="top1 blake">
+		<div class="top1right">
+            <a href="">问答首页</a><span>︱</span>&nbsp;&nbsp;<a href="{url user/ask}" >我的提问</a><span>︱</span>&nbsp;&nbsp;<a href="javascript:void(0)" onclick="SetHomepage()">设为首页</a><span>︱</span>&nbsp;&nbsp;<a href="javascript:void(0)" onclick="addfavorite()">收藏夹</a><span>︱</span>&nbsp;&nbsp;<a href="{url index/help}" target="_blank">帮助</a>
+		</div>
+		<span class="rit padding-r">
+		<!--{if 0!=$user['uid']}-->
+			您好,<a href="{url user/default}"><strong>{$user['username']}</strong></a>
+			<!--{if $user['newmsg']>0}-->
+			| <a id="TopLink_MessageBox" href="{url message/new}" target="_blank">您有<span id="MessagesCount" style="color: rgb(255, 0, 0);">{$user['newmsg']}</span>条新信息</a> 
+			 <!--{/if}-->
+			| <a href="{url user/default}">个人中心</a> 
+			<!--{if $user['groupid']<=3}-->
+			| <a href="index.php?admin_main">系统设置</a>
+			<!--{/if}--> 
+			| <a href="{url user/logout}">退出</a> 
+		<!--{else}-->
+		    您好，欢迎来{$setting['site_name']}！[<a  href="{url user/login}">请登录</a>] [<a  href="{url user/register}">免费注册</a>]
+		<!--{/if}-->
+		</span>&nbsp;
+	</div>
+
+	<div class="top2">
+		<div class="top2right">
+			<div class="top2right01 blue">	
+					<span class="fff">关键字</span>
+				    <!--{loop $headernavlist $nav}-->
+						<!--{if $nav['available']}-->
+							<a {if $nav['target']}target="_blank"{/if}  href="$nav['url']">{$nav['name']}</a>
+						<!--{/if}-->
+					<!--{/loop}-->
+			</div>
+			<div class="top2right02">
+				<form name="searchform"  action="{url question/search/3}" method="post">
+					<input id="kw" type="text" style="vertical-align: middle;width:260px;" class="ask_input"  value="{if isset($word)}$word{/if}" name="word" maxlength="100" tabindex="1"  >
+                    <input name="ask_area" type="hidden" id="ask_area" value="" />
+ 					<select name="select" id="select" onchange="document.getElementById('ask_area').value = this.options[this.selectedIndex].value">
+					  <option value="">全部</option>
+                      <option value="1" {if $ask_area==1}selected="selected"{/if}>普通咨询</option>
+                      <option value="2" {if $ask_area==2}selected="selected"{/if}>处方咨询</option>
+                      <option value="3" {if $ask_area==3}selected="selected"{/if}>处方共享</option>
+                      <option value="4" {if $ask_area==4}selected="selected"{/if}>病案讨论</option>
+			      </select>
+ 
+					<input type="button" style="vertical-align: middle;" class="btn_search" value="搜 索" onclick="search_submit();" >
+					<input type="button" style="vertical-align: middle;" class="btn_ask"    value="提 问" onclick="ask_submit();"    >
+				</form>
+			</div>
+		</div>
+		<a href=""><img src="css/default/logo.png"></a>
+	</div>
+
+	<div class="top3" id="divMenu">
+		<ul>
+			<!--{if 'index/default'==$regular}--><li class="current_menu"><!--{else}--><li class="font_white"><!--{/if}--><a href="" ><strong>问答首页</strong></a></li>
+			<!--{if 'category/recommend'==$regular}--><li class="current_menu"><!--{else}--><li class="font_white"><!--{/if}--><a href="{url category/recommend/1}" ><strong>精彩问题</strong></a></li>
+			<!--{if 'gift/default'==$regular}--><li class="current_menu"><!--{else}--><li class="font_white"><!--{/if}--><a href="{url gift}" ><strong>礼品商店</strong></a></li>
+		</ul>
+	</div>
+
+</div>

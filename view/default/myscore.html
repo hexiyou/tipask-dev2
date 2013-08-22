@@ -1,0 +1,164 @@
+{template header}
+<div class="content">
+    <div class="uleft">
+        <div class="tximg"><img width="100px" height="100px" src="{$user['avatar']}" alt="{$user['username']}" title="{$user['username']}"></div>
+        <div class="txname">
+            {$user['username']}
+            <!--{if $user['islogin']}-->
+            <img src="css/default/online.gif" align="absmiddle" title="当前在线" alt="当前在线"/>
+            <!--{else}-->
+            <img src="css/default/outline.gif" align="absmiddle" title="当前离线" alt="当前离线"/>
+            <!--{/if}-->
+        </div>
+        <div class="clr"></div>
+        <div class="list">
+            <h1 class="on"><a title="我的主页" target="_top" href="{url user/score}"><img width="16" height="16" align="absmiddle" src="css/default/myhome.gif" /> &nbsp;我的主页</a></h1>
+            <h1><a title="我的问答" target="_top" href="{url user/ask/2}"><img width="16px" height="15px" align="absmiddle" src="css/default/myanswer.gif" /> &nbsp;我的问答</a></h1>            
+            <h1 class=""><a title="我的消息" target="_top" href="{url message/new}"><img width="16px" height="16px" align="absmiddle" src="css/default/mymsg.gif" /> &nbsp;我的消息</a></h1>
+            <h1 class=""><a title="我收藏的问题" target="_top" href="{url user/favorite}"><img width="14" height="15" align="absmiddle" src="css/default/mycollect.gif" /> &nbsp;我的收藏</a></h1>
+        </div>
+    </div>
+    <div class="uright">
+        <div class="grzl">
+            <h2>用户资料</h2>
+            <div class="grxqt"></div>
+            <div class="grxqc">
+                <h1>{$user['username']}</h1>
+                <ul>
+                    <li>
+                        用户组:{$user['grouptitle']}
+                    </li>
+                    <li>上次登录：{$user['lastlogin']}</li>
+                    <!--{if 2==$user['grouptype']}-->
+                    {eval $credit1percent=round(($user['credit1']/$user['creditshigher'])*100);}
+                    <li title="升级进度:升级到一等级[{$nextgroup['grouptitle']}]还需{$higherneeds}经验值">升级进度:
+                        <div class="process-bar">
+                            <div class="pb-wrapper">
+                                <div class="pb-highlight"></div>
+                                <div class="pb-container">
+                                    <div class="pb-text">{$user['credit1']}/{$user['creditshigher']}</div>
+                                    <div style="height:100%;width:{$credit1percent}%;background:#3F92F8;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>下一等级:[{$nextgroup['grouptitle']}]</li>
+                    <!--{/if}-->
+                    <li>总经验值：{$user['credit1']}</li>
+                    <li>总财富值：{$user['credit2']}&nbsp;{if $setting['recharge_open']}<a href="{url user/recharge}">[点击充值]</a>{/if}</li>
+                    <li>魅力值：{$user['credit3']}</li>
+                    <li>采纳率：{$adoptpercent}%</li>
+                    <li>提问数：{$user['questions']}</li>
+                    <li>回答数:{$user['answers']}</li>
+                    <li>QQ：{$user['qq']}</li>
+                    <li>MSN:{$user['msn']}</li>
+
+                </ul>
+                <div class="clr"></div>
+
+            </div>
+            <div class="grxqb">
+            </div>
+        </div>
+        <div class="glgrzl">
+            <div class="ggao"></div>
+            <div class="glzlt"></div>
+            <div class="glzlc">
+                <h1>管理个人资料</h1>
+                <div class="clr"></div>
+                <div class="jiben">
+                    <img width="16px" height="16px" src="css/default/myquestion.gif" /> <a title="我的问题" target="_top" href="{url user/ask/2}">我的提问</a>&nbsp;&nbsp;
+                    <img width="16px" height="16px"  src="css/default/myanswer.gif" /> <a title="我的回答" target="_top" href="{url user/answer/1}">我的回答</a>
+                </div>
+                <div class="jiben">
+                    <img width="16px" height="16px" align="absmiddle" src="css/default/mymsg.gif" /> <a title="我的消息" target="_top" href="{url message/new}">我的消息</a>&nbsp;&nbsp;
+                    <img width="16px" height="16px" src="css/default/myquestion.gif" /> <a title="修改密码" target="_top" href="{url user/uppass}">修改密码</a>
+                </div>
+                <div class="jiben">
+                    <img width="16px" height="16px" align="absmiddle" src="css/default/myinfo.gif"> <a title="个人信息" target="_top" href="{url user/profile}">个人信息</a>&nbsp;&nbsp;
+                    <img width="16px" height="16px" align="absmiddle" src="css/default/myavatar.gif" /> <a title="查看或修改头像" target="_top" href="{url user/editimg}">修改头像</a>
+                </div>
+
+
+                <div class="clr"></div>
+            </div>
+            <div class="glzlb"></div>
+            <div class="clr"></div>
+        </div>
+        <div class="jianjie"><img width="18" height="16" align="absmiddle" src="css/default/userinfo.gif">&nbsp;个人简介</div>
+        <div class="fg"><img width="780px;" height="6px" src="css/default/userline.gif"></div>
+        <div class="jf">{$user['signature']}</div>
+
+        <div class="jianjie"><img width="18" height="16" align="absmiddle" src="css/default/userinfo.gif">&nbsp;我的积分</div>
+        <div class="fg"><img width="780px;" height="6px" src="css/default/userline.gif"></div>
+        <div class="jf">
+            <!--{if $setting['outextcredits']}-->
+            <form name="exchangeform"  action="{url user/exchange}" method="post">
+                <div class="exchangescore">积分兑换:
+                    <input type="text" id="exchangeamount" class="input4"  name="exchangeamount" onkeyup="init_exchange()" size="5" value="2"  />
+                    <select id="tocredits"  name="tocredits" onchange="init_exchange()" style="width:160px;height:20px;" >
+                        <!--{loop $outextcredits $index $credits}-->
+                        <option value="{$credits[creditsrc]}|{$credits[creditdesc]}" src="{$credits[creditsrc]}" unit="{$credits[unit]}" title="{$credits[title]}" index="{$index}" ratio="{$credits[ratio]}">{$credits[title]}</option>
+                        <!--{/loop}-->
+                    </select>
+                    &nbsp;
+                    所需&nbsp;<input  type="text" id="needamount" name="needamount" size="5" disabled="disabled" class="input4" value="0">
+                    <select id="fromcredits"  name="fromcredits" style="width:120px;height:20px;"></select>
+                    &nbsp;
+                    <input type="hidden" id="outextindex" name="outextindex"  />
+                    <input type="submit" class="button1" value="立即兑换" name="exchange"  />
+                </div>
+            </form>
+            <script type="text/javascript">
+                function init_exchange(){
+                    var exchangeamount=parseFloat($('#exchangeamount').val());
+                    var creditsrc=$('#tocredits').find("option:selected").attr('src');
+                    var ratio=parseFloat($('#tocredits').find("option:selected").attr('ratio'));
+                    var outextindex=$('#tocredits').find("option:selected").attr('index');
+                    $('#outextindex').val(outextindex);
+                    $('#needamount').val(exchangeamount/ratio);
+                    $("#fromcredits").empty();
+                    if(1==creditsrc){
+                        $("#fromcredits").append('<option value="1" title="经验">经验值</option>');
+                    }else{
+                        $("#fromcredits").append('<option value="2" title="财富">财富值</option>');
+                    }
+                }
+                $(document).ready(init_exchange);
+            </script>
+            <!--{/if}-->
+            <h3>经验值</h3>
+            <div class="jfmx">
+                <ul>
+                    <li>总分<br>&nbsp;{$user['credit1']}</li>
+                    <li>日常操作<br>&nbsp;{$detail1['other']}</li>
+                    <li>奖励得分<br>&nbsp;{$detail1['reward']}</li>
+                    <li>违规处罚<br>&nbsp;{$detail1['punish']}</li>
+                </ul>
+                <div class="clr"></div>
+            </div>
+            <h3>财富值</h3>
+            <div class="jfmx">
+                <ul>
+                    <li>总分<br>&nbsp;{$user['credit2']}</li>
+                    <li>奖励得分<br>&nbsp;{$detail2['reward']}</li>
+                    <li>违规处罚<br>&nbsp;{$detail2['punish']}</li>
+                    <li>悬赏付出<br>&nbsp;{$detail2['offer']}</li>
+                    <li>回答被采纳<br>&nbsp;{$detail2['adopt']}</li>
+                </ul>
+                <div class="clr"></div>
+            </div>
+            <h3>魅力值</h3>
+            <div class="jfmx">
+                <ul>
+                    <li>总分<br>&nbsp;{$user['credit3']}</li>
+                    <li>奖励得分<br>&nbsp;{$detail3['reward']}</li>
+                    <li>违规处罚<br>&nbsp;{$detail3['punish']}</li>
+                </ul>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clr"></div>
+{template footer}

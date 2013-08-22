@@ -1,0 +1,782 @@
+* {
+	margin:0;
+	padding:0;
+}
+img {
+	border:none;
+}
+li {
+	list-style:none;
+}
+.clearer {
+	clear:both;
+	height:0;
+	overflow:hidden;
+}
+.ask-tiwen {
+	float:left;
+	width:970px;
+	height:auto;
+	overflow:hidden;
+}
+.ask-tiwen .twtop {
+	width:968px;
+	overflow:hidden;
+	border:1px solid #B8D5E8;
+	border-bottom:none;
+	position:relative;
+	z-index:2;
+}
+.ask-tiwen .twtop .kebt {
+	display:block;
+	width:968px;
+	height:31px;
+	overflow:hidden;
+	background:url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x 0 -129px;
+}
+.ask-tiwen .twtop .kebt .dabiaoti {
+	float:left;
+	padding:1px 0 0 34px;
+	font:bold 14px/30px SimSun;
+}
+.ask-tiwen .twtop .kebt .xibiaoti {
+	float:left;
+	padding-top:2px;
+	font:12px/30px SimSun;
+	color:#999;
+}
+.ask-tiwen .twtop .kebt .you {
+	float:right;
+	margin:6px 15px 0 0;
+	display:inline;
+	padding-left:22px;
+	font:12px/21px SimSun;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -928px;
+}
+.ask-tiwen .twtop .kebt .you a {
+	color:#06b;
+	text-decoration:underline;
+}
+.ask-tiwen .twtop .kebt .you a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.ask-tiwen .twtop .kebt .jiahao {
+	display:block;
+	width:16px;
+	height:16px;
+	overflow:hidden;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -1030px;
+	position:absolute;
+	top:7px;
+	left:10px;
+	z-index:3;
+	cursor:pointer;
+}
+.ask-tiwen .twtop .kebt .diandian {
+	display:block;
+	width:18px;
+	height:15px;
+	overflow:hidden;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -216px;
+	position:absolute;
+	top:8px;
+	left:10px;
+	z-index:3;
+}
+.ask-tiwen .cons {
+	width:968px;
+	height:auto;
+	padding-bottom:26px;
+	overflow:hidden;
+	border-color:#B8D5E8;
+}
+.ask-tiwen .cons .xingbie {
+	float:left;
+	width:968px;
+	height:42px;
+	margin-top:14px;
+	font:14px SimSun;
+}
+.ask-tiwen .cons .xingbie .xbleft {
+	float:left;
+	width:116px;
+	padding-top:4px;
+	margin-top:14px;
+	overflow:hidden;
+	text-align:right;
+}
+.ask-tiwen .cons .xingbie .xbright {
+	float:left;
+	width:852px;
+	margin-top:14px;
+	overflow:hidden;
+}
+.ask-tiwen .cons .xingbie .xbright .induo {
+	float:left;
+	margin:4px 0 0 10px;
+*margin:1px 0 0 6px;
+	display:inline;
+}
+.ask-tiwen .cons .xingbie .xbright .ff {
+	float:left;
+	margin:5px 18px 0 5px;
+*margin:5px 18px 0 2px;
+	display:inline;
+}
+.ask-tiwen .cons .xingbie .xbright .nl {
+	float:left;
+	margin:5px 0 0 20px;
+	display:inline;
+}
+.ask-tiwen .cons .xingbie .xbright .intat {
+	float:left;
+	width:34px;
+	height:22px;
+	padding:0 3px;
+	border:1px solid #C6C6C6;
+	font:12px/22px Verdana;
+}
+.ask-tiwen .cons .xingbie .xbright .nlcuowu {
+	float:left;
+	width:303px;
+	height:22px;
+	margin-left:10px;
+	display:inline;
+	overflow:hidden;
+	padding:0 0 0 25px;
+	border:1px solid #FFD0C9;
+	background:#FFF9F8 url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat 5px -176px;
+	font:12px/22px SimSun;
+	color:#f20;
+}
+.ask-tiwen .cons .miaosu {
+	float:left;
+	width:968px;
+	font:14px SimSun;
+	position:relative;
+	z-index:2;
+}
+.ask-tiwen .cons .miaosu .msleft {
+	float:left;
+	width:116px;
+	padding-top:8px;
+	margin-top:14px;
+	overflow:hidden;
+	text-align:right;
+}
+.ask-tiwen .cons .miaosu .msright {
+	float:left;
+	width:852px;
+	margin-top:14px;
+}
+.ask-tiwen .cons .miaosu .msright .notipsa {
+	float:left;
+	width:830px;
+	margin-left:10px;
+	display:inline;
+	position:relative;
+	z-index:4;
+}
+.ask-tiwen .cons .miaosu .msright .notipsa .intbt {
+	float:left;
+	width:546px;
+	height:30px;
+	padding:0 3px;
+	border:1px solid #C6C6C6;
+	font:14px/30px SimSun;
+}
+.ask-tiwen .cons .miaosu .msright .notipsa .keyi {
+	float:left;
+	width:262px;
+	overflow:hidden;
+	margin:1px 0 0 10px;
+	display:inline;
+	font:14px/30px SimSun;
+	color:#999;
+}
+.ask-tiwen .cons .miaosu .msright .notipsa .fwcuowu {
+	width:527px;
+	height:20px;
+	overflow:hidden;
+	padding:0px 0 0px 25px;
+	border:1px solid #FFD0C9;
+	background:#FFF9F8 url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat 5px -177px;
+	font:12px/20px SimSun;
+	color:#f20;
+	position:absolute;
+	top:31px;
+	left:0px;
+	z-index:5;
+}
+.ask-tiwen .cons .miaosu .msright .notipsa .fanwei {
+	float:left;
+	width:800px;
+	padding:5px 0 0 5px;
+	font:12px SimSun;
+	color:#999;
+}
+.ask-tiwen .cons .xiangsu {
+	float:left;
+	width:968px;
+	margin-top:10px;
+	font:14px SimSun;
+	position:relative;
+	z-index:2;
+}
+.ask-tiwen .cons .xiangsu .xsleft {
+	float:left;
+	width:116px;
+	padding-top:19px;
+	margin-top:14px;
+	overflow:hidden;
+	text-align:right;
+}
+.ask-tiwen .cons .xiangsu .xsright {
+	float:left;
+	width:852px;
+	margin-top:14px;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox {
+	float:left;
+	width:552px;
+	height:auto;
+	padding-bottom:26px;
+	margin-left:10px;
+	border:1px solid #B4D6EC;
+	background:#fff url(skin/images/ask_line.png) repeat-x 0 -750px;
+	position:relative;
+	z-index:1;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .bt {
+	float:left;
+	width:520px;
+	height:26px;
+	margin:20px 0 0 16px;
+	display:inline;
+	font:bold 12px SimSun;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .bt .hui {
+	font-weight:normal;
+	color:#999;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru {
+	float:left;
+	width:520px;
+	height:86px;
+	margin-left:16px;
+	display:inline;
+	position:relative;
+	z-index:2;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru textarea {
+	width:510px;
+	height:80px;
+*margin-top:-1px;
+	padding:2px 4px;
+	overflow:hidden;
+	overflow-y:auto;
+	font:14px/22px SimSun;
+	border:1px solid #fff;
+	position:relative;
+	z-index:3;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru .cuowu {
+	width:493px;
+	height:20px;
+	overflow:hidden;
+	padding:0 0 0 25px;
+	border:1px solid #FFD0C9;
+	background:#FFF9F8 url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat 5px -177px;
+	font:12px/20px SimSun;
+	color:#f20;
+	position:absolute;
+	top:64px;
+	left:0;
+	z-index:5;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru .tipsb {
+	display:block;
+	width:260px;
+	padding:14px;
+	font:12px/20px SimSun;
+	border:1px solid #FFD785;
+	background:#FFFBF4;
+	position:absolute;
+	top:0;
+	left:519px;
+	z-index:8;
+	display:none;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru .tipsb p {
+	font:12px/20px SimSun;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru .tipsb p .cu {
+	font-weight:bold;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru .tipsb p a {
+	color:#f60;
+	text-decoration:none;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru .tipsb p a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru .tipsb .jiantou {
+	display:block;
+	width:7px;
+	height:12px;
+	overflow:hidden;
+	background:url(http://www.120center.com/skin/images/ask_tie_spans.gif) no-repeat 0 -260px;
+	position:absolute;
+	top:18px;
+	left:-7px;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru .tipsb .close {
+	display:block;
+	width:11px;
+	height:10px;
+	overflow:hidden;
+	background:url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat 0 -58px;
+	position:absolute;
+	top:4px;
+	right:4px;
+	cursor:pointer;
+	display:none;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru1 {
+	position:relative;
+	z-index:3;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru2 {
+	position:relative;
+	z-index:2;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru3 {
+	position:relative;
+	z-index:1;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .xsshuru .textkuang {
+	border-color:#D9D9D9;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .showtipsb .tipsb {
+	display:block;
+}
+.ask-tiwen .cons .xiangsu .xsright .xsbox .showtipsb textarea {
+	border-color:#D9D9D9;
+}
+.ask-tiwen .cons .shangchuan {
+	float:left;
+	width:842px;
+	height:30px;
+	padding-left:126px;
+	margin-top:10px;
+	color:#999;
+}
+.ask-tiwen .cons .shangchuan .sc {
+	float:left;
+	height:30px;
+	padding-left:22px;
+	font:14px/30px SimSun;
+	background:url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat -443px -47px;
+}
+.ask-tiwen .cons .shangchuan .sc a {
+	color:#06b;
+	text-decoration:underline;
+}
+.ask-tiwen .cons .shangchuan .sc a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.ask-tiwen .cons .jibin {
+	float:left;
+	width:968px;
+	margin-top:10px;
+	font:14px SimSun;
+	position:relative;
+	z-index:2;
+}
+.ask-tiwen .cons .jibin .jbleft {
+	float:left;
+	width:116px;
+	padding-top:19px;
+	overflow:hidden;
+	text-align:right;
+}
+.ask-tiwen .cons .jibin .jbright {
+	float:left;
+	width:852px;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox {
+	float:left;
+	width:520px;
+	height:auto;
+	padding:0 16px 20px;
+	margin-left:10px;
+	border:1px solid #B4D6EC;
+}
+.ask-tiwen .cons .jibin .jbright .boxa, .ask-tiwen .cons .jibin .jbright .boxb {
+	float:left;
+	width:520px;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .bt {
+	float:left;
+	width:520px;
+	height:26px;
+	margin-top:20px;
+	font:bold 12px SimSun;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .boxrow {
+	float:left;
+	width:520px;
+	height:30px;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .boxrow .inrad {
+	float:left;
+	margin:5px 0 0 0;
+*margin:2px 0 0 -4px;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .boxrow .fl {
+	float:left;
+	margin-left:5px;
+*margin-left:2px;
+	display:inline;
+	font:14px/26px SimSun;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .boxrow2 {
+	float:left;
+	width:520px;
+	height:36px;
+	margin-top:10px;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .boxrow2 a {
+	float:left;
+	width:83px;
+	height:28px;
+	font:12px/28px SimSun;
+	text-align:center;
+	background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -170px -364px;
+	color:#333;
+	text-decoration:none;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .boxrow2 a:hover {
+	background-position:-253px -364px;
+	color:#333;
+	text-decoration:none;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .boxrow2 span {
+	float:left;
+	margin-left:10px;
+	font:12px/28px SimSun;
+	color:#999;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .boxrow3 {
+	float:left;
+	width:520px;
+	height:30px;
+	margin-top:10px;
+	overflow:hidden;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .boxrow3 .changjian {
+	float:left;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .boxrow3 .inrad2 {
+	float:left;
+	margin:0 0 0 6px;
+*margin:-3px 0 0 2px;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .boxrow3 .rl {
+	float:left;
+	margin:0 10px 0 6px;
+*margin:0 10px 0 3px;
+	display:inline;
+	font:14px SimSun;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .xuan {
+	float:left;
+	width:520px;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .xuan select {
+	float:left;
+	width:120px;
+	overflow:hidden;
+	overflow-y:auto;
+	margin-right:10px;
+	border:1px solid #696969;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .xuan select .morejb {
+	color:#069;
+	text-decoration:underline;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .xuan .annu {
+	float:left;
+	width:67px;
+	height:186px;
+	padding-top:94px;
+	margin-left:10px;
+	display:inline;
+	overflow:hidden;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .xuan .annu .inbht {
+	float:left;
+	width:67px;
+	height:25px;
+	margin-top:12px;
+	line-height:25px;
+	border:none;
+	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat -83px -79px;
+	cursor:pointer;
+}
+.ask-tiwen .cons .jibin .jbright .jbbox .xuan .annu .inbht2 {
+	background-position:-83px -104px;
+}
+.ask-tiwen .cons .gdjibin {
+	float:left;
+	width:852px;
+	padding-left:116px;
+	margin-top:10px;
+	font:14px SimSun;
+	position:relative;
+	z-index:2;
+}
+.ask-tiwen .cons .gdjibin .jbbox {
+	float:left;
+	width:682px;
+	height:auto;
+	padding:0 16px 20px;
+	margin-left:10px;
+	border:1px solid #B4D6EC;
+}
+.ask-tiwen .cons .gdjibin .jbbox .bt {
+	float:left;
+	width:682px;
+	height:26px;
+	margin-top:20px;
+	font:bold 12px SimSun;
+}
+.ask-tiwen .cons .gdjibin .jbbox dl {
+	float:left;
+	width:682px;
+	height:auto;
+	padding:14px 0 12px;
+	overflow:hidden;
+	position:relative;
+	z-index:1;
+}
+.ask-tiwen .cons .gdjibin .jbbox dt {
+	width:20px;
+	height:30px;
+	padding-top:2px;
+	overflow:hidden;
+	font:bold 14px Verdana;
+	text-align:center;
+	background:url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat -440px -140px;
+	position:absolute;
+	top:0;
+	left:6px;
+	z-index:3;
+}
+.ask-tiwen .cons .gdjibin .jbbox dd {
+	width:682px;
+	height:auto;
+	overflow:hidden;
+	border-bottom:1px solid #D0E7FF;
+	position:relative;
+	z-index:2;
+}
+.ask-tiwen .cons .gdjibin .jbbox dd ul {
+	float:left;
+	width:682px;
+	height:auto;
+	padding:12px 0;
+	overflow:hidden;
+	font:12px SimSun;
+}
+.ask-tiwen .cons .gdjibin .jbbox dd ul li {
+	float:left;
+	width:158px;
+	height:20px;
+	margin:8px 0 0 10px;
+	display:inline;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.ask-tiwen .cons .gdjibin .jbbox dd ul li input {
+	margin:3px 5px 0 0;
+*margin:0px 2px 0 -4px;
+}
+.ask-tiwen .cons .gdjibin .jbbox dd ul li label {
+	position:relative;
+	top:-2px;
+*top:-1px;
+}
+.ask-tiwen .cons .gdjibin .jbbox .annu {
+	float:left;
+	width:472px;
+	padding-top:4px;
+	overflow:hidden;
+	padding-left:210px;
+}
+.ask-tiwen .cons .gdjibin .jbbox .annu .inbht {
+	float:left;
+	width:67px;
+	height:25px;
+	margin-left:10px;
+	display:inline;
+	line-height:25px;
+	border:none;
+	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat -83px -79px;
+	cursor:pointer;
+}
+.ask-tiwen .cons .gdjibin .jbbox .annu .inbht2 {
+	background-position:-83px -104px;
+}
+.ask-tiwen .cons .gdjibin .jbbox .annu .fanhui {
+	float:left;
+	font:14px/24px SimSun;
+	margin:1px 0 0 10px;
+	display:inline;
+}
+.ask-tiwen .cons .gdjibin .jbbox .annu .fanhui a {
+	color:#369;
+	text-decoration:underline;
+}
+.ask-tiwen .cons .gdjibin .jbbox .annu .fanhui a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.ask-tiwen .cons .tijiao {
+	float:left;
+	width:968px;
+	height:42px;
+	margin-top:26px;
+}
+.ask-tiwen .cons .tijiao label {
+	float:left;
+	margin-left:300px;
+}
+.ask-tiwen .cons .tijiao .insub {
+	float:left;
+	width:143px;
+	height:42px;
+	border:none;
+	background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat 0 -330px;
+	cursor:pointer;
+}
+.ask-tiwen .cons .tijiao .insub2 {
+	background-position:0 -372px;
+}
+.ask-tiwen .cons .tijiao span {
+	float:left;
+	margin-top:13px;
+	font:12px Verdana;
+	color:#999;
+}
+.ts9 {
+	width:395px;
+	height:164px;
+	border:1px solid #FAA525;
+	font:12px SimSun;
+	color:#333;
+	background:#fff;
+}
+.ts9 a {
+	color:#06b;
+	text-decoration:none;
+}
+.ts9 a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.ts9 .ts9-top {
+	width:395px;
+	height:29px;
+	background:url(http://www.120center.com/skin/images/ask_tc.gif) repeat-x;
+}
+.ts9 .ts9-top strong {
+	float:left;
+	margin:8px 0 0 10px;
+	display:inline;
+}
+.ts9 .ts9-top span {
+	float:right;
+	width:17px;
+	height:16px;
+	margin:6px 10px 0 0;
+	display:inline;
+}
+.ts9 .ts9-top span a {
+	display:block;
+	width:17px;
+	height:16px;
+	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -100px;
+}
+.ts9 .ts9-top span a:hover {
+	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -116px;
+}
+.ts9 .ts9-down {
+	width:395px;
+	overflow:hidden;
+	padding-top:5px;
+}
+.ts9 .ts9-down .sc {
+	float:left;
+	width:395px;
+	height:26px;
+	padding-top:14px;
+}
+.ts9 .ts9-down .sc .scleft {
+	float:left;
+	width:90px;
+	margin-top:4px;
+	font:14px SimSun;
+	text-align:right;
+}
+.ts9 .ts9-down .sc .scright {
+	float:left;
+	width:305px;
+}
+.ts9 .ts9-down .sc .scright2 {
+	height:24px; /*background:url(http://image.39.net/ask/2011/images/liulan.png) no-repeat; _background:none;*/
+}
+.ts9 .ts9-down .sc .scright .liulan {
+	width:217px;
+	height:24px;
+	vertical-align:middle;
+	line-height:24px;
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity:0;
+	opacity:0;
+}
+.ts9 .ts9-down .sc .wangluo {
+	float:left;
+	width:239px;
+	height:22px;
+	padding:0 4px;
+	font:12px/22px SimSun;
+	border:1px solid #ABADB3;
+}
+.ts9 .ts9-down .anniu {
+	float:left;
+	width:395px;
+	margin-top:12px;
+	text-align:center;
+}
+.ts9 .ts9-down .anniu .buts {
+	width:83px;
+	height:25px;
+	font-size:12px;
+	padding-bottom:1px;
+	line-height:28px;
+	border:none;
+	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat;
+	cursor:pointer;
+}
+.ts9 .ts9-down .anniu .buts1 {
+	background-position:0 -29px;
+}
+.ts9 .ts9-down .anniu .buts2 {
+	background-position:0 -54px;
+}

@@ -1,0 +1,37 @@
+* {margin:0; padding:0;} img {border:none;} li {list-style:none;} .clearer {clear:both; height:0; overflow:hidden;}
+/* 定制 */
+.tc1 {width:617px; height:240px; border:1px solid #FAA525; font:12px SimSun; color:#333; background:#fff;}
+.tc1 .tc1-top {width:617px; height:29px; background:url(http://www.120center.com/skin/images/ask_tc.gif) repeat-x;}
+.tc1 .tc1-top strong {float:left; margin:8px 0 0 10px; display:inline;}
+.tc1 .tc1-top span {float:right; width:17px; height:16px; margin:6px 10px 0 0; display:inline; background:#ccc;}
+.tc1 .tc1-top span a {display:block; width:17px; height:16px; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -100px;}
+.tc1 .tc1-top span a:hover {background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -116px;}
+.tc1 .tc1-down {width:617px; overflow:hidden;}
+.tc1 .tc1-down .xuan {width:617px; margin-top:10px;}
+.tc1 .tc1-down .xuan .lef {float:left; width:196px; height:50px; padding-top:8px; text-align:right;}
+.tc1 .tc1-down .xuan .lef span {color:#999;}
+.tc1 .tc1-down .xuan .rig {float:left; width:398px; height:58px; padding-left:16px; position:relative; z-index:1;}
+.tc1 .tc1-down .xuan .rig2 {height:84px;}
+.tc1 .tc1-down .xuan .rig table {width:99%; vertical-align:middle;}
+.tc1 .tc1-down .xuan .rig table td {height:24px; border:none;}
+.tc1 .tc1-down .xuan .rig .inputbox {position:relative; top:3px; left:-2px; *top:0px; *left:-6px;}
+.tc1 .tc1-down .xuan .rig .text {position:relative; *top:-2px; *left:-7px;}
+.tc1 .tc1-down .xuan .rig .inputtext {width:220px; height:22px; padding:0 5px; font:12px/22px SimSun; border:1px solid #C2C2C2; position:absolute; top:3px; *top:2px; left:15px; z-index:3;}
+.tc1 .tc1-down .xuan .rig p {width:228px; height:26px; overflow:hidden; padding:30px 5px 0; border:1px solid #FFD0C9; background:#FFF9F8; position:absolute; top:-1px; *top:-2px; left:11px; z-index:2;}
+.tc1 .tc1-down .xuan .rig p span {display:block; height:24px; line-height:24px; padding-left:20px; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat -165px -102px; color:#f20;}
+.tc1 .tc1-down .anniu {width:406px; margin-top:6px; padding-left:211px;}
+.tc1 .tc1-down .anniu input {width:83px; height:25px; font-size:12px; padding-bottom:1px; line-height:28px; border:none; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -29px; cursor:pointer;}
+.tc1 .tc1-down .anniu input:hover {background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -54px;}
+/* 定制成功 */
+.tc2 {width:617px; height:225px; border:1px solid #FAA525; font:12px SimSun; color:#333; background:#fff;}
+.tc2 .tc2-top {width:617px; height:29px; background:url(http://www.120center.com/skin/images/ask_tc.gif) repeat-x;}
+.tc2 .tc2-top strong {float:left; margin:8px 0 0 10px; display:inline;}
+.tc2 .tc2-top span {float:right; width:17px; height:16px; margin:6px 10px 0 0; display:inline; background:#ccc;}
+.tc2 .tc2-top span a {display:block; width:17px; height:16px; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -100px;}
+.tc2 .tc2-top span a:hover {background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -116px;}
+.tc2 .tc2-down {width:617px; overflow:hidden;}
+.tc2 .tc2-down .cg {width:617px; height:100px; text-align:center;}
+.tc2 .tc2-down span {display:inline-block; height:36px; margin-top:40px; padding-left:40px; font:bold 16px/36px SimSun; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -160px; color:#f60;}
+.tc2 .tc2-down .anniu {width:617px; margin-top:6px; text-align:center;}
+.tc2 .tc2-down .anniu input {width:83px; height:25px; font-size:12px; padding-bottom:1px; line-height:28px; border:none; background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -29px; cursor:pointer;}
+.tc2 .tc2-down .anniu input:hover {background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -54px;}

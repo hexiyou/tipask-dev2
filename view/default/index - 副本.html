@@ -1,0 +1,423 @@
+{template header}
+<!--加载广告-->
+<!--{eval $adlist = $this->fromcache("adlist");}-->
+<div class="content">
+    <!--左边分类开始-->
+    <div class="left">
+        <!--问题分类开始-->
+        <div class="wtfl">
+            <div class="wtfl_t"></div>
+            <div class="wtfl_m">
+                <div class="wtfl_m_t">
+                    <div class="wt_l">&nbsp;问题分类
+                    </div>
+                    <div class="clr"></div>
+                    <div id="rmc"></div>
+                </div>
+                <div id="siderbar">
+                    <div id="secNav">
+                        <ul id="secNavList">
+                            <!--{eval $categorylist=$this->fromcache('categorylist');}-->
+                            <!--{loop $categorylist  $category1}-->
+                            <li>
+                                <div class="iconBg"><a href="{url category/view/$category1['id']}" title="{$category1['name']}">{$category1['name']}</a></div>
+                                <div class="listcon">
+                                    <!--{loop $category1['sublist'] $index $category2}-->
+                                    <a href="{url category/view/$category2['id']}">{$category2['name']}</a>
+                                    <!--{/loop}-->
+                                </div>
+                            </li>
+                            <!--{/loop}-->
+                        </ul>
+                    </div>
+                    <div class="more"><a ttarget="_top" title="查看更多分类" href="{url category/view/all}">查看更多分类&gt;&gt;</a></div>
+                </div>          
+            </div>
+            <div class="wtfl_b"></div>
+        </div>
+        <!--问题分类结束-->
+
+        <div class="topscore">
+            <div class="l_b_t"></div>
+            <div class="l_b_m">
+                <div class="l_b_m_t">
+                    <div class="mc"><div class="ivote"></div>积分排行榜</div>
+                    <div class="phb">
+                        <ul>
+                            <li onclick="showtop('week')" id="weektab" class="on">本周排行</li>
+                            <li onclick="showtop('all')" id="alltab" class="">总排行</li>
+                        </ul>
+                        <div class="clr"></div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div class="l_b_m_m">
+                    <div id="weektop" class="yshy" style="display: block;">
+                        <ul>
+                            <!--{eval $weekuserlist=$this->fromcache('weekuserlist');}-->
+                            <!--{loop $weekuserlist $index $weekuser}-->
+                            <!--{eval ++$index;}-->
+                            <li>
+                                <span class="hyname"><img align="absmiddle" src="css/default/num{$index}.gif"> <a target="_blank" href="{url user/space/$weekuser['uid']}">{$weekuser['username']}</a></span>
+                                <img align="absmiddle" src="css/default/up.gif">{$weekuser['credit1']}
+                            </li>
+                            <!--{/loop}-->
+                        </ul>
+                    </div>
+                    <div id="alltop" class="yshy" style="display:none;">
+                        <ul>
+                            <!--{eval $alluserlist=$this->fromcache('alluserlist');}-->
+                            <!--{loop $alluserlist $index $alluser}-->
+                            <!--{eval ++$index;}-->
+                            <li>
+                                <span class="hyname"><img align="absmiddle" src="css/default/num{$index}.gif"> <a target="_blank" href="{url user/space/$alluser['uid']}">{$alluser['username']}</a></span>
+                                <img align="absmiddle" src="css/default/up.gif">{$alluser['credit1']}
+                            </li>
+                            <!--{/loop}-->
+                        </ul>
+                    </div>
+                    <div class="listcon"></div>
+                    <div class="more"><a ttarget="_top" title="查看更多排行榜" href="{url user/scorelist/1}">查看更多排行榜&gt;&gt;</a></div>
+                    <div class="clr"></div>
+
+                </div>
+            </div>
+            <div class="l_b_b"></div>
+        </div>
+
+        <!--知道小贴士开始-->
+        <div class="cjjb">
+            <div class="l_b_t"></div>
+            <div class="l_b_m">
+                <div class="l_b_m_t1">
+                    <div class="mc"><div class="irelate"></div>知道小贴士</div>
+                </div>
+                <div class="clr"></div>
+                <div class="l_b_m_m">
+                    <div class="xts">
+                        <ul>
+                            <li><a target="_blank" title="如何提问" href="{url index/help}#如何提问">如何提问</a></li>
+                            <li><a target="_blank" title="如何回答" href="{url index/help}#如何回答">如何回答</a></li>
+                            <li><a target="_blank" title="如何获得积分" href="{url index/help}#如何获得积分">如何获得积分</a></li>
+                            <li><a target="_blank" title="如何处理问题" href="{url index/help}#如何处理问题">如何处理问题</a></li>
+                        </ul>
+                    </div>
+                    <div class="tsyjy"> 如要投诉或提出意见，请点击<br><a title="投诉与建议" href="mailto:{$setting['admin_email']}"><input type="button" class="button1" value="建议反馈" /></a></div>
+                </div>
+            </div>
+            <div class="l_b_b"></div>
+        </div>
+        <!--知道小贴士结束-->
+    </div>
+    <div class="b_right">
+        <div class="middle">
+            <!--{eval $topiclist=$this->fromcache('topiclist');}-->
+            <!--{if $topiclist}-->
+            <div class="rdtj">
+                <div class="rdtj_t"></div>
+                <div class="rdtj_m" >
+                    <div id="slides">
+                        <div class="slides_container">
+                            <!--{eval $topiclist=$this->fromcache('topiclist');}-->
+                            <!--{loop $topiclist $topic}-->
+                            <div>
+                                <div class="hdp"><img src="{$topic['image']}" width="270px" height="222px"/></div>
+                                <div class="hdpr">
+                                    <strong style="color:#9C9A9A">推荐专题</strong>
+                                    <h1><a href="{url category/recommend}#{$topic['id']}">{eval echo cutstr($topic['title'],14,'');}</a></h1>
+                                    <p>{eval echo cutstr($topic['describtion'],60,'');}</p>
+                                    <ul>
+                                        <!--{loop $topic['questionlist'] $question}-->
+                                        <li><a class="hotTitscontlia" title="{$question['title']}" target="_blank" href="{url question/view/$question['id']}">{eval echo cutstr($question['title'],26,'');}</a> </li>
+                                        <!--{/loop}-->
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--{/loop}-->
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="rdtj_b"></div>
+            </div>
+            <!--{/if}-->
+            <!--精彩推荐开始-->
+            <div class="m_wt">
+                <div class="m_wtt">
+                    <ul>
+                        <li class="a1"></li>
+                        <li class="a2">
+                            <div class="a2t">精彩推荐的问题</div>
+                            <div class="more"><a target="_top" title="更多问题" href="{url category/view/all/6}">更多问题</a> </div>
+                        </li>
+                        <li class="a3"></li>
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+                <div class="m_wtm">
+                    <div id="weijieList">
+                        <ul>
+                            <!--{eval $nosolvelist=$this->fromcache('recommendlist');}-->
+                            <!--{loop $nosolvelist $index $question}-->
+                            <!--{eval ++$index;}-->
+                            <li><a target="_blank" href="{url question/view/$question['id']}" title="{$question['title']}">{eval echo cutstr($question['title'],40);}</a>&nbsp;<span class="lei">[<a target="_blank" href="{url category/view/$question['cid']}" title="{$question['category_name']}">{eval echo cutstr($question['category_name'],10,'');}</a>]</span><span class="qanswers">{$question['answers']}回答</span></li>
+                            <!--{/loop}-->
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="m_wtb"></div>
+            </div>
+            <!--精彩推荐结束-->
+            <!--广告位1-->
+            <!--{if (isset($adlist['index']['middle1']) && trim($adlist['index']['middle1']))}-->
+            <div class="m_ad">{$adlist['index']['middle1']}</div>
+            <!--{/if}-->
+            <!--待解决问题开始-->
+            <div class="m_wt">
+                <div class="m_wtt">
+                    <ul>
+                        <li class="a1"></li>
+                        <li class="a2">
+                            <div class="a2t">大家都在问什么</div>
+                            <div class="more"><a target="_top" title="更多问题" href="{url category/view/all/1}">更多问题</a> </div>
+                        </li>
+                        <li class="a3"></li>
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+                <div class="m_wtm">
+                    <div id="weijieList">
+                        <ul>
+                            <!--{eval $nosolvelist=$this->fromcache('nosolvelist');}-->
+                            <!--{loop $nosolvelist $index $question}-->
+                            <!--{eval ++$index;}-->
+                            <li><a target="_blank" href="{url question/view/$question['id']}" title="{$question['title']}">{eval echo cutstr($question['title'],40);}</a>&nbsp;<span class="lei">[<a target="_blank" href="{url category/view/$question['cid']}" title="{$question['category_name']}">{eval echo cutstr($question['category_name'],10,'');}</a>]</span><span class="qanswers">{$question['answers']}回答</span></li>
+                            <!--{/loop}-->
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="m_wtb"></div>
+            </div>
+            <!--待解决问题结束-->
+            <!--广告位2-->
+            <!--{if (isset($adlist['index']['middle2']) && trim($adlist['index']['middle2']))}-->
+            <div class="m_ad">{$adlist['index']['middle2']}</div>
+            <!--{/if}-->
+            <!--悬赏问题开始-->
+            <div class="m_wt">
+                <div class="m_wtt">
+                    <ul>
+                        <li class="a1"></li>
+                        <li class="a2">
+                            <div class="a2t">悬赏求答案的问题</div>
+                            <div class="more"><a target="_top" target="_blank" title="更多问题" href="{url category/view/all/4}">更多问题</a> </div>
+                        </li>
+                        <li class="a3"></li>
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+                <div class="m_wtm">
+                    <div id="weijieList">
+                        <ul>
+                            <!--{eval $nosolvelist=$this->fromcache('rewardlist');}-->
+                            <!--{loop $nosolvelist $index $question}-->
+                            <!--{eval ++$index;}-->
+                            <li><span class="qlscore"><img src="css/default/TB2.gif" />{$question['price']}</span><a target="_blank" href="{url question/view/$question['id']}" title="{$question['title']}">{eval echo cutstr($question['title'],40);}</a>&nbsp;<span class="lei">[<a target="_blank" href="{url category/view/$question['cid']}" title="{$question['category_name']}">{eval echo cutstr($question['category_name'],10,'');}</a>]</span><span class="qanswers">{$question['answers']}回答</span></li>
+                            <!--{/loop}-->
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="m_wtb"></div>
+            </div>
+            <!--悬赏问题结束-->
+            <!--广告位3-->
+            <!--{if (isset($adlist['index']['middle3']) && trim($adlist['index']['middle3']))}-->
+            <div class="m_ad">{$adlist['index']['middle3']}</div>
+            <!--{/if}-->
+            <!--已解决问题开始-->
+            <div class="m_wt">
+                <div class="m_wtt">
+                    <ul>
+                        <li class="a1"></li>
+                        <li class="a2">
+                            <div class="a2t">最新已解决的问题</div>
+                            <div class="more"><a target="_top" title="更多问题" href="{url category/view/all/2}">更多问题</a></div>
+                        </li>
+                        <li class="a3"></li>
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+                <div id="jieList" class="m_wtm">
+                    <ul>
+                        <!--{eval $nosolvelist=$this->fromcache('solvelist');}-->
+                        <!--{loop $nosolvelist $index $question}-->
+                        <!--{eval ++$index;}-->
+                        <li><a target="_blank" href="{url question/view/$question['id']}" title="{$question['title']}">{eval echo cutstr($question['title'],30);}</a>&nbsp;<span class="lei">[<a target="_blank" href="{url category/view/$question['cid']}" title="{$question['category_name']}">{eval echo cutstr($question['category_name'],10,'');}</a>]</span><span class="qanswers">{$question['answers']}回答</span></li>
+                        <!--{/loop}-->
+                    </ul>
+
+                </div>
+                <div class="m_wtb"></div>
+            </div>
+            <!--已解决问题结束-->
+        </div>
+        <div class="right">
+            <div class="ty">
+                <div class="tyt"></div>
+                <div class="tym">
+                    <div class="tym_t">
+                        <div class="mc">
+                            <img src="css/default/note.gif" class="noteicon"/>
+                            站內公告
+                        </div>
+                    </div>
+                    <div class="tym_m">
+                        <ul>
+                            <!--{eval $notelist=$this->fromcache('notelist');}-->
+                            <!--{loop $notelist $note}-->
+                            <li><a  {if $note['url']}href="{$note['url']}"{else}href="{url note/view/$note['id']}"{/if}  title="{$note['title']}">{eval echo cutstr({$note['title']},22);}</a></li>
+                            <!--{/loop}-->
+                        </ul>
+                        <div class="more1"><a href="{URL note/list}" target="_blank" title="查看全部公告">查看全部公告</a></div>
+                    </div>
+                </div>
+                <div class="tyb"></div>
+            </div>
+            <div class="zjzt">
+                <div class="zjztt">
+                    <ul>
+                        <li class="a1"></li>
+                        <li class="a2">热点关键词</li>
+                        <li class="a3"></li>
+                    </ul>
+                </div>
+                <div class="zjztm">
+                    <!--{loop $wordslist $hotword}-->
+                    <a {if $hotword['qid']}href="{url question/view/$hotword['qid']}" {else}href="{url question/search/3/$hotword['w']}"{/if}>{$hotword['w']}</a>
+                    <!--{/loop}-->                    
+                </div>
+                <div class="zjztb"></div>
+            </div>
+            <!--{if (isset($adlist['index']['right1']) && trim($adlist['index']['right1']))}-->
+            <div class="r_ad">{$adlist['index']['right1']}</div>
+            <!--{/if}-->
+            <div class="rb_zj">
+                <div class="rb_zj_t"></div>
+                <div class="rb_zj_m">
+                    <div class="rb_zj_mt"><div class="istar"></div>推荐之星</div>
+                    <div class="rb_zj_mm">
+                        <!--{eval $famouslist=$this->fromcache('famouslist');}-->
+                        <!--{loop $famouslist $indexstat $famous}-->
+                        <!--{if $indexstat}-->
+                        <div class="rb_zj_mmc" style="border-top:1px dashed #DDDDDD;padding-top: 10px;">
+                            <!--{else}-->
+                            <div class="rb_zj_mmc">
+                                <!--{/if}-->
+                                <div class='zjimg'>
+                                    <a href="{url user/space/$famous['uid']}" target='_blank'><img src="{$famous['avatar']}" width='50px' height='50px' /></a>
+                                </div>
+                                <div class='jbzl'>
+                                    <a href="{url user/space/$famous['uid']}" target='_blank'>{$famous['username']}</a><br/>
+                                    回答数:{$famous['answers']}<br />
+                                    提问数:{$famous['questions']}
+                                </div>
+                                <div class='clr'></div>
+                                <!--{if $famous['bestanswer']}-->
+                                精选解答:<input type="button" class="button1" value="向TA提问" onclick="javascript:document.location='{url question/add/$famous['uid']}'"/><ul>
+                                    <!--{loop $famous['bestanswer'] $answer}-->
+                                    <li><a href="{url question/view/$answer['qid']}" target='_blank' title="{$answer['title']}">{eval echo cutstr($answer['title'],28,'');}</a></li>
+                                    <!--{/loop}-->
+                                </ul>
+                                <!--{/if}-->
+                            </div>
+                            <div class="clr"></div>
+                            <!--{/loop}-->
+                            <div class="more2"><a href="{url user/famouslist}" target="_blank" title="历届知道之星">历届知道之星>> </a></div>
+                        </div>
+                    </div>
+                    <div class="rb_zj_b"></div>
+                </div>
+                <div class="rb_zj">
+                    <div class="rb_zj_t"></div>
+                    <div class="rb_zj_m">
+                        <div class="rb_zj_mt1"><img src="css/default/user.png" class="noteicon" alt="知道专家" />知道专家</div>
+                        <div class="rb_zj_mm">
+                            <!--{eval $expertlist=$this->fromcache('expertlist');}-->
+                            <!--{loop $expertlist $indexstat $expert}-->
+                            <div class="rb_zj_mmc1">
+                                <ul>
+                                    <li>
+                                        <div class="zjimg1">
+                                            <a href="{url user/space/$expert['uid']}">
+                                                <img src="{$expert['avatar']}"  height="50px" width="50px"/>
+                                            </a>
+                                        </div>
+                                        <div class="jbzl1">
+                                            <h3><a href="{url user/space/$expert['uid']}" >{$expert['name']}</a></h3>
+                                            擅长分类：$expert['categoryname']
+                                            <a href="{url question/add/$expert['uid']}">
+                                                <img src="css/default/wytw.gif" height="20px" width="60px"/>
+                                            </a>
+                                        </div>
+                                        <div class="clr"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--{/loop}-->
+                            <div class="more2"><a href="{url expert/default}" target="_blank" title="查看更多">查看更多专家</a></div>
+                        </div>
+                    </div>
+                    <div class="rb_zj_b"></div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+    <div class="clr"></div>
+    <!--友情链接-->
+    <div class="jklm">
+        <div class="jklmm">
+            <h3>友情链接</h3>
+            <div class="lm">
+                <!--{loop $linklist $link}-->
+                <a target="_blank" href="{$link['url']}" title="{$link['description']}">
+                    <!--{if $link['logo']}-->
+                    <img src="{$link['logo']}" alt="{$link['name']}" />
+                    <!--{else}-->
+                    {$link['name']}
+                    <!--{/if}-->
+                </a>
+                <!--{/loop}-->
+            </div>
+        </div>
+    </div>
+    <div class="clr"></div>
+    <script src="js/slides.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#slides').slides({
+                preload: true,
+                generateNextPrev: false,
+                play: 5000,
+                container: 'slides_container'
+            
+            });
+        });
+        function showtop(type){
+            if(type=='week'){
+                $("#weektab").attr('class','on'); 
+                $("#alltab").attr('class',''); 
+                $("#alltop").hide();
+                $("#weektop").show();
+            }else{
+                $("#alltab").attr('class','on'); 
+                $("#weektab").attr('class',''); 
+                $("#weektop").hide();
+                $("#alltop").show();
+            }
+        }
+    </script>
+    {template footer}

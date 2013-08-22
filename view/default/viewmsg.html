@@ -1,0 +1,7 @@
+<link href="c{$message['subject']}ss/default/ask.css" rel="stylesheet" type="text/css" />
+<div>{$message['subject']}</div>
+<div class="fg"><img width="780px;" height="6px" src="css/default/userline.gif"></div>
+<div class="jf">{$message['content']}</div>
+<div style="float:right;">                {if $user['uid']==$message['fromuid']}收件人：<a href="{url user/space/$message['touid']}" target="_blank">{$touser['username']}</a>{else}发件人：<a href="{url user/space/$message['fromuid']}">$message['from']</a>{/if}&nbsp;{$message['date']}
+    <a id="delMessage" href="{url message/remove/$message['id']/$type}">删除</a>
+</div>

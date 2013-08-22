@@ -1,0 +1,571 @@
+* {
+	margin:0;
+	padding:0;
+}
+img {
+	border:none;
+}
+li {
+	list-style:none;
+}
+.clearer {
+	clear:both;
+	height:0;
+	overflow:hidden;
+}
+.wrap {
+	width:970px;
+	overflow-x:hidden;
+	margin:0 auto;
+	padding:0 5px;
+	background:#fff;
+}
+.wrap1 {
+	width:970px;
+	margin:0 auto;
+	padding:0 5px;
+	background:#fff;
+	position:relative;
+}
+.wrap1 .tonglan {
+	display:block;
+	width:970px;
+	height:90px;
+	margin-top:8px;
+	overflow:hidden;
+}
+.wrap1 .spline {
+	display:block;
+	width:100%;
+	height:0;
+	overflow:hidden;
+	border-top:1px solid #D7E6F4;
+	border-bottom:1px solid #fff;
+}
+.wrap1 .margintop10 {
+	margin-top:10px;
+}
+.wrap1 .cons {
+	border:1px solid #fff;
+	border-top:none;
+}
+.wrap1 em {
+	font-style:normal;
+}
+.wrap1 .noborders {
+	border:none;
+}
+.wrap1 .andthen, .wrap1 .uls li {
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.wrap1 .color666 a {
+	color:#666;
+	text-decoration:none;
+}
+.wrap1 .color666 a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.wrap1 .color999 a {
+	color:#999;
+	text-decoration:none;
+}
+.wrap1 .color999 a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.wrap1 .color909 a {
+	color:#909090;
+	text-decoration:none;
+}
+.wrap1 .color909 a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.wrap1 .color0C6 a {
+	color:#0C61AD;
+	text-decoration:none;
+}
+.wrap1 .color0C6 a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.wrap1 .color06b a {
+	color:#06b;
+	text-decoration:none;
+}
+.wrap1 .color06b a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.new_nav .new_navlogin input, .new_askser .new_sercen input {
+	padding-top:0;
+}
+.new_nav {
+	width:980px;
+	height:30px;
+	overflow:hidden;
+	padding:1px 0;
+	margin:0;
+}
+.new_nav .new_navtext {
+	float:left;
+	font:12px/32px "宋体";
+	color:#333;
+}
+.new_nav .new_navtext a {
+	padding:0 0 0 10px;
+	color:#333;
+	text-decoration:none;
+}
+.new_nav .new_navtext a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.new_nav .new_navlogin {
+	float:right;
+	padding:0 10px 0 0;
+}
+.new_nav .new_navlogin .new_askbtn {
+	margin:5px 10px 0 0;
+*margin:0 10px 0 0;
+	_margin:5px 10px 0 0;
+	width:44px;
+	height:20px;
+	border:0;
+	cursor:pointer;
+}
+.new_nav .new_navlogin .new_askbtn1 {
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat -166px -95px;
+}
+.new_nav .new_navlogin .new_askbtn2 {
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat -210px -95px;
+}
+.new_nav .new_navlogin div {
+	line-height:30px;
+*line-height:20px;
+	_line-height:30px;
+	_padding:7px 0 0;
+}
+.new_nav .new_navlogin span {
+	color:#ccc;
+	margin:0 5px;
+}
+.new_nav .new_navlogin a {
+	color:#333;
+	text-decoration:underline;
+}
+.new_nav .new_navlogin a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.new_nav .new_navlogin img {
+	vertical-align:middle;
+	margin:0 5px 2px;
+}
+.loginbox {
+	width:395px;
+	height:240px;
+	border:1px solid #FAA525;
+	font:12px SimSun;
+	background:#fff;
+	color:#333;
+}
+.loginbox a {
+	color:#06b;
+	text-decoration:none;
+}
+.loginbox a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.loginbox .loginbox-top {
+	width:395px;
+	height:29px;
+	background:url(http://www.120center.com/skin/images/ask_tc.gif) repeat-x;
+}
+.loginbox .loginbox-top strong {
+	float:left;
+	margin:8px 0 0 10px;
+	display:inline;
+}
+.loginbox .loginbox-top b {
+	float:left;
+	margin:8px 0 0 0;
+	display:inline;
+	font-weight:normal;
+	color:#999;
+}
+.loginbox .loginbox-top span {
+	float:right;
+	width:17px;
+	height:16px;
+	margin:6px 10px 0 0;
+	display:inline;
+}
+.loginbox .loginbox-top span a {
+	display:block;
+	width:17px;
+	height:16px;
+	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -100px;
+}
+.loginbox .loginbox-top span a:hover {
+	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -116px;
+}
+.loginbox .loginbox-down {
+	width:395px;
+	overflow:hidden;
+}
+.loginbox .loginbox-down form {
+	width:395px;
+	height:163px;
+	overflow:hidden;
+	padding-top:10px;
+}
+.loginbox .loginbox-down form .formrow {
+	float:left;
+	width:395px;
+	overflow:hidden;
+	margin-top:13px;
+}
+.loginbox .loginbox-down form .formrow input {
+	float:left;
+	display:inline;
+}
+.loginbox .loginbox-down form .formrow .inputtit {
+	width:160px;
+	height:22px;
+	padding:0 5px;
+	font:12px/22px SimSun;
+	border:1px solid #C2C2C2;
+}
+.loginbox .loginbox-down form .formrow .inputbox {
+	margin:0 0 0 130px;
+*margin:-4px 0 0 126px;
+}
+.loginbox .loginbox-down form .formrow .inputbut {
+	width:83px;
+	height:25px;
+	margin:5px 0 0 130px;
+*margin:3px 0 0 130px;
+	line-height:30px;
+*line-height:28px;
+	border:none;
+	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -29px;
+	cursor:pointer;
+}
+.loginbox .loginbox-down form .formrow .inputbut2 {
+	background-position:0 -54px;
+}
+.loginbox .loginbox-down form .formrow span {
+	float:left;
+	display:inline;
+}
+.loginbox .loginbox-down form .formrow .tits {
+	width:130px;
+	font:14px/24px SimSun;
+	text-align:right;
+}
+.loginbox .loginbox-down form .formrow .titx {
+	font:12px SimSun;
+	margin:0 0 0 5px;
+*margin:0 0 0 2px;
+}
+.loginbox .loginbox-down form .formrow .titw {
+	height:25px;
+	overflow:hidden;
+	font:12px/28px SimSun;
+	margin:5px 0 0 10px;
+*margin:3px 0 0 10px;
+}
+.loginbox p {
+	width:395px;
+	height:37px;
+	font:14px/36px SimSun;
+	text-align:center;
+	border-top:1px solid #FAE7C1;
+	background:#FFFBF4;
+}
+.loginbox p a {
+	font-weight:bold;
+}
+.ask-top {
+	width:970px;
+	height:112px;
+	overflow:hidden;
+}
+.ask-top span {
+	display:block;
+}
+.ask-top .bgleft {
+	width:965px;
+	height:112px;
+	padding-left:5px;
+	background:url(http://www.120center.com/skin/images/ask_menu.png) no-repeat 0 0;
+}
+.ask-top .bgright {
+	width:960px;
+	height:112px;
+	padding-right:5px;
+	background:url(http://www.120center.com/skin/images/ask_menu.png) no-repeat right -224px;
+}
+.ask-top .topcon {
+	width:960px;
+	height:112px;
+	background:url(http://www.120center.com/skin/images/ask_menu.png) repeat-x 0 -112px;
+}
+.ask-top .topcon .conup {
+	width:960px;
+	height:81px;
+}
+.ask-top .topcon .conup h1, .ask-top .topcon .conup .asklogo {
+	float:left;
+	width:210px;
+	height:81px;
+}
+.ask-top .topcon .conup h1 a, .ask-top .topcon .conup .asklogo a {
+	display:block;
+	width:164px;
+	height:54px;
+	margin:12px 0 0 21px;
+	text-indent:-1000px;
+	background:url(http://www.120center.com/skin/images/ask_others.png) no-repeat 0 0;
+}
+.ask-top .topcon .conup form {
+	float:left;
+	width:750px;
+	height:60px;
+	padding-top:21px;
+	color:#333;
+}
+.ask-top .topcon .conup form .inputtext {
+	float:left;
+	width:421px;
+	height:36px;
+	margin-right:2px;
+	padding:0 8px;
+	font:14px/36px SimSun;
+	border:0;
+	background:url(http://www.120center.com/skin/images/ask_others.png) no-repeat 0 -54px;
+	color:#666;
+}
+.ask-top .topcon .conup form .inputbut {
+	float:left;
+	width:86px;
+	height:36px;
+	margin-left:5px;
+	display:inline;
+	font:bold 14px/36px SimSun;
+	border:none;
+	color:#333;
+	cursor:pointer;
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat;
+}
+.ask-top .topcon .conup form .inputbut1 {
+	background-position:0 0;
+}
+.ask-top .topcon .conup form .inputbut2 {
+	background-position:-86px 0;
+}
+.ask-top .topcon .conup form .inputbut3 {
+	width:99px;
+	padding-left:22px;
+	background-position:0 -36px;
+}
+.ask-top .topcon .conup form .inputbut4 {
+	width:99px;
+	padding-left:22px;
+	background-position:-99px -36px;
+}
+.ask-top .topcon .condown {
+	width:960px;
+	height:28px;
+}
+.ask-top .topcon .condown ul {
+	float:left;
+	padding-top:5px;
+	font:12px/18px SimSun;
+}
+.ask-top .topcon .condown ul li {
+	float:left;
+	display:inline;
+}
+.ask-top .topcon .condown .ul1 li {
+	margin:0 7px;
+}
+.ask-top .topcon .condown .ul2 {
+	margin-left:10px;
+	display:inline;
+	padding-left:45px;
+	background:url(http://www.120center.com/skin/images/ask_others.png) no-repeat -396px 4px;
+}
+.ask-top .topcon .condown .ul2 li {
+	margin:0 8px;
+	white-space:nowrap;
+}
+.ask-top .topcon .condown .tj {
+	float:left;
+	width:41px;
+	height:18px;
+	overflow:hidden;
+	margin:4px 3px 0 8px;
+	display:inline;
+	background:url(http://www.120center.com/skin/images/ask_others.png) no-repeat -396px 0;
+}
+.new_tipbox {
+	position:absolute;
+	height:115px;
+	overflow:hidden;
+	margin:24px 0 0 500px;
+	z-index:200;
+}
+.new_tipbox a {
+	color:#06b;
+	text-decoration:none;
+}
+.new_tipbox a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.new_tipbox .tipbox_le {
+	float:left;
+	width:8px;
+	height:100%;
+	overflow:hidden;
+	background:url(http://www.120center.com/skin/images/2010_tipbox.gif) 0 6px no-repeat;
+}
+.new_tipbox .tipbox_cen {
+	float:left;
+	width:270px;
+	height:100%;
+	background:url(http://www.120center.com/skin/images/2010_tipbox.gif) 0 -122px repeat-x;
+}
+.new_tipbox .tipbox_rit {
+	float:left;
+	width:8px;
+	height:100%;
+	background:url(http://www.120center.com/skin/images/2010_tipbox.gif) 0 -294px no-repeat;
+}
+.new_tipbox .tip_jt {
+	width:100%;
+	height:11px;
+	background:url(http://www.120center.com/skin/images/2010_tipbox.gif) 40px -260px no-repeat;
+}
+.new_tipbox .tip_close {
+	float:right;
+	margin:3px 0 0;
+	width:20px;
+	height:20px;
+	text-align:right;
+}
+.new_tipbox .tip_cn {
+	float:left;
+	width:290px;
+	padding:6px 5px 0;
+	overflow:hidden;
+	font:12px/18px SimSun;
+}
+.new_tipbox .tip_cn .new_tipbtn {
+	width:94px;
+	height:30px;
+	margin:0 10px 0 0;
+	background:url(http://www.120center.com/skin/images/2010_askbtn.gif) 0 -200px no-repeat;
+	border:0;
+	cursor:pointer;
+}
+.new_tipbox .tip_cn .tip_link1 {
+	clear:both;
+	width:100%;
+	display:block;
+	margin:10px 0 0;
+	color:#333;
+	text-decoration:underline;
+}
+.new_tipbox .tip_cn .tip_link1:hover {
+	color:#f60;
+}
+.new_tipbox .tipbox_cen2 {
+	float:left;
+	width:325px;
+	height:100%;
+	background:url(http://www.120center.com/skin/images/2010_tipbox.gif) 0 -122px repeat-x;
+}
+.new_tipbox .tipbox_cen2 .tip_cn .new_tipbtn2 {
+	float:left;
+	width:153px;
+	height:30px;
+	margin:0 10px 0 0;
+	background:url(http://www.120center.com/skin/images/2010_askbtn.gif) 0 -120px no-repeat;
+	line-height:30px;
+	text-align:center;
+	color:#333;
+	text-decoration:none;
+}
+.new_tipbox .tipbox_cen2 .tip_cn .new_tipbtn3 {
+	float:left;
+	width:94px;
+	height:30px;
+	background:url(http://www.120center.com/skin/images/2010_askbtn.gif) 0 -160px no-repeat;
+	line-height:30px;
+	text-align:center;
+	color:#333;
+	text-decoration:none;
+}
+.new_tipbox .tipbox_cen2 .tip_cn .new_tipbtn2 b {
+	color:#f60;
+}
+.new_tipbox .tip_jt2 {
+	width:100%;
+	height:11px;
+	background:url(http://www.120center.com/skin/images/2010_tipbox.gif) 270px -260px no-repeat;
+}
+.new_tipbox .tip_cn .tip_info {
+	font:12px/22px "宋体";
+}
+.new_tipbox .tip_cn .tip_info .user2010 {
+	font-family:Verdana;
+}
+.new_tipbox .tip_cn .tip_info .blue2010 {
+	color:#37d;
+}
+.new_tipbox .tip_cn .tip_link2 {
+	clear:both;
+	width:100%;
+	display:block;
+	margin:5px 0 0;
+	color:#f60;
+	text-decoration:underline;
+}
+.new_tipbox .tip_cn .tip_link2:hover {
+	color:#f00;
+}
+/*问答区域select*/
+#searchType {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+  border-image: none;
+  border-right: 1px solid #CCCCCC;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  color: #666666;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 52px 0 0 445px;
+  //overflow: hidden;
+  position:absolute;
+  width: 80px;
+  z-index: 2000;
+}
+#searchType a {
+  color: #333333;
+  display: block;
+  height: 20px;
+  padding: 1px 10px;
+  text-decoration:none;
+}

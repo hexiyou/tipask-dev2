@@ -1,0 +1,1508 @@
+* {
+	margin:0;
+	padding:0;
+}
+img {
+	border:none;
+}
+li {
+	list-style:none;
+}
+.clearer {
+	clear:both;
+	height:0;
+	overflow:hidden;
+}
+.ask-mid {
+	width:970px;
+	height:auto;
+	overflow:hidden;
+}
+.mid-left {
+	float:left;
+	width:200px;
+	height:auto;
+}
+.mid-left .fenlei {
+	display:block;
+	width:200px;
+	height:30px;
+	overflow:hidden;
+	background:url(http://www.120center.com/skin/images/ask_titles.png) no-repeat 0 -94px;
+}
+.mid-left .fenlei em {
+	display:block;
+	height:21px;
+	padding:9px 0 0 34px;
+	font:bold 12px SimSun;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -209px;
+}
+.mid-left .cons {
+	width:198px;
+	height:auto;
+	border-color:#AFCBE3;
+	background:#F6F9FC;
+	color:#666;
+}
+.mid-left .cons .ul1 {
+	width:192px;
+	height:46px;
+	margin-left:3px;
+	padding-top:8px;
+	font:12px/20px Verdana;
+}
+.mid-left .cons .ul1 li {
+	padding-left:20px;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 9px -60px;
+}
+.mid-left .cons .ul1 li b {
+	font-weight:bold;
+	color:#f60;
+}
+.mid-left .jibin {
+	display:block;
+	width:192px;
+	height:20px;
+	margin-left:3px;
+	overflow:hidden;
+}
+.mid-left .jibin em {
+	float:left;
+	margin:4px 0 0 10px;
+	display:inline;
+	color:#F00;
+}
+.mid-left .jibin .spline2 {
+	float:right;
+	width:125px;
+	height:0;
+	overflow:hidden;
+	margin-top:10px;
+	display:inline;
+	border-top:1px solid #D7E6F4;
+	border-bottom:1px solid #fff;
+}
+.mid-left .cons .ul2 {
+	width:192px;
+	height:auto;
+	margin-left:3px;
+	padding-top:4px;
+	font:12px/24px SimSun;
+}
+.mid-left .cons .ul2 li {
+	float:left;
+	width:54px;
+	padding-left:10px;
+	overflow:hidden;
+}
+.mid-left .cons .menus {
+	width:192px;
+	margin-left:3px;
+}
+.mid-left .cons .menus h2 a, .mid-left .cons .menus h3 a {
+	color:#0C61AD;
+	text-decoration:none;
+}
+.mid-left .cons .menus h2 a:hover, .mid-left .cons .menus h3 a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-left .cons .menus dl {
+	position:relative;
+	z-index:1;
+}
+.mid-left .cons .menus dl dt {
+	width:192px;
+	height:32px;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 183px -89px;
+}
+.mid-left .cons .menus dl strong {
+	float:left;
+	height:32px;
+	padding-left:15px;
+	font:bold 12px/32px SimSun;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 5px 13px;
+	color:#0C61AD;
+}
+.mid-left .cons .menus dl .tips {
+	float:left;
+	font:12px/32px SimSun;
+	margin-left:10px;
+	display:inline;
+	color:#B2C4D0;
+}
+.mid-left .cons .menus dl dd {
+	width:190px;
+	padding:10px 8px;
+	background:#FBFDFE;
+	border:2px solid #6EB0E5;
+	position:absolute;
+	top:-2px;
+	left:195px;
+	z-index:2;
+}
+.mid-left .cons .menus dl dd h2 {
+	width:182px;
+	height:32px;
+	padding-left:13px;
+	font:bold 12px/32px SimSun;
+	background:#FBFDFE;
+	border:2px solid #6EB0E5;
+	border-right:none;
+	position:absolute;
+	top:-2px;
+	left:-197px;
+	z-index:3;
+}
+.mid-left .cons .menus dl dd h2 a {
+	color:#0C61AD;
+	text-decoration:none;
+}
+.mid-left .cons .menus dl dd strong a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-left .cons .menus dl dd ul {
+	width:190px;
+	height:32px;
+	border-bottom:1px solid #E8EFF6;
+	font:12px/32px SimSun;
+	color:#DEDEDE;
+}
+.mid-left .cons .menus dl dd ul li {
+	float:left;
+	padding-left:19px;
+	background:url(http://www.120center.com/skin/images/ask_others.png) no-repeat -418px -118px;
+}
+.mid-left .cons .menus dl dd ul li.nopadding {
+	padding-left:0;
+	background:none;
+}
+.mid-left .cons .menus dl dd ul li h3 {
+	width:84px;
+	font-size:12px;
+	font-weight:bold;
+	text-align:right;
+}
+.mid-left .cons .menus dl dd ul li h3.sph3 {
+	float:left;
+	width:80px;
+	padding:0 12px;
+	text-align:center;
+}
+.mid-left .cons .menus dl dd .close {
+	width:15px;
+	height:14px;
+	position:absolute;
+	top:1px;
+	right:1px;
+	z-index:4;
+	display:none;
+}
+.mid-left .cons .menus dl dd .close a {
+	display:block;
+	width:15px;
+	height:14px;
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat -283px 0;
+}
+.mid-left .cons .menus dl dd .close a:hover {
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat -283px -14px;
+}
+.mid-left .cons .menus dl dd .no-ulborder {
+	display:block;
+	width:190px;
+	height:0;
+	margin-top:-1px;
+	overflow:hidden;
+	border-top:1px solid #FBFDFE;
+}
+.mid-left .cons .menus dl.nomore dd {
+	display:none;
+}
+.mid-left .cons .menus dl.showmore dd {
+	display:block;
+}
+.mid-left .cons .ul3 {
+	width:192px;
+	height:36px;
+	margin-left:3px;
+	font:12px/32px SimSun;
+}
+.mid-left .cons .ul3 li {
+	float:left;
+	margin-left:12px;
+	display:inline;
+}
+.mid-left .zhuanjia {
+	display:block;
+	width:178px;
+	height:23px;
+	padding-left:20px;
+	overflow:hidden;
+	font:bold 12px/24px SimSun;
+	border-top:1px solid #D6E4F1;
+	background:url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -410px -101px;
+}
+.mid-left .zhuanjia a {
+	color:#666;
+	text-decoration:none;
+}
+.mid-left .zhuanjia a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-left .cons .ul4 {
+	width:198px;
+	overflow:hidden;
+	padding:10px 0 20px;
+	font:12px/24px SimSun;
+}
+.mid-left .cons .ul4 li {
+	float:left;
+	width:86px;
+	margin-left:8px;
+	display:inline;
+}
+
+.mid-left .cons .ul44 {
+	width:198px;
+	overflow:hidden;
+	padding:10px 0 20px;
+	font:12px/24px SimSun;
+}
+.mid-left .cons .ul44 li {
+	float:left;
+	width:auto;
+	margin-left:8px;
+	display:inline;
+}
+.mid-left .cons .ul44 li a{color:#E4913C}
+.mid-left .cons .ul44 li a:hover {color:#000}
+.mid-left .cons .ul14 {
+	width:198px;
+	overflow:hidden;
+	text-align:center;
+	font:48px/64px SimSun;
+}
+.mid-left .cons .ul14 li {
+	width:86px;
+	text-align:center;
+	display:inline;
+}
+.mid-left .cons .ul5 {
+	width:198px;
+	overflow:hidden;
+	padding:10px 0 20px;
+	font:12px/24px SimSun;
+}
+.mid-left .cons .ul5 li {
+	float:left;
+	width:88px;
+	margin:0 2px 0 8px;
+	display:inline;
+}
+.mid-left .help {
+	display:block;
+	width:198px;
+	overflow:hidden;
+	border:1px solid #C7DCE9;
+	background:url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -201px -95px;
+}
+.mid-left .help .biaoti {
+	display:block;
+	width:173px;
+	height:21px;
+	padding:13px 0 0 25px;
+	overflow:hidden;
+	font:bold 12px SimSun;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -120px;
+	color:#666;
+}
+.mid-left .help .biaoti a {
+	color:#666;
+	text-decoration:none;
+}
+.mid-left .help .biaoti a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-left .help .ul6 {
+	width:198px;
+	font:12px/24px SimSun;
+	padding:4px 0 8px;
+	border-bottom:1px solid #C7DCE9;
+}
+.mid-left .help .ul6 li {
+	width:165px;
+	padding-left:23px;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 12px 9px;
+}
+.mid-left .help p {
+	width:178px;
+	font:12px/20px SimSun;
+	padding:8px 10px 6px;
+	color:#999;
+}
+.mid-left .help .lx {
+	display:block;
+	width:168px;
+	height:20px;
+	margin-top:3px;
+	padding-left:30px;
+	font:12px Verdana;
+}
+.mid-left .help .lx1 {
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -476px;
+}
+.mid-left .help .lx2 {
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -522px;
+}
+.mid-left .help .lx3 {
+	width:140px;
+	padding-left:58px;
+	color:#999;
+	padding-bottom:10px;
+}
+.mid-right {
+	float:right;
+	width:760px;
+	height:auto;
+	position:relative;
+	z-index:0;
+}
+.mid-right .right-top {
+	float:left;
+	width:760px;
+	height:auto;
+}
+.mid-right .topleft {
+	float:left;
+	width:540px;
+	height:auto;
+	overflow:hidden;
+}
+.mid-right .topleft #focus {
+	display:block;
+	width:540px;
+	height:188px;
+	overflow:hidden;
+	font:12px SimSun;
+	position:relative;
+	z-index:1;
+}
+.mid-right .topleft #focus #hotpic {
+	width:540px;
+	height:188px;
+	overflow:hidden;
+}
+.mid-right .topleft #focus #hotpic div {
+	display:none;
+	width:538px;
+	height:160px;
+	border:1px solid #C9DFED;
+	border-bottom:none;
+}
+.mid-right .topleft #focus #hotpic div img {
+	width:538px;
+	height:160px;
+}
+.mid-right .topleft #focus #hotpic div span {
+	display:block;
+	width:340px;
+	height:24px;
+	overflow:hidden;
+	line-height:24px;
+	padding-left:12px;
+	position:absolute;
+	z-index:3;
+	top:162px;
+	left:0;
+}
+.mid-right .topleft #focus #hotpic div span a {
+	color:#fff;
+	text-decoration:none;
+}
+.mid-right .topleft #focus #hotpic div span a:hover {
+	color:#fff;
+	text-decoration:underline;
+}
+.mid-right .topleft #focus .carousel {
+	width:540px;
+	height:27px;
+	background:url(http://www.120center.com/skin/images/ask_menu.png) repeat-x 0 -336px;
+	position:absolute;
+	top:161px;
+	left:0;
+	z-index:2;
+}
+.mid-right .topleft #focus .carousel span {
+	float:left;
+	width:29px;
+	height:21px;
+	padding-top:12px;
+	font:12px Verdana;
+	text-align:center;
+	position:absolute;
+	top:-6px;
+	z-index:4;
+	cursor:pointer;
+}
+.mid-right .topleft #focus .carousel span#t0 {
+	left:395px;
+}
+.mid-right .topleft #focus .carousel span#t1 {
+	left:424px;
+}
+.mid-right .topleft #focus .carousel span#t2 {
+	left:453px;
+}
+.mid-right .topleft #focus .carousel span#t3 {
+	left:482px;
+}
+.mid-right .topleft #focus .carousel span#t4 {
+	left:511px;
+}
+.mid-right .topleft #focus .carousel .bg {
+	background:url(http://www.120center.com/skin/images/ask_slide.gif) no-repeat 0 6px;
+	color:#fff;
+}
+.mid-right .topleft #focus .carousel .active {
+	background:url(http://www.120center.com/skin/images/ask_slide.gif) no-repeat 0 -27px;
+	color:#333;
+	font-weight:bold;
+}
+.mid-right .topleft .redian {
+	display:block;
+	width:538px;
+	height:91px;
+	border:1px solid #C9DFED;
+	border-top:none;
+	background:#FDFEFF;
+}
+.mid-right .topleft .redian span {
+	float:left;
+	width:18px;
+	height:65px;
+	overflow:hidden;
+	padding:26px 0 0 6px;
+	font:12px/20px SimSun;
+	color:#999;
+}
+.mid-right .topleft .redian ul {
+	float:left;
+	width:513px;
+	height:78px;
+	padding-top:2px;
+	overflow:hidden;
+	margin-top:5px;
+	border-left:1px solid #DDEBF4;
+	font:14px/26px SimSun;
+}
+.mid-right .topleft .redian ul li {
+	float:left;
+	width:230px;
+	margin-left:12px;
+	display:inline;
+	padding-left:10px;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 9px;
+}
+.mid-right .topleft .guanzhu {
+	display:block;
+	width:540px;
+	height:16px;
+	overflow:hidden;
+	font:12px/16px SimSun;
+}
+.mid-right .topleft .guanzhu span {
+	float:left;
+	width:30px;
+	height:16px;
+	overflow:hidden;
+	padding-left:6px;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 33px -31px;
+	color:#999;
+}
+.mid-right .topleft .guanzhu ul {
+	float:left;
+	width:504px;
+	height:16px;
+	overflow:hidden;
+}
+.mid-right .topleft .guanzhu ul li {
+	float:left;
+	margin:0 10px;
+	display:inline;
+}
+.mid-right .topleft .news {
+	display:block;
+	width:540px;
+	height:205px;
+	overflow:hidden;
+}
+.mid-right .topleft .news strong {
+	display:block;
+	width:515px;
+	height:15px;
+	padding:15px 0 0 25px;
+	font:bold 12px SimSun;
+	background:url(http://www.120center.com/skin/images/ask_titles.png) no-repeat 0 -64px;
+}
+.mid-right .topleft .news .cons {
+	display:block;
+	width:538px;
+	height:174px;
+	overflow:hidden;
+	border-color:#C9DFED;
+}
+.mid-right .topleft .news .cons .newanswer {
+	display:block;
+	width:538px;
+	height:110px;
+	overflow:hidden;
+}
+.mid-right .topleft .news .cons .newanswer ul {
+	width:528px;
+	height:110px;
+	padding:5px 5px 0;
+	overflow:hidden;
+	font:14px/36px SimSun;
+	color:#666;
+}
+.mid-right .topleft .news .cons .newanswer ul li {
+	float:left;
+	width:500px;
+	padding:0 5px 0 23px;
+	overflow:hidden;
+	border-bottom:1px dashed #E3E3E3;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 12px 15px;
+}
+.mid-right .topleft .news .cons .newanswer ul li .newqs {
+	float:left;
+	width:369px;
+	overflow:hidden;
+}
+.mid-right .topleft .news .cons .newanswer ul li b {
+	float: right;
+	width:70px;
+	padding-right:10px;
+	font:12px/36px SimSun;
+	font-weight:normal;
+	text-align:right;
+	color:#333;
+}
+.mid-right .topleft .news .cons .as {
+	display:block;
+	width:538px;
+	height:auto;
+	overflow:hidden;
+	margin:0;
+}
+.mid-right .topleft .news .cons .as a {
+	float:left;
+	width:109px;
+	height:33px;
+	overflow:hidden;
+	padding:6px 0 0 40px;
+	margin:8px 0 0 30px;
+	display:inline;
+	font:12px/14px SimSun;
+	text-decoration:none;
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat;
+	color:#999;
+}
+.mid-right .topleft .news .cons .as a:hover {
+	text-decoration:none;
+}
+.mid-right .topleft .news .cons .as a em {
+	font-weight:bold;
+	color:#666;
+}
+.mid-right .topleft .news .cons .as .a1 {
+	background-position:0 -203px;
+	margin-left:16px;
+}
+.mid-right .topleft .news .cons .as .a1:hover {
+	background-position:-149px -203px;
+}
+.mid-right .topleft .news .cons .as .a2 {
+	background-position:0 -242px;
+}
+.mid-right .topleft .news .cons .as .a2:hover {
+	background-position:-149px -242px;
+}
+.mid-right .topleft .news .cons .as .a3 {
+	background-position:0 -281px;
+}
+.mid-right .topleft .news .cons .as .a3:hover {
+	background-position:-149px -281px;
+}
+.mid-right #tab1 {
+	width:540px;
+	height:255px;
+	overflow:hidden;
+	font:12px SimSun;
+}
+.mid-right #tab1 .tabtop {
+	float:left;
+	width:540px;
+	height:32px;
+	background:url(http://www.120center.com/skin/images/ask_titles.png) no-repeat 0 -32px;
+}
+.mid-right #tab1 .tabtop strong {
+	float:left;
+	width:102px;
+	height:30px;
+	padding:2px 0 0 33px;
+	font-weight:bold;
+	line-height:30px;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -257px;
+}
+.mid-right #tab1 .tabtop strong a {
+	color:#333;
+	text-decoration:none;
+}
+.mid-right #tab1 .tabtop strong a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-right #tab1 em {
+	float:left;
+	width:68px;
+	height:30px;
+	padding-top:2px;
+	margin-left:-1px;
+	line-height:30px;
+	text-align:center;
+	cursor:pointer;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -557px;
+	color:#333;
+	position:relative;
+	z-index:1;
+}
+.mid-right #tab1 .up {
+	font-weight:bold;
+	background:url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -540px -32px;
+	z-index:2;
+}
+.mid-right #tab1 .dingzhi {
+	float:right;
+	height:30px;
+	padding:2px 0 0 18px;
+	line-height:30px;
+	margin-right:10px;
+	display:inline;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -378px;
+}
+.mid-right #tab1 .dingzhi a {
+	color:#666;
+	text-decoration:underline;
+}
+.mid-right #tab1 .dingzhi a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-right #tab1 div {
+	float:left;
+	display:none;
+	width:540px;
+	height:223px;
+	overflow:hidden;
+}
+.mid-right #tab1 div .qiuzhen {
+	display:block;
+	width:466px;
+	height:74px;
+	padding-left:74px;
+	border-bottom:1px dashed #E3E3E3;
+	background:#fff url(http://www.120center.com/skin/images/doctor.png) no-repeat 10px 16px;
+}
+.mid-right #tab1 div .qiuzhenbg {
+	background:#F6F9FC url(http://www.120center.com/skin/images/doctor.png) no-repeat 10px 16px;
+}
+.mid-right #tab1 div .qiuzhen .qztop {
+	float:left;
+	width:466px;
+	height:28px;
+	padding-top:12px;
+	overflow:hidden;
+}
+.mid-right #tab1 div .qiuzhen .qztop a {
+	float:left;
+	height:28px;
+	font:14px/28px SimSun;
+}
+.mid-right #tab1 div .qiuzhen .qztop b {
+	float:left;
+	height:28px;
+	font:12px/28px SimSun;
+	margin-left:15px;
+	display:inline;
+	padding-left:20px;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -423px;
+}
+.mid-right #tab1 div .qiuzhen .qzdown {
+	float:left;
+	width:466px;
+	height:23px;
+	overflow:hidden;
+}
+.mid-right #tab1 div .qiuzhen .qzdown p {
+	float:left;
+	line-height:22px;
+	color:#333;
+}
+.mid-right #tab1 div .qiuzhen .qzdown p span {
+	color:#666;
+}
+.mid-right #tab1 div .qiuzhen .qzdown .wo {
+	float:right;
+	width:59px;
+	height:23px;
+	margin-right:10px;
+	display:inline;
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat 0 -72px;
+}
+.mid-right #tab1 div .qiuzhen .qzdown .wo:hover {
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat -59px -72px;
+}
+.mid-right #tab1 div .wangqi {
+	display:block;
+	width:540px;
+	height:186px;
+	font:12px SimSun;
+	overflow:hidden;
+	border-bottom:1px dashed #E3E3E3;
+}
+.mid-right #tab1 div .wqbox {
+	float:left;
+	width:152px;
+	height:170px;
+	padding-top:16px;
+	margin-left:10px;
+	display:inline;
+	overflow:hidden;
+}
+.mid-right #tab1 div .wqbox2 {
+	margin-left:32px;
+}
+.mid-right #tab1 div .wqbox img {
+	float:left;
+	width:150px;
+	height:80px;
+	border:1px solid #DEDEDE;
+}
+.mid-right #tab1 div .wqbox strong {
+	float:left;
+	width:152px;
+	height:26px;
+	padding-top:4px;
+	font:14px/26px SimSun;
+	overflow:hidden;
+}
+.mid-right #tab1 div .wqbox .wqyy {
+	float:left;
+	width:152px;
+	height:26px;
+	line-height:26px;
+	overflow:hidden;
+}
+.mid-right #tab1 div .wqbox p {
+	float:left;
+	width:152px;
+	height:30px;
+	overflow:hidden;
+}
+.mid-right #tab1 div .wqbox p .wqname {
+	float:left;
+	width:86px;
+	height:26px;
+	line-height:26px;
+}
+.mid-right #tab1 div .wqbox p a {
+	float:right;
+	width:63px;
+	height:22px;
+	margin-top:2px;
+	display:inline;
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat -118px -72px;
+}
+.mid-right #tab1 div .wqbox p a:hover {
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat -181px -72px;
+}
+.mid-right #tab1 div .suoyou {
+	display:block;
+	width:530px;
+	overflow:hidden;
+	padding:12px 10px 0 0;
+	text-align:right;
+}
+.mid-right #tab1 div .hezuobt {
+	display:block;
+	width:540px;
+	height:23px;
+	padding-top:12px;
+	border-bottom:1px dashed #E3E3E3;
+}
+.mid-right #tab1 div .hezuobt a.jinqi {
+	float:left;
+	margin-left:20px;
+	display:inline;
+}
+.mid-right #tab1 div .hezuobt a.quanbu {
+	float:right;
+	margin-right:10px;
+	display:inline;
+}
+.mid-right #tab1 div .hezuobt a {
+	color:#666;
+	text-decoration:none;
+}
+.mid-right #tab1 div .hezuobt a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-right #tab1 div .hezuo {
+	width:540px;
+	overflow:hidden;
+	padding-top:3px;
+	font:14px/30px SimSun;
+}
+.mid-right #tab1 div .hezuo li {
+	float:left;
+	width:235px;
+	padding-left:15px;
+	margin:0 10px;
+	display:inline;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 5px -163px;
+}
+.mid-right #tab1 div .huodong1 {
+	float:left;
+	width:240px;
+	height:190px;
+	overflow:hidden;
+	margin:18px 0 0 12px;
+	display:inline;
+	border:1px solid #E5EBEF;
+}
+.mid-right #tab1 div .huodong1 img {
+	width:240px;
+	height:190px;
+}
+.mid-right #tab1 div .huodong2 {
+	float:right;
+	width:240px;
+	height:50px;
+	overflow:hidden;
+	margin:18px 12px 0 0;
+	display:inline;
+	border:1px solid #E5EBEF;
+}
+.mid-right #tab1 div .huodong2 img {
+	width:240px;
+	height:50px;
+}
+.mid-right #tab1 .block {
+	display:block;
+}
+.mid-right .topright {
+	float:right;
+	width:210px;
+	height:auto;
+	overflow:hidden;
+	font:12px SimSun;
+}
+.mid-right .topright .login {
+	display:block;
+	width:210px;
+	height:43px;
+	overflow:hidden;
+}
+.mid-right .topright .login a {
+	float:left;
+	height:43px;
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat;
+}
+.mid-right .topright .login .a1 {
+	width:104px;
+	background-position:0 -117px;
+}
+.mid-right .topright .login .a1:hover {
+	background-position:0 -160px;
+}
+.mid-right .topright .login .a2 {
+	width:106px;
+	background-position:-104px -117px;
+}
+.mid-right .topright .login .a2:hover {
+	background-position:-104px -160px;
+}
+.mid-right .topright .login2 {
+	display:block;
+	width:208px;
+	height:41px;
+	overflow:hidden;
+	border:1px solid #fb0;
+	background:#FFFCE6;
+}
+.mid-right .topright .login2 ul {
+	width:202px;
+	height:38px;
+	padding:3px 0 0 6px;
+	overflow:hidden;
+	font:12px/18px SimSun;
+}
+.mid-right .topright .login2 ul li {
+	width:202px;
+}
+.mid-right .topright .login2 ul li a.cs {
+	color:#333;
+	text-decoration:underline;
+	font-family:Verdana;
+}
+.mid-right .topright .login2 ul li a.cs:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-right .topright .login2 ul li a.gl {
+	text-decoration:underline;
+}
+.mid-right .topright .boxs {
+	display:block;
+	width:210px;
+	overflow:hidden;
+	background:url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -200px -94px;
+}
+.mid-right .topright .boxsa {
+	margin-top:8px;
+}
+.mid-right .topright .boxsa .zjzt {
+	width:208px;
+	height:112px;
+	overflow:hidden;
+}
+.mid-right .topright .boxsb {
+	margin-top:-1px;
+}
+.mid-right .topright .boxsb .zxyy {
+	width:208px;
+	height:136px;
+	overflow:hidden;
+}
+.mid-right .topright .boxs strong {
+	display:block;
+	width:210px;
+	height:17px;
+	padding:13px 0 0 25px;
+	overflow:hidden;
+	font-weight:bold;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -120px;
+	color:#666;
+}
+.mid-right .topright .boxs .imgbox {
+	display:block;
+	width:180px;
+	height:107px;
+	margin:7px 0 0 13px;
+	border:1px solid #DEDEDE;
+}
+.mid-right .topright .boxs .imgbox img {
+	float:left;
+	width:180px;
+	height:85px;
+}
+.mid-right .topright .boxs .imgbox span {
+	float:left;
+	width:180px;
+	height:22px;
+	line-height:22px;
+	text-align:center;
+}
+.mid-right .topright .boxs .cons {
+	display:block;
+	width:208px;
+	overflow:hidden;
+	border-color:#C9DFED;
+}
+.mid-right .topright .boxs .cons ul {
+	width:208px;
+	overflow:hidden;
+	padding:6px 0 10px;
+	line-height:24px;
+}
+.mid-right .topright .boxs .cons ul li {
+	float:left;
+	margin-left:10px;
+	display:inline;
+	padding-left:8px;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -165px;
+	white-space:nowrap;
+}
+.mid-right .topright .boxs .cons .ul7 li {
+	width:82px;
+}
+.mid-right .topright .boxs .cons .ul8 li {
+	width:48px;
+}
+.mid-right .topright .boxs .cons .ul9 li {
+	width:180px;
+}
+.mid-right .topright .gg {
+	display:block;
+	width:210px;
+	height:75px;
+	overflow:hidden;
+}
+.mid-right .right-bottom {
+	float:left;
+	width:760px;
+	height:auto;
+}
+.mid-right #tab2 {
+	width:760px;
+	height:auto;
+	overflow:hidden;
+	font:12px SimSun;
+}
+.mid-right #tab2 .tabtop {
+	float:left;
+	width:760px;
+	height:32px;
+	background:url(http://www.120center.com/skin/images/ask_titles.png) no-repeat 0 0;
+}
+.mid-right #tab2 .tabtop strong {
+	float:left;
+	width:102px;
+	height:30px;
+	padding:2px 0 0 33px;
+	font-weight:bold;
+	line-height:30px;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -297px;
+}
+.mid-right #tab2 .tabtop strong a {
+	color:#333;
+	text-decoration:none;
+}
+.mid-right #tab2 .tabtop strong a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-right #tab2 em {
+	float:left;
+	width:68px;
+	height:30px;
+	padding-top:2px;
+	margin-left:-1px;
+	line-height:30px;
+	text-align:center;
+	cursor:pointer;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -557px;
+	color:#333;
+	position:relative;
+	z-index:1;
+}
+.mid-right #tab2 .up {
+	font-weight:bold;
+	background:url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -540px -32px;
+	z-index:2;
+}
+.mid-right #tab2 div {
+	float:left;
+	display:none;
+	width:760px;
+	height:auto;
+	overflow:hidden;
+}
+.mid-right #tab2 div .divleft {
+	float:left;
+	width:540px;
+	height: auto;
+	padding:0 5px;
+	overflow:hidden;
+}
+.mid-right #tab2 div .divleft ul {
+	width:515px;
+	padding:10px 10px 8px;
+	overflow:hidden;
+	font:14px/30px SimSun;
+	color:#bbb;
+}
+.mid-right #tab2 div .divleft ul li {
+	float:left;
+	width:508px;
+	overflow:hidden;
+	padding-left:7px;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -164px;
+}
+.mid-right #tab2 div .divleft ul li .bt {
+	float:left;
+	width:290px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:#333;
+}
+.mid-right #tab2 div .divleft ul li .bt .color333 {
+	color:#333;
+	text-decoration:none;
+}
+.mid-right #tab2 div .divleft ul li .bt .color333:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-right #tab2 div .divleft ul li .doctor {
+	float:left;
+	width:53px;
+	padding-left:57px;
+	margin-left:10px;
+	display:inline;
+	font-size:12px;
+	background:url(http://www.120center.com/skin/images/ask_others.png) no-repeat 0 -127px;
+}
+.mid-right #tab2 div .divleft ul li .when {
+	float:right;
+	width:86px;
+	font-size:11px;
+	font-family:Verdana;
+	text-align:right;
+}
+.mid-right #tab2 div .divright {
+	float:left;
+	width:209px;
+	height:auto;
+	padding-left:1px;
+	overflow:hidden;
+	background:url(http://www.120center.com/skin/images/ask_line.png) no-repeat 0 0;
+	color:#666;
+}
+.mid-right #tab2 div .divright .rigtop {
+	display:block;
+	width:185px;
+	height:20px;
+	padding:15px 0 0 24px;
+	font:12px SimSun;
+	border-bottom:1px solid #DBEAF4;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -595px;
+	color:#333;
+}
+.mid-right #tab2 div .divright .tuijian {
+	display:block;
+	width:204px;
+	height:104px;
+	margin:0 0 3px 5px;
+	border-bottom:1px dashed #E3E3E3;
+}
+.mid-right #tab2 div .divright .tuijian .p1 {
+	float:left;
+	width:204px;
+	overflow:hidden;
+}
+.mid-right #tab2 div .divright .tuijian .p1 .imgbox {
+	float:left;
+	width:76px;
+}
+.mid-right #tab2 div .divright .tuijian .p1 .imgbox img {
+	width:60px;
+	height:60px;
+	border:1px solid #DEDEDE;
+	margin:10px 0 0 6px;
+}
+.mid-right #tab2 div .divright .tuijian .p1 .name {
+	float:left;
+	width:128px;
+	height:20px;
+	padding-top:6px;
+	line-height:20px;
+}
+.mid-right #tab2 div .divright .tuijian .p1 .jj {
+	float:left;
+	width:128px;
+	height:24px;
+	line-height:24px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.mid-right #tab2 div .divright .tuijian .p1 .tiwen {
+	float:left;
+	width:128px;
+	height:22px;
+}
+.mid-right #tab2 div .divright .tuijian .p1 .tiwen a {
+	display:block;
+	width:83px;
+	height:22px;
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat 0 -95px;
+}
+.mid-right #tab2 div .divright .tuijian .p1 .tiwen a:hover {
+	background:url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat -83px -95px;
+}
+.mid-right #tab2 div .divright .tuijian .p2 {
+	float:left;
+	width:180px;
+	padding:8px 0 0 6px;
+	overflow:hidden;
+}
+.mid-right #tab2 div .divright .tuijian .p2 b {
+	font-weight:normal;
+}
+.mid-right #tab2 div .divright .tuijian .p2 b a {
+	color:#666;
+	text-decoration:underline;
+}
+.mid-right #tab2 div .divright .tuijian .p2 b a:hover {
+	color:#f60;
+}
+.mid-right #tab2 .block {
+	display:block;
+}
+.mid-right #tab3 {
+	width:760px;
+	height:175px;
+	overflow:hidden;
+	font:12px SimSun;
+}
+.mid-right #tab3 .tabtop {
+	float:left;
+	width:760px;
+	height:32px;
+	background:url(http://www.120center.com/skin/images/ask_titles.png) no-repeat 0 0;
+}
+.mid-right #tab3 .tabtop strong {
+	float:left;
+	width:102px;
+	height:30px;
+	padding:2px 0 0 33px;
+	font-weight:bold;
+	line-height:30px;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -337px;
+}
+.mid-right #tab3 .tabtop strong a {
+	color:#333;
+	text-decoration:none;
+}
+.mid-right #tab3 .tabtop strong a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-right #tab3 em {
+	float:left;
+	width:68px;
+	height:30px;
+	padding-top:2px;
+	margin-left:-1px;
+	line-height:30px;
+	text-align:center;
+	cursor:pointer;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -557px;
+	color:#333;
+	position:relative;
+	z-index:1;
+}
+.mid-right #tab3 .up {
+	font-weight:bold;
+	background:url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -540px -32px;
+	z-index:2;
+}
+.mid-right #tab3 div {
+	float:left;
+	display:none;
+	width:760px;
+	height:143px;
+	overflow:hidden;
+}
+.mid-right #tab3 div ul {
+	width:760px;
+	padding:10px 0 8px;
+	overflow:hidden;
+	font:14px/30px SimSun;
+	color:#bbb;
+}
+.mid-right #tab3 div ul li {
+	float:left;
+	width:350px;
+	overflow:hidden;
+	padding-left:7px;
+	margin:0 8px 0 15px;
+	display:inline;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -164px;
+}
+.mid-right #tab3 div ul li .bt {
+	float:left;
+	width:280px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color:#333;
+}
+.mid-right #tab3 div ul li .bt .color333 {
+	color:#333;
+	text-decoration:none;
+}
+.mid-right #tab3 div ul li .bt .color333:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+.mid-right #tab3 div ul li .when {
+	float:right;
+	width:56px;
+	padding-right:5px;
+	font-size:12px;
+	text-align:right;
+}
+.mid-right #tab3 .block {
+	display:block;
+}
+.ask-tips {
+	width:970px;
+	height:auto;
+	overflow:hidden;
+	padding-top:10px;
+}
+.ask-tips dl {
+	width:968px;
+	height:148px;
+	overflow:hidden;
+	font:12px SimSun;
+	border:1px solid #C9DFED;
+	color:#999;
+	background:url(http://www.120center.com/skin/images/ask_line.png) repeat-x 0 -353px;
+}
+.ask-tips dl dt {
+	float:left;
+	width:958px;
+	height:26px;
+	overflow:hidden;
+	padding-left:10px;
+	font-weight:bold;
+	line-height:26px;
+	border-bottom:1px solid #D9EBF6;
+	background:#F8FAFC;
+	color:#666;
+}
+.ask-tips dl dd {
+	float:left;
+	width:161px;
+	height:121px;
+	overflow:hidden;
+	padding:0 15px;
+	line-height:20px;
+}
+.ask-tips dl .ddline {
+	float:left;
+	width:0;
+	height:105px;
+	padding:0;
+	margin-top:9px;
+	border-left:1px solid #D9EBF6;
+}
+.ask-tips dl .dd1 {
+	width:168px;
+	margin:0;
+}
+.ask-tips dl .dd2 {
+	width:163px;
+}
+.ask-tips dl dd span {
+	display:block;
+	width:109px;
+	height:28px;
+	font:bold 12px SimSun;
+	padding:21px 0 0 52px;
+	background:url(http://www.120center.com/skin/images/ask_tips.png) no-repeat;
+	color:#666;
+}
+.ask-tips dl .dd1 span {
+	width:116px;
+	background-position:0 0;
+}
+.ask-tips dl .dd2 span {
+	width:111px;
+	background-position:0 -50px;
+}
+.ask-tips dl .dd3 span {
+	background-position:0 -100px;
+}
+.ask-tips dl .dd4 span {
+	background-position:0 -150px;
+}
+.ask-tips dl .dd5 span {
+	background-position:0 -200px;
+}
+.ask-bot {
+	width:970px;
+	height:auto;
+	overflow:hidden;
+}
+.ask-bot #tab4 {
+	width:968px;
+	overflow:hidden;
+	font:12px SimSun;
+	border:1px solid #C9DFED;
+	color:#666;
+}
+.ask-bot #tab4 .tabtop {
+	float:left;
+	width:968px;
+	height:26px;
+	border-bottom:1px solid #D9EBF6;
+	background:#F8FAFC;
+	position:relative;
+	z-index:1;
+}
+.ask-bot #tab4 em {
+	float:left;
+	width:99px;
+	height:26px;
+	padding-top:1px;
+	line-height:26px;
+	text-align:center;
+	cursor:pointer;
+	position:relative;
+	z-index:1;
+	border-right:1px solid #D9EBF6;
+	position:absolute;
+	top:0;
+	z-index:2;
+}
+.ask-bot #tab4 #em1 {
+	width:98px;
+	left:0;
+}
+.ask-bot #tab4 #em2 {
+	left:99px;
+}
+.ask-bot #tab4 .up {
+	font-weight:bold;
+	background:#fff;
+}
+.ask-bot #tab4 div {
+	float:left;
+	display:none;
+	width:968px;
+	overflow:hidden;
+}
+.ask-bot #tab4 div ul {
+	width:968px;
+	padding:10px 0;
+	overflow:hidden;
+	line-height:24px;
+}
+.ask-bot #tab4 div ul li {
+	float:left;
+	width:116px;
+	padding-left:10px;
+	margin-left:10px;
+	display:inline;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 8px;
+}
+.ask-bot #tab4 .block {
+	display:block;
+}
+
+
+
+.topright .color06b{ border:1px solid #FFBB00; background-color:#FFFCE6; padding:5px 5px 2px; }
+.topright .color06b li{ padding:2px 0 1px;}

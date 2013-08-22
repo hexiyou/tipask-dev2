@@ -1,0 +1,111 @@
+{template header}
+<link rel="stylesheet" href="css/common/imgpopup/imgpopup.css"/>
+<script type="text/javascript" src="js/imgpopup.js"></script>
+<div class="content">
+    <div class="uleft">
+        <div class="tximg"><img width="100px" height="100px" src="{$user['avatar']}" alt="{$user['username']}" title="{$user['username']}"></div>
+        <div class="txname">
+            {$user['username']}
+            <!--{if $user['islogin']}-->
+            <img src="css/default/online.gif" align="absmiddle" title="当前在线" alt="当前在线"/>
+            <!--{else}-->
+            <img src="css/default/outline.gif" align="absmiddle" title="当前离线" alt="当前离线"/>
+            <!--{/if}-->
+        </div>
+        <div class="clr"></div>
+        <div class="list">
+            <h1><a title="我的主页" target="_top" href="{url user/score}"><img width="16" height="16" align="absmiddle" src="css/default/myhome.gif" /> &nbsp;我的主页</a></h1>
+            <h1><a title="我的问答" target="_top" href="{url user/ask/2}"><img width="16px" height="15px" align="absmiddle" src="css/default/myanswer.gif" /> &nbsp;我的问答</a></h1>
+            <h1  class="on"><a title="我的消息" target="_top" href="{url message/new}"><img width="16px" height="16px" align="absmiddle" src="css/default/mymsg.gif" /> &nbsp;我的消息</a></h1>
+            <ul id="huida">
+                <li id="hui1" {if 'outbox' != $type}class="ac"{/if}><a title="我的提问" target="_top" href="{url message/new}">收件箱</a></li>
+                <li id="hui2" {if 'outbox' == $type}class="ac"{/if} ><a title="我的回答" target="_top" href="{url message/outbox}">已发送</a></li>
+            </ul>
+            <h1 class=""><a title="我收藏的问题" target="_top" href="{url user/favorite}"><img width="14" height="15" align="absmiddle" src="css/default/mycollect.gif" /> &nbsp;我的收藏</a></h1>
+        </div>
+    </div>
+    <div class="uright">
+        <div class="miaoshu">
+            <img width="12px" height="12px" align="texttop" src="css/default/tip1.gif"> 为了让您的提问被更多人关注，以获得最佳的回答，您可以提高悬赏。
+        </div>
+
+        <!--{if 'outbox' == $type}-->
+        <div class="jianjie">&nbsp;已发送</div>
+        <div class="fg"><img width="780px;" height="6px" src="css/default/gx.gif"></div>
+        <div class="wdhd2">
+            <ul class="bt">
+                <li class="b5">&nbsp;&nbsp;<input class="checkbox" id="chkall" onclick="checkall('mid[]')" type="checkbox" name="chkall">删</li>
+                <li class="bt6">标题（共{$messagenum}条）</li>
+                <li class="b4">收件人</li>
+                <li class="b4">日期</li>
+            </ul>
+            <form name="msgform" method="POST">
+                <input type="hidden" name="type" value="out" />
+                <!--{loop $messagelist $message}-->
+                <ul>
+                    <li class="b5"><input type="checkbox" name="mid[]" value="{$message['id']}"></li>
+                    <li class="b6"><a href="{url message/ajaxview/$message['id']}" title="{$message['subject']}">{eval echo cutstr($message['subject'],52)}</a></li>
+                    <li class="b4"><a target="_blank" href="{url user/space/$message['fromuid']}">{$message['touser']}</a></li>
+                    <li class="b4">{$message['time']}</li>
+                </ul>
+                <!--{/loop}-->
+                <ul>
+                    <li class="b6">&nbsp;&nbsp;<input type="button" class="button1" value="删除消息" onclick="delmsg();"/></li>           
+                </ul>
+            </form>
+        </div> 
+        <!--{else}-->
+        <div class="tab2" id="tab">
+            <ul>
+                <li {if 'new'==$type}class="on"{/if}>
+                    <a href="{url message/new}">未读消息</a>
+                </li>
+                <li {if 'personal'==$type}class="on"{/if}>
+                    <a href="{url message/personal}">个人消息{$personalnum}</a>
+                </li>
+                <li {if 'system'==$type}class="on"{/if}>
+                    <a href="{url message/system}">系统消息{$systemnum}</a>
+                </li>
+            </ul>
+            <div class="clr"></div>
+        </div>
+        <div class="wdhd2">
+            <ul class="bt">
+                <li class="b5">&nbsp;&nbsp;<input class="checkbox" id="chkall" onclick="checkall('mid[]')" type="checkbox" name="chkall">删</li>
+                <li class="b5">状态</li>
+                <li class="bt6">标题（共{$messagenum}条）</li>
+                <li class="b4">发件人</li>
+                <li class="b4">日期</li>
+            </ul>
+            <form name="msgform" method="POST">
+                <input type="hidden" name="type" value="in" />
+                <!--{loop $messagelist $message}-->
+                <ul>
+                    <li class="b5"><input type="checkbox" name="mid[]" value="{$message['id']}"></li>
+                    <li class="b5">{if $message['new']}<img src="css/default/newmsg.gif" title="未读"  class="noteicon" />{else}<img src="css/default/readmsg.gif" title="已读" class="noteicon"/>{/if}</li>
+                    <li class="b6"><a href="{url message/ajaxview/$message['id']}" title="{$message['subject']}">{eval echo cutstr($message['subject'],52)}</a></li>
+                    <li class="b4"><a target="_blank" href="{url user/space/$message['fromuid']}">{$message['from']}</a></li>
+                    <li class="b4">{$message['time']}</li>
+                </ul>
+                <!--{/loop}-->
+                <ul>
+                    <li class="b6">&nbsp;&nbsp;<input type="button" class="button1" value="删除消息" onclick="delmsg();"/></li>           
+                </ul>
+            </form>
+        </div>
+        <!--{/if}-->
+        <div class="blank20"></div>
+        <div class="pages"><div class="scott">{$departstr}</div></div>
+    </div>
+</div>
+<div class="clr"></div>
+<script type="text/javascript">
+    function delmsg(){
+        document.msgform.action="index.php?message/remove{$setting['seo_suffix']}";
+        document.msgform.submit();
+    }
+    $(document).ready(function(){
+       $(".b6 a").fancybox({'titlePosition':'false'});
+    });
+</script>
+{template footer}

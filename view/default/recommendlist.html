@@ -1,0 +1,30 @@
+{template header}
+<div class="content">
+    <!--{loop $topiclist $topic}-->
+    <div class="contzt">
+        <div class="contzt1">
+            <div class="juzhong">&nbsp;{$topic['title']}<a name="{$topic['id']}"></a></div>            
+        </div>
+        <div class="contzt2">
+            <div class="jianjie"><img src="{$topic['image']}" width="270px" height="222px"/></div>
+            <div class="contzt2con">
+                <div class="contzt2contt">{$topic['describtion']}</div>
+                <div class="wtlist">
+                    <ul>
+                        <!--{loop $topic['questionlist'] $question}-->
+                        <li><a class="hotTitscontlia" title="{$question['title']}" target="_blank" href="{url question/view/$question['id']}">{eval echo cutstr($question['title'],38);}</a> </li>
+                        <!--{/loop}-->
+                    </ul>
+                </div>                
+                <div class="clr"></div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <div class="contzt3"></div>        
+    </div>
+    <div class="clr"></div>
+    <!--{/loop}-->
+    <div class="pages"><div class="scott">{$departstr}</div></div>
+</div>
+<div class="clr"></div>
+{template footer}

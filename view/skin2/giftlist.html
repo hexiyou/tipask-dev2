@@ -1,0 +1,143 @@
+{template header}
+<div class="box">
+    <div class="box_left">
+        <div class="box_left_nav font_gray">
+            → <a href="{SITE_URL}">{$setting['site_name']}</a>
+            <!--{loop $navlist $nav}-->
+            &gt;&gt; <a href="{url category/view/$nav['id']}">{$nav['name']}</a>
+            <!--{/loop}-->
+        </div>
+        <!--分类 开始-->
+        <div class="box_left1">
+            <div class="boxtop2_title boxtop1">
+                <strong>兑换规则</strong>
+            </div>
+            <div class="box_left1_down" style="padding-bottom: 0pt;">
+                <table id="tl" width="100%" border="0" cellspacing="0">
+                    <tr>
+                        <td>欢迎来到礼品商店，各种丰厚的礼品供您选择。只要您是本站的注册用户，并通过回答问题积累了一定的财富，就可以在这里挑选兑换自己喜爱的礼品。</td>
+                        <td><img src="{SITE_URL}css/common/theme_bg.gif" /></td>
+                    </tr>
+                </table>
+                <span style="clear: both;"></span>
+            </div>
+        </div>
+        <!--分类 结束-->
+        <div class="blank10"></div>
+        <!--分类 开始-->
+        <div class="box_left1">
+            <div class="boxtop2_title boxtop1">
+                <strong>选择价格范围</strong>
+            </div>
+            <div class="box_left1_down" style="padding-bottom: 0pt;">
+                <ul class="fl">
+                    <!--{loop $ranglist $key $val}-->
+                    <li>
+                        <!--{if isset($to) && $val==$to}-->
+                        <font style="color: black; font-size: 14px;">{$key}-{$val}</font>
+                        <!--{else}-->
+                        <a href="{url gift/search/$key/$val}">{$key}-{$val}</a>
+                        <!--{/if}-->
+                    </li>
+                    <!--{/loop}-->
+                </ul>
+                <span style="clear: both;"></span>
+                <span style="clear: both;"></span>
+            </div>
+        </div>
+        <!--分类 结束-->
+        <div class="blank10"></div>
+        <!--分类 开始-->
+        <div class="box_left1">
+            <div class="boxtop2_title boxtop1">
+                <strong>兑换礼品</strong>
+            </div>
+            <div class="box_left1_down" style="padding-bottom: 0pt;">
+                <ul class="fl">
+                    <!--{loop $giftlist $gift}-->
+                    <li>
+                        <div style="height: 130px; width: 100px;" >
+                            <table height="100" cellspacing="0" cellpadding="0" border="0" width="100">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="middle" style="padding-top: 0pt;"><img id="giftimg{$gift['id']}" height="100" style="border: 1px solid #E6E6E6;" src="{SITE_URL}{$gift['image']}" alt="{$gift['title']}" title="{$gift['description']}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="middle" style="padding-top: 0pt;">{$gift['title']}</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="middle" style="padding-top: 0pt;"><span id="giftcredit{$gift['id']}">所需财富值:{$gift['credit']}</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="middle"><img onclick="apply($gift['id'],$gift['credit'])" style="cursor:pointer" src="css/default/redeem.gif" alt="我要对换" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="blank10"></div>
+                    </li>
+
+                    <!--{/loop}-->
+                </ul>
+
+            </div>
+            <div class="box_left1_down" style="padding-bottom: 0pt;">
+                <div id="pg_center">
+                    <div id="ask_page" style="padding: 5px 0pt;">
+                        <span id="pg_right">{$departstr}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--分类 结束-->
+        <div class="blank10"></div>
+    </div>
+
+
+
+
+
+
+    <!--内容左栏 end-->
+    <!--内容右栏 begin-->
+    <div class="boxthree">
+        <div class="box_left_nav"></div>
+        <div class="boxthree2">
+            <div class="boxtop">礼品公告</div>
+            <div class="boxthree2down blue">
+                <div id="Userorder1_plNo2">
+                    <div class="fenr margb">
+                        <div class="flmrbc">{$setting['gift_note']}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--内容右栏 end-->
+    <div class="clear">
+    </div>
+</div>
+<script type="text/javascript">
+    function apply(id,credit){
+        giftimg = $("#giftimg"+id).attr("src");
+        gifttitle = $("#giftimg"+id).attr("alt");
+        giftcredit = $("#giftcredit"+id).text();
+        if($user['credit2']<credit){
+            alert("抱歉！您的财富值不足不能兑换该礼品!");
+            return ;
+        }
+        $.dialog({
+            id:'supplyDiv',
+            position:'center',
+            align:'center',
+            fixed:1,
+            width:400,
+            title:'礼品对换申请',
+            fnOk:function(){document.giftform.submit();$.dialog.close('supplyDiv')},
+            fnCancel:function(){$.dialog.close('supplyDiv')},
+            content:'<div class="form-reg"><form name="giftform" action="{url gift/add}" method="POST"><input type="hidden" name="gid" value="'+id+'" /><div class="inner"><div class="inner-content"><div class="user-pic"><img src="'+giftimg+'" height="60" width="60" ></div><div class="user-info-main"><p class="user-name">礼品名称：'+gifttitle+'</p><p class="user-info-co"><span class="green">'+giftcredit+'</span></p><p class="user-progress-bar"></p></div></div></div><br /><p class="item"><label class="form-label">真实姓名：</label><span class="form-input input-text"><input type="text" size="42"  maxlength="20" class="txt" id="realname" name="realname" value="{$user[realname]}"/><br /><span id="PwdNotice" style="color:red">请务必填入真实姓名，便于联系！</span></span></p><p id="curpwd" class="item"><label class="form-label" for="UserOldPwd">电子邮件：</label><span class="form-input input-text"><input size="42" maxlength="64" class="txt" id="email" name="email" value="{$user[email]}" /><br /><span id="PwdNotice">常用的邮箱地址</span></span></p><p class="item"><label class="form-label" for="UserNewPwd">联系电话：</label><span class="form-input input-text"><input  size="42" maxlength="16" class="txt" id="phone" name="phone" value="{$user[phone]}"/><br /><span id="PwdNotice" style="color:red">请填写真实联系电话</span></span></p><p id="newpwd_again" class="item"><label class="form-label" for="UserNewPwdAgn">邮寄地址：</label><span class="form-input input-text"><input type="text" size="42" class="txt" maxlength="100" id="addr" name="addr" /><br /><span id="PwdNotice" style="color:red">请填写真实地址，便于邮件！</span></span></p><p id="newpwd_again" class="item"><label class="form-label" for="UserNewPwdAgn">邮政编码：</label><span class="form-input input-text"><input type="text" size="42" class="txt" maxlength="100" id="addr" name="postcode" /><br /><span id="PwdNotice" style="color:red">请填写所在地的邮政编码！</span></span></p><p id="newpwd_again" class="item"><label class="form-label" for="UserNewPwdAgn">QQ号：</label><span class="form-input input-text"><input type="text" size="42" class="txt" maxlength="100" id="qq" name="qq" value="{$user[qq]}"/><br /></span></p><p id="newpwd_again" class="item"><label class="form-label" for="UserNewPwdAgn">备注：</label><span class="form-input input-text"><textarea name="notes"></textarea></p></div> '
+        });
+    }
+</script>
+{template footer}

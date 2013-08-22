@@ -1,0 +1,78 @@
+{template header}
+<div class="content">
+    <div class="dh">包含标签"<font color="#FFA615">{$tagname}</font>"的所有问题如下：</div>
+    <div class="cleftbox">
+        <div class="clist">
+            <ul>
+                <li class="li1"><span id="loading"></span>标题(共{$rownum}条)</li>
+                <li class="li2">回答/查看</li>
+                <li class="li3">状态</li>
+                <li class="li4">提问时间</li>
+            </ul>
+            <!--{loop $questionlist $question}-->
+            <ul>
+                <li class="li1">
+                    <!--{if $question['price'] > 0}-->
+                    <img src="css/default/TB2.gif" /><span class="qlscore">{$question['price']}</span>
+                    <!--{/if}-->
+                    <a href="{url question/view/$question['id']}" title="{$question['title']}">{eval echo cutstr($question['title'],38);}</a>
+                    &nbsp;<span class="lei">[<a href="{url category/view/$question['cid']}" title="{$question['category_name']}" class="lei">{eval echo cutstr($question['category_name'],10,'');}</a>]
+                </li>
+                <li class="li2">{$question['answers']}/{$question['views']}</li>
+                <li class="li3"><img src="css/common/icn_{$question['status']}.gif" /></li>
+                <li class="li4">{$question['format_time']}</li>
+            </ul>
+            <!--{/loop}-->
+        </div>
+        <div class="blank20"></div>
+        <div class="pages"><div class="scott">{$departstr}</div></div>
+    </div>
+    <div class="right1">
+        <div class="gg">
+            <div class="ggtitle">
+                <ul>
+                    <li class="gga11"></li>
+                    <li class="gga21">
+                        <div class="juzhong">
+                            <div class="qico" >
+                                <div class="ivote"></div>
+                            </div>
+                            积分排行榜
+                        </div>
+                    </li>
+                    <li class="gga31"></li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+            <div class="ggcon">
+                <div class="l_b_m_m">
+                    <div class="yshy" id="alltop">
+                        <ul>
+                            <!--{eval $alluserlist=$this->fromcache('alluserlist');}-->
+                            <!--{loop $alluserlist $index $alluser}-->
+                            <!--{eval ++$index;}-->
+                            <li>
+                                <span class="hyname"><img align="absmiddle" src="css/default/num{$index}.gif"> <a target="_blank" href="{url user/space/$alluser['uid']}">{$alluser['username']}</a></span>
+                                <img align="absmiddle" src="css/default/up.gif">{$alluser['credit1']}
+                            </li>
+                            <!--{/loop}-->
+                        </ul>
+                    </div>
+                    <div class="listcon"></div>
+                    <div class="more"><a href="{url user/scorelist/2}" title="查看更多排行榜" ttarget="_top">查看更多排行榜&gt;&gt;</a></div>
+                    <div class="clr"></div>
+                </div>
+            </div>
+            <div class="ggbuttom">
+                <ul>
+                    <li class="ggba1"></li>
+                    <li class="ggba2"></li>
+                    <li class="ggba3"></li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+</div>
+<div class="clr"></div>
+{template footer}

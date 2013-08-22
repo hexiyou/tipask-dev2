@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>插入购买可见</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=gbk"/>
+    <link rel="stylesheet" type="text/css" href="video.css" />
+</head>
+<body>
+<div class="wrapper">
+    <div id="videoTab">
+        <div id="tabHeads">
+            <span tabSrc="video" class="focus">插入购买内容</span>
+		<!--<span tabSrc="videoSearch">视频搜索</span>-->
+        </div>
+        <div id="tabBodys">
+            
+            <div id="videoSearch" class="panel" style="">
+                <table style="margin-top: 5px;">
+				<tr><td>请输入购买价格</td></tr>
+                    <tr>
+                        <td><input id="buyprice" value="" type="text" id="buyprice"/></td>
+                        <td>
+                            <select id="buyType" name="buyType">
+                                <option value="money">铜币</option>
+                                <option value="jinbi">金币</option>
+								<option value="yuanbao">元宝</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div id="searchList" style="padding-top:10px">
+					<textarea name="buycontent" id="buycontent" style="width:480px;height:240px"></textarea>
+					</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../internal.js"></script>
+<script type="text/javascript" src="video.js"></script>
+<script type="text/javascript">
+    window.onload = function(){
+        video.init();
+        //$focus($G("videoUrl"));
+    };
+</script>
+</body>
+</html>

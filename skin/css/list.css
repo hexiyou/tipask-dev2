@@ -1,0 +1,1580 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: none;
+}
+li {
+	list-style: none;
+}
+.clearer {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+.gg230 {
+	display: block;
+	width: 230px;
+	height: auto;
+	overflow: hidden;
+}
+.ask-sub {
+	float: left;
+	width: 970px;
+	font: 12px/18px SimSun;
+	position: relative;
+	z-index: 10;
+}
+.ask-sub .subleft {
+	float: left;
+	padding-left: 10px;
+	color: #999;
+}
+.ask-sub .subleft span {
+	float: left;
+}
+.ask-sub .subleft b {
+	font: bold 12px Verdana;
+	color: #f60;
+}
+.ask-sub .subleft .moreke {
+	position: relative;
+	z-index: 11;
+}
+.ask-sub .subleft .moreke .now {
+	padding: 0 16px 0 6px;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 18;
+	white-space: nowrap;
+}
+.ask-sub .subleft .moreke ul {
+	padding: 2px 2px;
+	position: absolute;
+	z-index: 12;
+	top: 18px;
+	left: -1px;
+	font: 12px/22px SimSun;
+	border: 1px solid #B8D5E8;
+	background: #fff;
+	display: none;
+}
+.ask-sub .subleft .moreke ul li {
+	padding: 1px 13px 0 3px;
+	border-bottom: 1px dashed #E3E3E3;
+}
+.ask-sub .subleft .moreke ul li a {
+	white-space: nowrap;
+}
+.ask-sub .subleft .moreke ul li.nobor {
+	border: none;
+}
+.ask-sub .subleft .moreke .jt {
+	width: 7px;
+	height: 4px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -990px;
+	position: absolute;
+	top: 6px;
+	right: 5px;
+	z-index: 20;
+}
+.ask-sub .subleft .moreke2 {
+	margin-top: -1px;
+	border: 1px solid #B8D5E8;
+	border-bottom: none;
+}
+.ask-sub .subleft .moreke2 .now {
+	padding: 0 15px 3px 5px;
+	background: #fff;
+}
+.ask-sub .subleft .moreke2 .jt {
+	width: 7px;
+	height: 4px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -990px;
+	position: absolute;
+	top: 6px;
+	right: 4px;
+}
+.ask-sub .subleft .moreke2 ul {
+	display: block;
+}
+.ask-sub .subright {
+	float: right;
+	padding-right: 10px;
+}
+.list-left {
+	float: left;
+	width: 755px;
+	height: auto;
+	overflow: hidden;
+}
+.list-left .lefttop {
+	width: 753px;
+	overflow: hidden;
+	border: 1px solid #B8D5E8;
+	border-bottom: none;
+	position: relative;
+	z-index: 2;
+}
+.list-left .lefttop .kebt {
+	display: block;
+	width: 753px;
+	height: 31px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x 0 -129px;
+}
+.list-left .lefttop .kebt h1, .list-left .lefttop .kebt .dabiaoti {
+	float: left;
+	padding: 1px 0 0 34px;
+	font: bold 14px/30px SimSun;
+}
+.list-left .lefttop .kebt .you {
+	float: right;
+	margin: 4px 0 0 0;
+	font: 12px/21px SimSun;
+}
+.list-left .lefttop .kebt .you a {
+	float: left;
+	height: 21px;
+	padding-top: 1px;
+	margin-right: 10px;
+	overflow: hidden;
+	text-align: center;
+	background: url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat;
+	color: #333;
+	text-decoration: none;
+}
+.list-left .lefttop .kebt .you a.a1 {
+	width: 75px;
+	background-position: -170px -144px;
+}
+.list-left .lefttop .kebt .you a.a1:hover {
+	background-position: -170px -166px;
+}
+.list-left .lefttop .kebt .you a.a2 {
+	width: 54px;
+	background-position: -170px -188px;
+}
+.list-left .lefttop .kebt .you a.a2:hover {
+	background-position: -170px -210px;
+}
+.list-left .lefttop .kebt .jiahao {
+	display: block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -1030px;
+	position: absolute;
+	top: 7px;
+	left: 10px;
+	z-index: 3;
+	cursor: pointer;
+}
+.list-left .lefttop .kebt .diandian {
+	display: block;
+	width: 15px;
+	height: 15px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -1390px;
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	z-index: 3;
+}
+.list-left .lefttop .showul {
+	width: 753px;
+	border-bottom: 1px solid #B8D5E8;
+}
+.list-left .lefttop .showul ul {
+	width: 753px;
+	overflow: hidden;
+	padding: 12px 0;
+	font: 14px/26px SimSun;
+	background: #F6F9FC;
+}
+.list-left .lefttop .showul ul li {
+	float: left;
+	width: 164px;
+	padding-left: 12px;
+	margin-left: 10px;
+	display: inline;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 1px 10px;
+}
+.list-left .lefttop .showul ul .spcolor a {
+	color: #666;
+	text-decoration: none;
+}
+.list-left .lefttop .showul ul .spcolor a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+.list-left .lefttop .showul .ul2 li {
+	width: 226px;
+	padding-left: 12px;
+	margin-left: 10px;
+	display: inline;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 1px 10px;
+}
+.list-left .lefttop .showul ul li.now a {
+	font-weight: bold;
+}
+.list-left .lefttop .showul .jianhao {
+	display: block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -1070px;
+	position: absolute;
+	top: 7px;
+	left: 10px;
+	z-index: 3;
+	cursor: pointer;
+}
+.list-left .gggm_box {
+	width: 733px;
+	height: 50px;
+	padding: 17px 10px 0;
+	overflow: hidden;
+	border-left: 1px solid #B8D5E8;
+	border-right: 1px solid #B8D5E8;
+	display: none;
+}
+.list-left .gggm_box a {
+	float: left;
+	height: 50px;
+	background: url(http://www.120center.com/skin/images/ad_but1.gif) no-repeat;
+}
+.list-left .gggm_box .ty_url2 {
+	width: 411px;
+	background-position: 0 0;
+}
+.list-left .gggm_box .ty_url {
+	width: 322px;
+	background-position: -407px 0;
+}
+.list-left .ty_box {
+	width: 733px;
+	height: 50px;
+	padding: 17px 10px 0;
+	overflow: hidden;
+	border-left: 1px solid #B8D5E8;
+	border-right: 1px solid #B8D5E8;
+	background: url(http://www.120center.com/skin/images/ad_but2.gif) no-repeat 10px 17px;
+}
+.list-left .ty_box a {
+	float: left;
+	height: 50px;
+	display: none;
+}
+.list-left .ty_box .ty_url3 {
+	width: 411px;
+}
+.list-left .ty_box .ty_url {
+	width: 322px;
+}
+.list-left .chongxin {
+	width: 733px;
+	height: 72px;
+	padding: 2px 10px;
+	overflow: hidden;
+	border-left: 1px solid #B8D5E8;
+	border-right: 1px solid #B8D5E8;
+}
+.list-left .chongxin .tw {
+	float: left;
+	width: 184px;
+	height: 57px;
+	padding: 15px 0 0 10px;
+	overflow: hidden;
+}
+.list-left .chongxin .tw a {
+	display: block;
+	width: 170px;
+	height: 48px;
+	background: url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -266px -192px;
+}
+.list-left .chongxin .tw a:hover {
+	background-position: -266px -240px;
+}
+.list-left .chongxin .bz {
+	float: left;
+	width: 230px;
+	height: 38px;
+	padding-top: 34px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 139px -898px;
+	color: #666;
+}
+.list-left .chongxin .bz a {
+	text-decoration: underline;
+}
+.list-left .list {
+	width: 743px;
+	height: auto;
+	padding: 6px 5px 10px;
+	overflow: hidden;
+	border: 1px solid #B8D5E8;
+	border-top: none;
+}
+.list-left .list .limenu {
+	display: block;
+	width: 732px;
+	height: 32px;
+	padding-left: 11px;
+	background: url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x 0 31px;
+}
+.list-left .list .limenu a {
+	float: left;
+	width: 80px;
+	height: 32px;
+	margin-left: 4px;
+	display: inline;
+	font: bold 14px/32px SimSun;
+	text-align: center;
+	background: url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -608px -64px;
+	color: #06b;
+	text-decoration: none;
+}
+.list-left .list .limenu a.now {
+	color: #333;
+	background-position: -608px -32px;
+}
+.list-left .list .limenu a:hover {
+	color: #f60;
+	text-decoration: none;
+}
+.list-left .list .ty_tl {
+	width: 731px;
+	padding: 10px 6px;
+	overflow: hidden;
+	display:none;
+}
+.list-left .list .ty_tl2 {
+	width: 731px;
+	padding: 0 6px;
+	overflow: hidden;
+	display: none;
+}
+.list-left .list .ty_tl2 .gmgg_box_ad {
+	width: 730px;
+}
+.list-left .list .ty_tl2 .gmgg_box_ad div {
+	height: 0;
+	overflow: hidden;
+}
+.list-left .list .lititle {
+	display: block;
+	width: 252px;
+	height: 28px;
+	overflow: hidden;
+	padding: 1px 0 0 491px;
+	border-bottom: 1px solid #DCE9F1;
+	background: #FAFCFD;
+}
+.list-left .list .lititle span {
+	float: left;
+	width: 84px;
+	height: 28px;
+	overflow: hidden;
+	font: 12px/28px SimSun;
+	text-align: center;
+	color: #999;
+}
+.list-left .list ul {
+	width: 743px;
+	overflow: hidden;
+	font: 12px SimSun;
+	color: #666;
+	position: relative;
+	z-index: 3;
+}
+.list-left .list ul li {
+	float: left;
+	width: 743px;
+	height: 34px;
+	overflow: hidden;
+	border-bottom: 1px dashed #E3E3E3;
+}
+.list-left .list ul li a:visited {
+	color: #800180;
+}
+.list-left .list ul li.bg9fc {
+	background: #F6F9FC;
+}
+.list-left .list ul li span {
+	float: left;
+}
+.list-left .list ul li .tit {
+	width: 471px;
+	height: 34px;
+	padding: 0 10px;
+	overflow: hidden;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.list-left .list ul li .bt {
+	overflow: hidden;
+	font: 14px/34px SimSun;
+}
+.list-left .list ul li .zd {
+	padding: 0 0 1px 47px;
+	overflow: hidden;
+	font: 14px/34px SimSun;
+	background: url(http://www.120center.com/skin/images/ask_list_table.gif) no-repeat 0 0;
+}
+.list-left .list ul li .dq {
+	padding: 0 0 1px 57px;
+	overflow: hidden;
+	font: 14px/34px SimSun;
+	background: url(http://www.120center.com/skin/images/ask_list_table.gif) no-repeat 0 -220px;
+}
+.list-left .list ul li .bq {
+	padding: 0 0 1px 57px;
+	overflow: hidden;
+	font: 14px/34px SimSun;
+	background: url(http://www.120center.com/skin/images/ask_list_table.gif) no-repeat 0 -250px;
+}
+.list-left .list ul li .jh {
+	padding: 0 0 1px 38px;
+	overflow: hidden;
+	font: 14px/34px SimSun;
+	background: url(http://www.120center.com/skin/images/ask_list_table.gif) no-repeat 0 -30px;
+}
+.list-left .list ul li .tj {
+	padding: 0 0 1px 38px;
+	overflow: hidden;
+	font: 14px/34px SimSun;
+	background: url(http://www.120center.com/skin/images/ask_list_table.gif) no-repeat 0 -60px;
+}
+.list-left .list ul li .ks {
+	font-size: 12px;
+	line-height: 34px;
+	white-space: nowrap;
+}
+.list-left .list ul li .ks {
+	color: #999;
+	text-decoration: none;
+}
+.list-left .list ul li .ks:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+.list-left .list ul li .huifu {
+	width: 84px;
+	height: 34px;
+	text-align: center;
+	font: 12px/34px Verdana;
+}
+.list-left .list ul li .zhuan {
+        margin-top: 10px;
+	width: 84px;
+	height: 34px;
+	text-align: center;
+}
+.list-left .list ul li .zhuan b {
+	display: inline-block;
+	overflow: hidden;
+	margin-top: 10px;
+	background: url(http://www.120center.com/skin/images/ask_list_table.gif) no-repeat;
+}
+.list-left .list ul li .zhuan .b1 {
+	width: 18px;
+	height: 14px;
+	background-position: 0 -90px;
+}
+.list-left .list ul li .zhuan .b2 {
+	width: 17px;
+	height: 14px;
+	background-position: 0 -120px;
+}
+.list-left .list ul li .zhuan .b3 {
+	width: 10px;
+	height: 15px;
+	background-position: 0 -150px;
+}
+.list-left .list ul li .zhuan .b4 {
+	width: 17px;
+	height: 16px;
+	background-position: 0 -180px;
+	margin-top: 9px;
+}
+.list-left .list ul li .zuiho {
+	width: 84px;
+	height: 34px;
+	text-align: center;
+	font: 12px/34px Verdana;
+}
+.list-left .list .pages {
+	width: 743px;
+}
+.list-left .lisearch {
+	width: 755px;
+	height: 48px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_menu.png) repeat-x 0 -411px;
+	position: relative;
+	z-index: 2;
+}
+.list-left .lisearch .leftbg {
+	display: block;
+	width: 5px;
+	height: 48px;
+	background: url(http://www.120center.com/skin/images/ask_menu.png) no-repeat 0 -363px;
+	position: absolute;
+	z-index: 4;
+	top: 0;
+	left: 0;
+}
+.list-left .lisearch .rightbg {
+	display: block;
+	width: 5px;
+	height: 48px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_menu.png) no-repeat 0 -459px;
+	position: absolute;
+	z-index: 4;
+	top: 0;
+	right: 0;
+	_right: -1px;
+}
+.list-left .lisearch form {
+	display: block;
+	width: 747px;
+	padding: 7px 0 0 8px;
+	color: #333;
+}
+.list-left .lisearch form .inputtext {
+	float: left;
+	width: 421px;
+	height: 34px;
+	padding: 0 8px;
+	font: 14px/34px SimSun;
+	border: 0;
+	background: url(http://www.120center.com/skin/images/ask_others.png) no-repeat 0 -214px;
+	color: #666;
+}
+.list-left .lisearch form .inputbut {
+	float: left;
+	width: 82px;
+	height: 32px;
+	margin: 1px 0 0 8px;
+	display: inline;
+	font: bold 14px/34px SimSun;
+	border: none;
+	color: #333;
+	cursor: pointer;
+	background: url(http://www.120center.com/skin/images/ask_bgs.png) no-repeat;
+}
+.list-left .lisearch form .inputbut1 {
+	background-position: -2px -2px;
+}
+.list-left .lisearch form .inputbut2 {
+	background-position: -88px -2px;
+}
+.list-right {
+	float: right;
+	width: 205px;
+	height: auto;
+	overflow: hidden;
+}
+.list-right .liboxs {
+	display: block;
+	width: 205px;
+	margin-top: 10px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_tie_others.png) no-repeat -230px 0;
+}
+.list-right .liboxs strong {
+	display: block;
+	width: 180px;
+	height: 17px;
+	padding: 13px 0 0 25px;
+	overflow: hidden;
+	font-weight: bold;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -120px;
+	color: #666;
+}
+.list-right .liboxs .cons {
+	display: block;
+	width: 203px;
+	overflow: hidden;
+	border-color: #C9DFED;
+	background: #fff;
+}
+.list-right .liboxs .cons .minyi {
+	display: block;
+	width: 203px;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+.list-right .liboxs .cons .minyi .p1 {
+	float: left;
+	width: 180px;
+	height: 18px;
+	padding: 6px 10px 0;
+	font: 14px SimSun;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.list-right .liboxs .cons .minyi .p2 {
+	float: left;
+	width: 190px;
+	overflow: hidden;
+	padding: 4px 0 0 10px;
+	font: 12px/22px SimSun;
+}
+.list-right .liboxs .cons .minyi .p3 {
+	float: left;
+	width: 190px;
+	padding: 0 0 0 10px;
+	font: 12px/22px Verdana;
+}
+.list-right .liboxs .cons .minyi .p4 {
+	float: left;
+	width: 183px;
+	height: 29px;
+	padding: 6px 10px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.list-right .liboxs .cons .minyi .p4 a {
+	display: block;
+	width: 96px;
+	height: 21px;
+	padding-top: 1px;
+	font: 12px/21px SimSun;
+	text-align: center;
+	background: url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -253px -320px;
+	color: #333;
+	text-decoration: none;
+}
+.list-right .liboxs .cons .minyi .p4 a:hover {
+	background-position: -253px -342px;
+	color: #333;
+	text-decoration: none;
+}
+.list-right .liboxs .cons .banzhu {
+	display: block;
+	width: 193px;
+	height: 110px;
+	margin: 0 0 3px 5px;
+	border-bottom: 1px dashed #E3E3E3;
+}
+.list-right .liboxs .cons .banzhu .p1 {
+	float: left;
+	width: 193px;
+	overflow: hidden;
+}
+.list-right .liboxs .cons .banzhu .p1 .imgbox {
+	float: left;
+	width: 80px;
+}
+.list-right .liboxs .cons .banzhu .p1 .imgbox img {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #DEDEDE;
+	margin: 10px 0 0 6px;
+}
+.list-right .liboxs .cons .banzhu .p1 .name {
+	float: left;
+	width: 113px;
+	height: 20px;
+	padding-top: 6px;
+	line-height: 20px;
+}
+.list-right .liboxs .cons .banzhu .p1 .jj {
+	float: left;
+	width: 113px;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.list-right .liboxs .cons .banzhu .p1 .tiwen {
+	float: left;
+	width: 113px;
+	height: 22px;
+}
+.list-right .liboxs .cons .banzhu .p1 .tiwen a {
+	display: block;
+	width: 83px;
+	height: 22px;
+	background: url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -170px -320px;
+}
+.list-right .liboxs .cons .banzhu .p1 .tiwen a:hover {
+	background-position: -170px -342px;
+}
+.list-right .liboxs .cons .banzhu .p1 .zixun {
+	float: left;
+	width: 113px;
+	height: 22px;
+}
+.list-right .liboxs .cons .banzhu .p1 .zixun a {
+	display: block;
+	width: 83px;
+	height: 22px;
+	background: url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -170px -276px;
+}
+.list-right .liboxs .cons .banzhu .p1 .zixun a:hover {
+	background-position: -170px -298px;
+}
+.list-right .liboxs .cons .banzhu .p1 .zixun2 {
+	float: left;
+	width: 113px;
+	height: 22px;
+}
+.list-right .liboxs .cons .banzhu .p1 .zixun2 a {
+	display: block;
+	width: 59px;
+	height: 22px;
+	background: url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -183px -44px;
+}
+.list-right .liboxs .cons .banzhu .p1 .zixun2 a:hover {
+	background-position: -183px -66px;
+}
+.list-right .liboxs .cons .banzhu .p2 {
+	float: left;
+	width: 187px;
+	padding: 8px 0 0 6px;
+	overflow: hidden;
+}
+.list-right .liboxs .cons .banzhu .p2 b {
+	font-weight: normal;
+	font-family: Verdana;
+}
+.list-right .liboxs .cons .banzhu .p2 b a {
+	color: #666;
+	text-decoration: underline;
+}
+.list-right .liboxs .cons .banzhu .p2 b a:hover {
+	color: #f60;
+}
+.list-right .liboxs .cons .banzhu .p3 b a {
+	color: #666;
+	text-decoration: none;
+}
+.list-right .liboxs .cons .banzhu .p3 b a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+.list-right .liboxs .cons .banzhu2 {
+	border: none;
+}
+.list-right .liboxs .cons .hezuo {
+	display: block;
+	width: 203px;
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+.list-right .liboxs .cons .hezuo p {
+	float: left;
+	width: 183px;
+	padding: 0 10px;
+	font: 12px/22px SimSun;
+	color: #666;
+}
+.list-right .liboxs .cons .hezuo .p1 {
+	padding-top: 4px;
+}
+.list-right .liboxs .cons .hezuo .p3 span {
+	font-weight: bold;
+}
+.list-right .liboxs .cons .hezuo .p2 {
+	width: 165px;
+	padding-left: 28px;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -1355px;
+}
+.list-right .liboxs .cons ul {
+	width: 165px;
+	overflow: hidden;
+	padding: 6px 0 5px 28px;
+	font: 12px/24px SimSun;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 9px -1098px;
+}
+.list-right .liboxs .cons ul li {
+	float: left;
+	width: 165px;
+}
+.list-right .liboxs .cons .ul2 {
+	width: 183px;
+	overflow: hidden;
+	padding: 6px 10px 10px;
+	font: 12px/24px SimSun;
+	background: none;
+}
+.list-right .liboxs .cons .ul2 li {
+	float: left;
+	width: 170px;
+	padding-left: 10px;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -165px;
+}
+.list-right .liboxs .cons .abox {
+	float: left;
+	width: 177px;
+	padding: 4px 8px;
+	margin-left: 5px;
+	display: inline;
+	overflow: hidden;
+	font: 12px/22px SimSun;
+	border-bottom: 1px dashed #E3E3E3;
+}
+.list-right .liboxs .cons .abox a {
+	white-space: nowrap;
+}
+.list-right .liboxs .cons .noline {
+	float: left;
+	width: 203px;
+	height: 4px;
+	overflow: hidden;
+	margin-top: -1px;
+	border-top: 1px solid #fff;
+	background: #fff;
+}
+.list-right .liboxs .cons .gdbox {
+	float: left;
+	width: 177px;
+	padding: 4px 8px 10px;
+	margin-left: 5px;
+	display: inline;
+	overflow: hidden;
+	font: 12px/22px SimSun;
+}
+.list-right .liboxs .cons1 {
+	padding-top: 2px;
+}
+.list-right .liboxs2 {
+	margin-top: -1px;
+}
+.list-right .liboxs2 .dongtai {
+	display: block;
+	width: 193px;
+	height: 17px;
+	padding: 13px 0 0 10px;
+	overflow: hidden;
+	font-weight: bold;
+	background: none;
+	color: #666;
+}
+.list-right .newshd {
+	float: left;
+	width: 205px;
+	height: auto;
+	margin-top: 10px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_tie_others.png) no-repeat -230px 0;
+}
+.list-right .newshd strong {
+	display: block;
+	width: 180px;
+	height: 17px;
+	padding: 13px 0 0 25px;
+	overflow: hidden;
+	font-weight: bold;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -120px;
+	color: #666;
+}
+.list-right .newshd ul {
+	float: left;
+	width: 203px;
+	padding: 7px 0 11px;
+	font: 12px/22px SimSun;
+	border: 1px solid #C9DFED;
+	border-top: none;
+	background: #fff;
+}
+.list-right .newshd ul li {
+	float: left;
+	width: 173px;
+	padding-left: 10px;
+	margin-left: 10px;
+	display: inline;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -167px;
+}
+.list-more {
+	float: left;
+	width: 970px;
+	height: auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.list-more .moreas {
+	float: left;
+	width: 945px;
+	height: 32px;
+	padding-left: 25px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -760px 0;
+}
+.list-more .moreas a {
+	float: left;
+	width: 36px;
+	height: 32px;
+	margin-left: -1px;
+	font: 14px/34px Verdana;
+	text-align: center;
+	text-decoration: none;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -556px;
+	position: relative;
+	z-index: 1;
+}
+.list-more .moreas a:hover {
+	font-weight: bold;
+	color: #f60;
+	text-decoration: none;
+	background: url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -814px -32px;
+	position: relative;
+	z-index: 2;
+}
+.list-more .moreas a.all {
+	width: 54px;
+	background: none;
+}
+.list-more .moreas a.all:hover {
+	background: url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -760px -32px;
+}
+.list-more .moreas a#now {
+	font-weight: bold;
+	color: #333;
+	background: url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -814px -32px;
+	position: relative;
+	z-index: 2;
+}
+.list-more .moreas a#nowall {
+	font-weight: bold;
+	color: #333;
+	background: url(http://www.120center.com/skin/images/ask_titles.png) no-repeat -760px -32px;
+	position: relative;
+	z-index: 2;
+}
+.list-more .cons {
+	float: left;
+	width: 958px;
+	padding: 12px 5px 4px;
+	overflow: hidden;
+	border-color: #C9DFED;
+}
+.list-more .cons .mt {
+	float: left;
+	width: 956px;
+	height: 24px;
+	margin-top: 6px;
+	border: 1px solid #E4EDF3;
+	border-bottom-color: #D8E7F0;
+	background: #F8FAFC;
+	position: relative;
+	z-index: 1;
+}
+.list-more .cons .mt .bt {
+	float: left;
+	padding-left: 35px;
+	font: 22px/24px Verdana;
+}
+.list-more .cons .mt .backtop {
+	float: right;
+	padding-right: 26px;
+	font: 12px/24px SimSun;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 54px -1423px;
+}
+.list-more .cons .mt .jiantou {
+	width: 16px;
+	height: 9px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_tie_spans.gif) no-repeat 0 -230px;
+	position: absolute;
+	top: 24px;
+	left: 35px;
+	z-index: 2;
+}
+.list-more .cons ul {
+	float: left;
+	width: 958px;
+	padding: 10px 0;
+	font: 14px/30px SimSun;
+	color: #999;
+}
+.list-more .cons ul li {
+	float: left;
+	width: 218px;
+	padding-left: 10px;
+	margin-left: 10px;
+	display: inline;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -163px;
+}
+.list-more .cons .uline {
+	float: left;
+	width: 958px;
+	height: 0;
+	overflow: hidden;
+	border-top: 1px dashed #E3E3E3;
+}
+.list-news {
+	width: 970px;
+	height: auto;
+	overflow: hidden;
+}
+.list-news .newswt {
+	float: left;
+	width: 728px;
+	height: auto;
+	margin-top: 10px;
+	overflow: hidden;
+	border: 1px solid #B8D5E8;
+}
+.list-news .newswt .wttop {
+	display: block;
+	width: 728px;
+	height: 30px;
+	padding-top: 1px;
+	background: url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x 0 -1px;
+}
+.list-news .newswt .wttop strong {
+	float: left;
+	padding-left: 34px;
+	font: bold 14px/30px SimSun;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -338px;
+}
+.list-news .newswt .wttop .geng {
+	float: right;
+	padding-right: 15px;
+	font: 12px/30px SimSun;
+}
+.list-news .newswt ul {
+	float: left;
+	width: 728px;
+	padding: 10px 0;
+	font: 14px/30px SimSun;
+	color: #999;
+}
+.list-news .newswt ul li {
+	float: left;
+	width: 336px;
+	padding-left: 10px;
+	margin-left: 12px;
+	display: inline;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -163px;
+}
+.list-news .newshd {
+	float: right;
+	width: 230px;
+	height: auto;
+	margin-top: 10px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_tie_others.png) no-repeat 0 0;
+}
+.list-news .newshd strong {
+	display: block;
+	width: 180px;
+	height: 17px;
+	padding: 13px 0 0 25px;
+	overflow: hidden;
+	font-weight: bold;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -120px;
+	color: #666;
+}
+.list-news .newshd ul {
+	float: left;
+	width: 228px;
+	padding: 7px 0 11px;
+	font: 12px/22px SimSun;
+	border: 1px solid #C9DFED;
+	border-top: none;
+	background: #fff;
+}
+.list-news .newshd ul li {
+	float: left;
+	width: 198px;
+	padding-left: 10px;
+	margin-left: 10px;
+	display: inline;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -167px;
+}
+.tag-left {
+	float: left;
+	width: 730px;
+	height: auto;
+	overflow: hidden;
+}
+.tag-left .tagtop {
+	width: 728px;
+	overflow: hidden;
+	border: 1px solid #B8D5E8;
+	border-bottom: none;
+	position: relative;
+	z-index: 2;
+}
+.tag-left .tagtop .kebt {
+	display: block;
+	width: 728px;
+	height: 31px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x 0 -129px;
+}
+.tag-left .tagtop .kebt h1 {
+	float: left;
+	padding: 1px 0 0 34px;
+	font: bold 14px/30px SimSun;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -1382px;
+}
+.tag-left .tagtop .kebt .you {
+	float: right;
+	margin: 4px 0 0 0;
+	font: 12px/21px SimSun;
+}
+.tag-left .tagtop .kebt .you a {
+	float: left;
+	height: 21px;
+	padding-top: 1px;
+	margin-right: 10px;
+	overflow: hidden;
+	text-align: center;
+	background: url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat;
+	color: #333;
+	text-decoration: none;
+}
+.tag-left .tagtop .kebt .you a.a1 {
+	width: 75px;
+	background-position: -170px -144px;
+}
+.tag-left .tagtop .kebt .you a.a1:hover {
+	background-position: -170px -166px;
+}
+.tag-left .tagtop .kebt .you a.a2 {
+	width: 54px;
+	background-position: -170px -188px;
+}
+.tag-left .tagtop .kebt .you a.a2:hover {
+	background-position: -170px -210px;
+}
+.tag-left .woyao {
+	width: 708px;
+	height: 72px;
+	padding: 2px 10px 8px;
+	overflow: hidden;
+	border: 1px solid #B8D5E8;
+	border-top: none;
+	border-bottom-color: #E3EEF5;
+}
+.tag-left .woyao .tw {
+	float: left;
+	width: 184px;
+	height: 57px;
+	padding: 15px 0 0 10px;
+	overflow: hidden;
+}
+.tag-left .woyao .tw a {
+	display: block;
+	width: 170px;
+	height: 48px;
+	background: url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -266px -192px;
+}
+.tag-left .woyao .tw a:hover {
+	background-position: -266px -240px;
+}
+.tag-left .woyao .bz {
+	float: left;
+	width: 230px;
+	height: 38px;
+	padding-top: 34px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 139px -898px;
+	color: #666;
+}
+.tag-left .woyao .bz a {
+	text-decoration: underline;
+}
+.tag-left .tag {
+	width: 718px;
+	height: auto;
+	padding: 0 5px 10px;
+	overflow: hidden;
+	border: 1px solid #B8D5E8;
+	border-top: none;
+}
+.tag-left .tag ul {
+	width: 718px;
+	overflow: hidden;
+	font: 12px Verdana;
+	color: #333;
+	position: relative;
+	z-index: 3;
+}
+.tag-left .tag ul li {
+	float: left;
+	width: 718px;
+	padding: 8px 0 10px;
+	overflow: hidden;
+	border-bottom: 1px dashed #E3E3E3;
+}
+.tag-left .tag ul li.bg9fc {
+	background: #F6F9FC;
+}
+.tag-left .tag ul li span {
+	float: left;
+}
+.tag-left .tag ul li .wenti {
+	width: 480px;
+	padding: 0 10px 0 36px;
+	font: 14px/26px SimSun;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -1455px;
+}
+.tag-left .tag ul li .wenti .ks {
+	font-size: 12px;
+	line-height: 24px;
+	white-space: nowrap;
+}
+.tag-left .tag ul li .ks {
+	color: #999;
+	text-decoration: none;
+}
+.tag-left .tag ul li .ks:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+.tag-left .tag ul li .huidazhe {
+	width: 192px;
+	line-height: 26px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #999;
+}
+.tag-left .tag ul li .huida {
+	width: 670px;
+	padding: 4px 12px 0 36px;
+	font: 12px/24px SimSun;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -1492px;
+}
+.tag-left .tag .pages {
+	width: 718px;
+}
+.tag-left .ulbox {
+	float: left;
+	width: 728px;
+	height: auto;
+	margin-top: 10px;
+	border: 1px solid #B8D5E8;
+	border-top: none;
+}
+.tag-left .ulbox .ultop {
+	float: left;
+	width: 708px;
+	height: 30px;
+	padding: 2px 10px 0;
+	font: bold 14px/30px SimSun;
+	background: url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x 0 -128px;
+}
+.tag-left .ulbox .ultop span {
+	display: block;
+	padding-left: 24px;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat;
+}
+.tag-left .ulbox .ultop span.zui {
+	background-position: 0 -814px;
+}
+.tag-left .ulbox .ultop span.hud {
+	background-position: 0 -874px;
+}
+.tag-left .ulbox ul {
+	float: left;
+	width: 728px;
+	overflow: hidden;
+	padding: 10px 0;
+	font: 14px/30px SimSun;
+	color: #bbb;
+}
+.tag-left .ulbox ul li {
+	float: left;
+	width: 202px;
+	padding-left: 10px;
+	margin: 0 15px;
+	display: inline;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -164px;
+}
+.tag-right {
+	float: right;
+	width: 230px;
+	height: auto;
+	overflow: hidden;
+}
+.tag-right strong a {
+	color: #666;
+	text-decoration: none;
+}
+.tag-right strong a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+.tag-right .keyboxs {
+	display: block;
+	width: 230px;
+	margin-top: 10px;
+	overflow: hidden;
+	background: url(http://www.120center.com/skin/images/ask_tie_others.png) no-repeat 0 0;
+}
+.tag-right .keyboxs strong {
+	display: block;
+	width: 210px;
+	height: 17px;
+	padding: 13px 0 0 25px;
+	overflow: hidden;
+	font-weight: bold;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -120px;
+	color: #666;
+}
+.tag-right .keyboxs .cons {
+	display: block;
+	width: 208px;
+	padding: 5px 10px 10px;
+	overflow: hidden;
+	font: 12px/24px SimSun;
+	border-color: #C9DFED;
+	background: #fff;
+}
+.tag-right .keyboxs .cons a {
+	margin-right: 12px;
+	color: #333;
+	text-decoration: none;
+}
+.tag-right .keyboxs .cons a:hover {
+	color: #f60;
+	text-decoration: underline;
+}
+.tag-right .keyboxs .cons .ablue {
+	color: #06b;
+}
+.tag-right .keyboxs .cons .agreen {
+	color: #4B9801;
+}
+.tag-right .keyboxs .cons .aorange {
+	color: #f60;
+}
+.tag-right .looks {
+	display: block;
+	width: 228px;
+	height: 473px;
+	margin-top: 10px;
+	overflow: hidden;
+	border: 1px solid #C9DFED;
+}
+.tag-right .looks strong {
+	display: block;
+	width: 210px;
+	height: 21px;
+	padding: 9px 0 0 25px;
+	overflow: hidden;
+	font-weight: bold;
+	background: #F2F6FA url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 10px -124px;
+	border-bottom: 1px solid #E0EDF5;
+	color: #666;
+}
+.tag-right .looks .imgbox {
+	display: block;
+	width: 214px;
+	padding: 9px 0 8px 14px;
+	overflow: hidden;
+	border-bottom: 1px solid #E0ECF3;
+}
+.tag-right .looks .imgbox1 img {
+	float: left;
+	width: 200px;
+	height: 90px;
+}
+.tag-right .looks .imgbox1 p {
+	float: left;
+	width: 200px;
+	padding-top: 7px;
+	font: bold 12px SimSun;
+	text-align: center;
+}
+.tag-right .looks .imgbox2 {
+	padding-top: 6px;
+}
+.tag-right .looks .imgbox2 img {
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin-top: 2px;
+}
+.tag-right .looks .imgbox2 p {
+	float: left;
+	width: 124px;
+	margin-left: 10px;
+	display: inline;
+	font: 12px/18px SimSun;
+	color: #666;
+}
+.tag-right .looks ul {
+	width: 228px;
+	height: 48px;
+	overflow: hidden;
+	padding-top: 4px;
+	font: 12px/22px SimSun;
+	background: url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x 0 -160px;
+}
+.tag-right .looks ul li {
+	float: left;
+	width: 198px;
+	margin-left: 10px;
+	display: inline;
+	padding-left: 10px;
+	background: url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 8px;
+}
+.pages {
+	display: block;
+	height: 52px;
+	margin-top: -1px;
+	overflow: hidden;
+	border-top: 1px solid #DCE9F1;
+	position: relative;
+	z-index: 4;
+}
+.pages .pgleft {
+	float: left;
+	padding: 16px 0 0 4px;
+	font: 12px Verdana;
+	color: #666;
+}
+.pages .pgleft a {
+	float: left;
+	height: 19px;
+	padding: 0 5px;
+	overflow: hidden;
+	line-height: 20px;
+	margin-left: 6px;
+	display: inline;
+	background: url(http://www.120center.com/skin/images/ask_list_pages.png) repeat-x 0 -210px;
+	border: 1px solid #CCD7E0;
+	color: #666;
+}
+.pages .pgleft a:hover {
+	color: #649DCA;
+	text-decoration: none;
+	border-color: #649DCA;
+}
+.pages .pgleft a.first, .pages .pgleft a.prev, .pages .pgleft a.next, .pages .pgleft a.last {
+	height: 21px;
+	border: none;
+	text-indent: -5000px;
+}
+.pages .pgleft a.first {
+	width: 30px;
+	background-position: 0 0;
+}
+.pages .pgleft a.first:hover {
+	background-position: 0 -21px;
+}
+.pages .pgleft a.prev {
+	width: 49px;
+	background-position: 0 -126px;
+}
+.pages .pgleft a.prev:hover {
+	background-position: 0 -147px;
+}
+.pages .pgleft a.next {
+	width: 49px;
+	background-position: 0 -168px;
+}
+.pages .pgleft a.next:hover {
+	background-position: 0 -189px;
+}
+.pages .pgleft a.last {
+	width: 30px;
+	background-position: 0 -42px;
+}
+.pages .pgleft a.last:hover {
+	background-position: 0 -63px;
+}
+.pages .pgleft span {
+	float: left;
+	margin-left: 6px;
+	display: inline;
+	color: #999;
+}
+.pages .pgleft span.now {
+	float: left;
+	height: 19px;
+	padding: 0 5px;
+	overflow: hidden;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	border: 1px solid #649DCA;
+	background: url(http://www.120center.com/skin/images/ask_list_pages.png) repeat-x 0 -229px;
+}
+.pages .pgright {
+	float: right;
+	padding: 16px 12px 0 0;
+	color: #666;
+}
+.pages .pgright span {
+	float: left;
+	margin-left: 6px;
+	display: inline;
+	line-height: 22px;
+}
+.pages .pgright input {
+	float: left;
+	margin-left: 6px;
+	display: inline;
+}
+.pages .pgright .intit {
+	width: 26px;
+	height: 20px;
+	padding: 0 2px;
+	font: 12px/20px SimSun;
+	border: 1px solid #C2C2C2;
+	color: #999;
+}
+.pages .pgright .inbut {
+	width: 40px;
+	height: 21px;
+	border: none;
+	background: url(http://www.120center.com/skin/images/ask_list_pages.png) no-repeat 0 0;
+	cursor: pointer;
+}
+.pages .pgright .inbut1 {
+	background-position: 0 -84px;
+	color: #666;
+}
+.pages .pgright .inbut2 {
+	background-position: 0 -105px;
+	color: #649DCA;
+}
+.pages2 {
+	height: auto;
+	margin-top: 0;
+	overflow: hidden;
+	border-top: none;
+}
+
+a.alltop {
+  background: url("../images/ask_list_table.gif") no-repeat scroll 0 0 transparent;
+  font: 14px/34px SimSun;
+  overflow: hidden;
+  padding: 0 0 1px 47px;
+}
+
+a.cattop {
+  background: url("../images/ask_list_table.gif") no-repeat scroll 0 -250px transparent;
+  font: 14px/34px SimSun;
+  overflow: hidden;
+  padding: 0 0 1px 52px;
+}
+
+a.areatop {
+  background: url("../images/ask_list_table.gif") no-repeat scroll 0 -220px transparent;
+  font: 14px/34px SimSun;
+  overflow: hidden;
+  padding: 0 0 1px 52px;
+}

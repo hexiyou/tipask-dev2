@@ -1,0 +1,17 @@
+<div class="clist">
+    <ul>
+        <li class="li3">积分</li>
+        <li class="li1">简评</li>
+        <li class="li4">用户名</li>
+        <li class="li4">时间</li>
+    </ul>
+    <!--{loop $commentlist  $comment}-->
+    <ul>
+
+        <li class="li3">魅力&nbsp;{if $comment['credit']>0}<font color="green">+{$comment['credit']}</font>{else}<font color="red">{$comment['credit']}</font>{/if}</li>
+        <li class="li1">{echo cutstr($comment['content'],58,'');}</li>
+        <li class="li4"><a target="_blank" href="{url user/space/$comment['authorid']}">{echo cutstr($comment['author'],12,'');}</a></li>
+        <li class="li4">{$comment['time']}</li>
+    </ul>
+    <!--{/loop}-->
+</div>

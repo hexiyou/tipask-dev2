@@ -1,0 +1,18 @@
+{eval $setting=$this->setting;}
+<!--相关已解决-->
+<!--{if $questionlist}-->
+<div class="clr"></div>
+<div class="tw_t">看看以下回答是否解决了您的疑问：</div>
+<div class="askfgx"></div>
+<div class="xgwt">
+    <ul>
+        <!--相关已解决结束-->
+        <!--{loop $questionlist $question}-->
+        <li>
+            <h1><span class="descask">问</span>：<a target="_blank" href="{url question/view/$question['id']}">{$question['title']}</a></h1>
+            <p><span class="descanswer">答</span>：{eval echo cutstr(strip_tags($question['bestanswer']),240)}[<a href="{url question/view/$question['id']}" taget="_blank">详情</a>]</p>
+        </li>
+        <!--{/loop}-->
+    </ul>
+</div>
+<!--{/if}-->

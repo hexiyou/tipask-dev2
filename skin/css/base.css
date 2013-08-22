@@ -1,0 +1,1150 @@
+/* CSS Document */
+body {
+/*	background:#388;
+	text-align:center;
+	margin:0;color:#333;
+	background-image:url(http://www.120center.com/skin/images/bg_zq2011.jpg);*/
+	margin:0;padding:0;font-size:12px;color:#333;background:#338889 url(http://www.120center.com/skin/images/bg_zq2011.jpg) no-repeat center 0;
+}
+div {text-align:left;}
+body > div {margin-right:auto;margin-left:auto;}
+form, input, select {margin:0px; padding:0px;}
+body, div, td {font-size:12px;font-family:"宋体";}
+img,a img{border:0; margin:0; padding:0;}
+input,select {font-size:12px;vertical-align:absmiddle;}
+input {padding-top:1px;}
+a {color:#333; text-decoration:none;}
+a:hover {color:#f60;text-decoration:underline;}
+a.redfont {color: #d00;text-decoration:none;} 
+a.redfont:hover {color:#f60; text-decoration:underline;}
+a.orangefont {color: #f60!important;text-decoration:none;} 
+a.orangefont:hover {color:#f60!important; text-decoration:underline;}
+a.blackfont {color: #333;text-decoration:none;}
+a.blackfont:hover {color:#f60;text-decoration:underline;}
+a.bluefont {color: #06c;text-decoration:none;}
+a.bluefont:hover {color:#f60;text-decoration:underline;}
+.bluefont a{color: #069;text-decoration:none;}
+.bluefont a:hover {color:#f60;text-decoration:underline;}
+.clearer{height:0;overflow:hidden;clear:both;}
+.orange {color:#f60!important;}
+.yellow {color:#fc0!important;}
+.blue {color: #069!important;}
+
+.tybutton {
+	height:20px;
+	border:#333 1px solid;
+	cursor:pointer;
+	background:#fff url(http://www.120center.com/skin/images/butbg_02.gif) repeat-x left top;
+	padding:2px 3px 0 5px;
+}
+
+
+/* =================导航新菜单 */
+.Nav {
+	width:970px;
+	height:87px;
+	background:#fff;
+	padding:5px 5px 3px 5px;
+	}
+.NavTop {
+	width:970px;
+	height:28px;
+	border-bottom:#E75000 1px solid;
+	}
+	
+.NavTop a, .NavTop a:hover {
+	color: #FFF;
+}
+	
+.Nav .top1, .Nav .top2, .Nav .top3, .Nav .top4, .Nav .top5, .Nav .top6 {
+	float:left;
+	text-align:center;
+	font:bold 14px "宋体";
+	padding-top:8px;
+	height:20px;
+	color:#fff;
+	}
+.Nav .top1 {width:92px; background:url(http://www.120center.com/skin/images/nav_top_1.gif) no-repeat;}
+.Nav .top2 {width:331px; background:url(http://www.120center.com/skin/images/nav_top_2.gif) no-repeat;}
+.Nav .top3 {width:229px; background:url(http://www.120center.com/skin/images/nav_top_3.gif) no-repeat;}
+.Nav .top4 {width:91px; background:url(http://www.120center.com/skin/images/nav_top_4.gif) no-repeat;}
+.Nav .top5 {width:133px; background:url(http://www.120center.com/skin/images/nav_top_5.gif) no-repeat;}
+.Nav .top6 {width:94px; background:url(http://www.120center.com/skin/images/nav_top_6.gif) no-repeat;}
+
+.NavCon_home {
+	float:left;
+	width:970px;
+	height:57px;
+	border-bottom:#FFB404 1px solid;
+	background:url(http://www.120center.com/skin/images/navbg.jpg) repeat-x;
+	margin:0;
+	display:inline;
+	}
+
+.NavCon {
+	float:left;
+	width:970px;
+	height:57px;
+	border-bottom:#FFB404 1px solid;
+	background:url(http://www.120center.com/skin/images/navbg.jpg) repeat-x;
+	margin:0 0 0 5px;
+	display:inline;
+	}
+.NavLine {
+	float:left;
+	width:2px;
+	height:57px;
+	background:url(http://www.120center.com/skin/images/navline.jpg) no-repeat;
+	overflow:hidden;
+	}
+.NavLine2 {
+	float:right;
+	width:2px;
+	height:57px;
+	background:url(http://www.120center.com/skin/images/navline2.jpg) no-repeat;
+	overflow:hidden;
+	}
+.NavCon ul, .NavCon_home ul {
+	float:left;
+	color:#fb6;
+	padding:9px 12px 3px 13px;
+	line-height:22px;
+	margin:0;
+	background:url(http://www.120center.com/skin/images/navline1.jpg) no-repeat right 0;
+	}
+.NavCon .nobg, .NavCon_home .nobg {background:none;}
+.NavCon .red a, .NavCon_home .red a {color:#f00;}
+
+
+
+/*---------首页导航----------*/
+
+#topbar, #ad970, #logosearch {width:980px;background:#fff;}
+
+#topbar {padding:0 0 2px 0;}
+
+#login {float:left;padding:5px 0 0 10px;}
+#login input {vertical-align:middle;}
+
+#login .tb1 {
+	width:90px;
+	height:17px;
+	border:#999 1px solid;
+	padding-left:2px;
+}
+
+#login .but1, #login .but2 {
+	height:20px;
+	border:#999 1px solid;
+	cursor:pointer;
+}
+
+#login .but1 {
+	background:url(http://www.120center.com/skin/images/butbg_01.gif) repeat-x left top;
+	padding:2px 3px 0 5px;
+}
+
+#login .but2 {
+	width:55px;
+	background:url(http://www.120center.com/skin/images/ico_help.gif) no-repeat 5px center;
+	padding:2px 0 0 20px!important;
+	padding:3px 0 0 20px;
+	text-align:left;
+	color:#06c;
+}
+
+.topbar {
+	width:980px;
+	background:#fff;
+	height:32px;
+	padding:0 0 2px 0;
+}
+
+
+
+.hudong {
+	float:left;
+	padding:12px 0 0 10px;
+	color:#999;
+}
+
+.hudong img {
+	padding:1px 0 0 0;
+	+padding:0;
+	vertical-align:top;
+}
+
+
+#allsite {
+	float:right;
+	color:#bbb;
+	margin:10px 10px 0 0;
+	display:inline;
+}
+
+.allsite {
+	float:right;
+	color:#bbb;
+	margin:10px 10px 0 0;
+	display:inline;
+	font-family:Verdana;
+	}
+
+#logosearch {
+	height:60px;
+	overflow:hidden;
+	clear:both;
+	padding:5px 0 0 0;
+}
+
+#logosearch .logo {
+	float:left;
+	padding:5px 0 0 5px;
+}
+
+#logosearch .logo img {
+	background: url(http://www.120center.com/skin/images/39logo.gif);
+	width: 175px; height: 50px;
+}
+
+
+#logosearch .s1,#logosearch .s2, #logosearch .s3 {margin-top:5px;}
+
+#logosearch .s1, #logosearch .s3 {
+	float:left;
+	width:10px;
+	height:50px;
+}
+#logosearch .s1 {background:url(http://www.120center.com/skin/images/search_bg1.gif) no-repeat left top;}
+#logosearch .s3 {background:url(http://www.120center.com/skin/images/search_bg3.gif) no-repeat left top;margin-right:10px;}
+
+#logosearch .s2 {
+	float:left;
+	height:50px;
+	padding:11px 4px 5px 5px;
+	background:url(http://www.120center.com/skin/images/search_bg2.gif) repeat-x left top;
+}
+
+
+#logosearch .keyword {
+	float:left;
+	height:44px;
+	width:500px;
+	color:#bbb;
+	line-height:20px;
+	padding:10px 0 0 0;
+	letter-spacing:-1px;
+	font-family:verdana;
+}
+
+#logosearch .keyword a {color:#06c;}
+#logosearch .keyword a:hover {color:#f60;}
+
+#logosearch .button {
+	float:right;
+	width:65px;-width:66px;
+	padding:10px 0 0 0;
+}
+
+#logosearch .button a {cursor:pointer;}
+
+#logosearch .button a {
+	float:left;
+	margin:0 0 3px 0;
+}
+
+#logosearch .search {
+	float:left;
+	height:32px;
+	margin:2px 0 0 0;
+	display:inline;
+}
+
+#logosearch .tbox {
+	float:left;
+	height:18px;
+	width:130px;
+	+width:130px;
+	padding:4px 2px 0 3px;
+	margin:0 0 4px 0;
+	font-size:14px;
+	border:1px solid;
+	border-color:#7c7c7c #cecece #c3c3c3 #7c7c7c;
+	background:#fff url(http://www.120center.com/skin/images/sbox_bg.gif) no-repeat;
+}
+
+#logosearch .btns {
+	float:left;
+	margin:10px 0 0 10px;
+}
+
+#logosearch .data {
+	float:left;
+	margin:6px 10px 0 0;
+	font-size:14px;
+}
+
+#logosearch .btns span {
+	float:left;
+	width:68px;
+	height:16px;
+	padding:4px 0 0 22px;
+	margin:0 5px 0 0;
+	background:url(http://www.120center.com/skin/images/btn_search2.gif) repeat-x left top;
+}
+
+#logosearch .btns span a {text-decoration:none;}
+
+#logosearch .sbtn {
+	float:left;
+	width:60px;
+	height:24px;
+	font-size:14px;
+	font-weight:bold;
+	padding:2px 0 0 2px;
+	margin:0 0 4px 0;
+	border:#999 1px solid;
+	background:url(http://www.120center.com/skin/images/butbg_02.gif) repeat-x left top;
+}
+#logosearch .radio {margin:0 4px 2px 0;+margin:0 0 2px 0;}
+#logosearch input,#logosearch select {vertical-align:middle;}
+#logosearch select {font-size:14px;}
+#logosearch form span {float:left;}
+
+.select {
+	float: left;
+	margin:0;
+	display: inline;
+	padding:1px 0 1px 2px;
+	background:#fff url(http://www.120center.com/skin/images/sbox_bg.gif) no-repeat;
+	border:#7c7c7c 1px solid;
+	border-right:#c3c3c3 1px solid;
+	border-bottom:#c3c3c3 1px solid;
+}
+
+.select span {
+  border:1px solid #fff;
+  float: left;
+}
+
+/* 子选择器，在FF等非IE浏览器中识别 */
+.select>span {
+  height: 18px;
+  overflow:hidden;
+  }
+  
+/* 通配选择符，只在IE浏览器中识别 */
+* Html .select span select {
+  display:block;
+  float: left;
+  margin: -2px;
+}
+
+.select span>select {
+  display:block;
+  float:none;
+  margin: -2px;
+  padding: 0px;
+  font-size:14px;
+}
+
+
+
+
+
+
+
+
+#navigation {
+	width:970px;
+	height:52px;
+	padding:5px 0 4px 0;
+	border:#fff 5px solid;
+	border-bottom:none;
+	border-top:none;
+	background:#fff url(http://www.120center.com/skin/images/nav_bg5.gif) repeat-x left bottom;
+}
+
+
+#navigation .nimg1,#navigation .nimg6{
+	float:left;
+	width:5px;
+	height:52px;
+}
+#navigation .nimg1 {background:#fff url(http://www.120center.com/skin/images/nav_bg1.gif) no-repeat left top;}
+#navigation .nimg6 {float:right;background:#fff url(http://www.120center.com/skin/images/nav_bg2.gif) no-repeat left top;}
+
+#navigation .nimg2,#navigation .nimg3,#navigation .nimg4,#navigation .nimg5{
+	float:left;
+	width:67px;
+	height:52px;
+}
+
+/*#navigation .nimg2 {background:#fff url(http://www.120center.com/skin/images/nav_01.gif) no-repeat left top;}
+#navigation .nimg3 {background:#fff url(http://www.120center.com/skin/images/nav_02.gif) no-repeat left top;}
+#navigation .nimg4 {background:#fff url(http://www.120center.com/skin/images/nav_03.gif) no-repeat left top;}
+#navigation .nimg5 {background:#fff url(http://www.120center.com/skin/images/nav_04.gif) no-repeat left top;}*/
+
+
+#navigation .ntext0,#navigation .ntext1,#navigation .ntext2,#navigation .ntext3,#navigation .ntext4 {
+	float:left;
+	margin:7px 19px 0 19px;
+	line-height:20px;
+	display:inline;
+}
+
+#navigation .ntext4 {
+	margin-right:0;
+}
+
+
+/*---------内页导航----------*/
+
+#art_topbar {
+	width:980px;
+	height:35px;
+	background:#fff;
+	padding:0 0 5px 0;
+}
+
+#art_topbar .logo {
+	float:left;
+	padding:5px 5px 0 5px;
+}
+
+#art_topbar .nav1 {
+	float:right;
+	padding:0;
+	margin:10px 10px 0 0;
+}
+
+#art_topbar .nav1 li {
+	float:left;
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+#art_topbar .nav1 li a {
+	float:left;
+	padding:3px 3px 1px 3px;
+	margin:0 3px 0 0;
+	font-weight:bold;
+	color:#fff;
+}
+
+#art_topbar .nav1 li a:hover {
+	text-decoration:none;
+	background:#eee;
+	color:#666;
+}
+
+#art_topbar .nav1 li .b1 {background:#05f;}
+#art_topbar .nav1 li .b2 {background:#f06;}
+#art_topbar .nav1 li .b3 {background:#f90;}
+#art_topbar .nav1 li .b4 {background:#7c0;}
+
+#art_topbar ul {
+	float:right;
+	display:inline;
+	margin:12px 10px 0 0;
+	padding:2px 0 0 0;
+	border-left:#999 1px solid;
+}
+
+#art_topbar ul li {
+	float:left;
+	list-style:none;
+	display:inline;
+	padding:0;
+	margin:0 0 0 8px;
+}
+#art_topbar ul li a {text-decoration:underline;}
+
+
+
+
+/*---------新内页导航----------*/
+
+.art_top {
+	width:980px;
+	height:35px;
+	background:#fff;
+	padding:0 0 5px 0;
+}
+
+.art_top .logo {
+	float:left;
+	padding:5px 5px 0 5px;
+}
+
+
+.art_top ul {
+	float:right;
+	display:inline;
+	margin:14px 5px 0 0;
+}
+
+.art_top ul li {
+	float:left;
+	list-style:none;
+	display:inline;
+	padding:4px 5px 0 20px;
+	margin:0 0 0 15px;
+}
+.art_top .ico1 {background:url(http://www.120center.com/skin/images/site_icon.gif) no-repeat 0 0;}
+.art_top .ico2 {background:url(http://www.120center.com/skin/images/site_icon.gif) no-repeat 0 -23px;}
+.art_top .ico3 {background:url(http://www.120center.com/skin/images/site_icon.gif) no-repeat 0 -47px;}
+.art_top .ico4 {background:url(http://www.120center.com/skin/images/site_icon.gif) no-repeat 0 -71px;}
+.art_top .ico5 {background:url(http://www.120center.com/skin/images/site_icon.gif) no-repeat 0 -95px;}
+
+.art_menu {
+	width:980px;
+	height:100%;
+	overflow:auto;
+	margin:0 auto;
+	padding:0 0 5px 0;
+	background:#fff;
+}
+
+.art_menu .menu_topline{
+	float:left;
+	width:970px;
+	height:2px;
+	margin: 0 0 0 5px;
+	display:inline;
+	clear:both;
+	overflow:hidden;
+	background:url(http://www.120center.com/skin/images/art_menu_topline.gif) no-repeat 0 0;
+}
+
+.art_menu .menubox{
+	float:left;
+	width:968px;
+	margin:0 0 0 5px;
+	display:inline;
+	border:#f60 1px solid;
+	background:#ffe url(http://www.120center.com/skin/images/art_menu_bg.gif) repeat-x 1px 0;
+}
+
+
+.art_menu .menubox ul{
+	color:#fb6;
+	line-height:20px;
+	padding:6px 17px 3px 17px;
+	background:url(http://www.120center.com/skin/images/art_menu_line.gif) no-repeat right 0;
+}
+
+.art_menu .menubox .nobg {background:none;}
+
+
+/*---------广告----------*/
+
+#ad970 {
+	padding:0 0 5px 0;
+	text-align:center;
+	overflow:hidden;
+	clear:both;
+}
+
+#ad_code {width:980px;background:#fff;}
+
+
+/* 友情链接 ------------------------*/
+.links {
+	width:980px;
+	margin:0 auto;
+	background:#fff;
+	padding:5px 0 0 0;
+}
+
+.links .title ,.links ul{
+	float:left;
+	width:968px;
+	display:inline;
+}
+
+.links .title {
+	border:#B7CFCC 1px solid;
+	border-bottom:none;
+	padding:7px 0 4px 0;
+	background:url(http://www.120center.com/skin/images/links_title_bg.gif) repeat-x left top;
+	margin:0 0 0 5px;
+}
+
+.links .title .tt {
+	float:left;
+	font-weight:bold;
+	padding:0 0 0 8px;
+}
+
+.links .title .more {
+	float:right;
+	margin:0 10px 0 0;
+	display:inline;
+}
+
+.links .box {
+	float:left;
+	width:968px;
+	border:#B7CFCC 1px solid;
+	border-top:none;
+	margin:0 0 0 5px;
+	padding:0 0 1px 0;
+	display:inline;
+}
+
+.links ul {
+	float:left;
+	padding:0;
+	margin:0;
+	list-style:none;
+	border-top:#fff 1px solid;
+}
+
+.links li {
+	float:left;
+	width:110px;
+	line-height:20px;
+	padding:3px 0 0 10px;
+	background:#f7f7f7;
+	margin:0 0 0 1px;
+	display:inline;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+/*-----google ad css--------*/
+
+.gbox360,.gbox210{float:left;border:#ddd 1px solid;background:url(http://www.120center.com/skin/images/links_title_bg.gif) repeat-x left top;}
+
+.gbox210{width:208px;margin:10px 0 0 0;}
+
+.gbox360{width:366px;margin:0 0 10px 0;border:none;border-top:#ddd 1px solid;}
+
+.gbox360 .gtitle,.gbox210 .gtitle{/*background:url(http://www.120center.com/skin/images/biao_arrow45_2.gif) no-repeat 5px 9px;*/padding:8px 0 4px 10px;+padding:8px 0 5px 10px;-padding:8px 0 5px 10px;font:12px 宋体;font-weight:bold;}
+
+.gbox210 .gtitle{width:188px;}
+.gbox360 .gtitle{width:346px;}
+
+.gbox360 .gtitle a,.gbox360 .gtitle a:hover,.gbox210 .gtitle a,.gbox210 .gtitle a:hover{text-decoration:none;color:#333;}
+
+.gbox360 .tbox,.gbox210 .tbox{font-size:12px;line-height:18px;border-top:#D9F7F4 1px solid;}
+
+.gbox360 .tbox{width:351px;padding:10px 5px 5px 10px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.gbox210 .tbox{width:193px;padding:10px 5px 10px 10px;}
+
+.gbox360 .tbox a,.gbox210 .tbox a{text-decoration:underline;font-size:12px;color:#06c;}
+
+.gbox360 .tbox a:hover,.gbox210 .tbox a:hover{color:#f60;}
+
+.baidubox {float:left;width:360px;padding:2px 0 4px 6px;border-top:#eddff7 1px solid;}
+
+#art_baidu {background:url(http://images.39.net/sex/images/links_title_bg.gif) repeat-x left top;}
+
+
+
+/*----------- 导航上面单条文字链 ----------*/
+.artToplinkWrap {
+	float:left;
+	margin:16px 0 0 10px;
+	display:inline;
+}
+
+/* 新广告CSS -------------------------------*/
+.hpflash0 {
+	float:left;
+	width:550px;
+	padding:5px 0;
+}
+
+.hpflash1 {
+	float:left;
+	width:200px;
+	padding:5px 5px 5px 4px;
+	border-left:#ddd 1px solid;
+}
+
+.hpflash2 {
+	float:left;
+	width:200px;
+	padding:5px 4px 5px 5px;
+	border-right:#ddd 1px solid;
+}
+.BBSWrap iframe {overflow-x: hidden;overflow-y:hidden!important; } 
+.la51 {display:none;}
+
+
+
+/*====================================新导航CSS开始========================================*/
+.logosearch, .navigation {width:980px;margin:0 auto;background:#fff;}
+
+/*.skeywords {float:right;width:540px;margin:1px 0 0 0;color:#bbb;} 修改于 20101215 缩短*/
+.skeywords {float:right;width:440px;margin:1px 0 0 0;color:#bbb;}
+/*.skeywords ul{float:left;width:540px;margin:0;padding:0;} 修改于 20101215 缩短*/
+.skeywords ul{float:left;width:440px;margin:0;padding:0;overflow:hidden;}
+
+.skeywords li{float:left;margin:0;padding:0;width:58px;font-size:12px;margin:6px 0 0 0;background:url(http://www.120center.com/skin/images/arrow.gif) no-repeat 0 -63px;text-align:center;line-height:normal;list-style:none;}
+.skeywords .w1 {width:70px;}
+.skeywords .w2 {width:50px;}
+.skeywords a {color:#069;}
+.skeywords a:hover {color:#f60;}
+.nobg {background:none!important;}
+
+/* Logo&Serach CSS */
+.logosearch {height:50px;padding:12px 0 5px 0;}
+.logosearch .logo {float:left;width:150px;height:45px;margin:0 0 0 5px;display:inline;}
+
+/*.logosearch .search {float:left;width:268px;height:41px;margin:2px 0 0 15px;background:url(http://www.120center.com/skin/images/search_bg.gif) no-repeat 0 0;text-align:left;} 修改于 20101215 加长*/
+.logosearch .search {float:left;width:368px;height:41px;margin:2px 0 0 15px;background:url(http://www.120center.com/skin/images/search_bg.gif) no-repeat 0 0;text-align:left;}
+
+.logosearch .search .option {width:60px;height:18px;padding:2px 0 0 6px;-padding:3px 0 0 6px;margin:10px 0 0 6px;color:#666;font-size:14px;line-height:14px;+line-height:16px;position:absolute;z-index:10;background:#fff url(http://www.120center.com/skin/images/down_btn.gif) no-repeat 50px 2px;cursor:pointer;}
+.logosearch .search .sbox {float:left;}
+
+/*.logosearch .search .sbox input {width:113px;height:20px;color:#666;font-size:14px;padding:6px 0 0 66px;margin:5px 0 0 5px;border-top:#7b7b7b 1px solid;border-left:#7b7b7b 1px solid;border-right:#cbccce 1px solid;border-bottom:#cbccce 1px solid;position:absolute;z-index:0;} 修改于 20101215 加长*/
+.logosearch .search .sbox input {width:210px;height:20px;color:#666;font-size:14px;padding:6px 0 0 66px;margin:5px 0 0 5px;border-top:#7b7b7b 1px solid;border-left:#7b7b7b 1px solid;border-right:#cbccce 1px solid;border-bottom:#cbccce 1px solid;position:absolute;z-index:0;}
+
+
+.logosearch .search .sbtn {float:right;width:78px;height:41px;text-align:left;background:url(http://www.120center.com/skin/images/search_bg.gif) no-repeat right 0px;}
+.logosearch .search .sbtn input {width:73px;height:28px;padding:0 0 4px 0;+padding:0 0 1px 0;margin:5px 0 0 0;color:#000;font:bold 14px Verdana;background:url(http://www.120center.com/skin/images/splinter_btn.gif) no-repeat 0 0;border:0;cursor:pointer;}
+
+#sbArea_h {width:60px;font-size:14px;color:#d78100;padding:1px 0 1px 1px;margin:32px 0 0 5px;border:#cbccce 1px solid;position:absolute;z-index:20;background:#fff;
+	opacity: 0.9;
+	filter:alpha(opacity=90);
+}
+#sbArea_h a {float:left;color:#666;text-decoration:none;}
+#sbArea_h a:hover {color:#fff;background:#f90 url(http://www.120center.com/skin/images/sboxbg.gif) no-repeat 50px -4px;}
+#sbArea_h div {float:left;width:54px;font-size:14px;padding:2px 0 2px 5px;-padding:3px 0 0 5px;cursor:pointer;}
+
+/* 主导航 CSS */
+.navigation {height:120px;}
+.navigation ul,.navigation li {float:left;list-style-type:none;padding:0;margin:0;}
+.navigation li {line-height:normal;overflow:visible!important;font-size:12px;}
+.navigation .nav_icon { background: none; }
+
+.navigation .nav_text, .navigation .nav_icon {float:left;width:970px;margin:0 0 0 5px!important;display:inline; padding: 0;}
+.navigation .nav_text {width:970px;height:53px;background:url(http://www.120center.com/skin/images/nav_line.gif) repeat-x 0 0!important;}
+.navigation .nav_text .bgl{float:left;width:5px;height:53px;background:url(http://www.120center.com/skin/images/nav_bg.gif) no-repeat -148px 0!important;}
+.navigation .nav_text .bgr{float:right;width:5px;height:53px;background:url(http://www.120center.com/skin/images/nav_bg.gif) no-repeat -153px 0!important;}
+.navigation .nav_text .bgl, .navigation .nav_text .bgr {
+	margin: 0; padding: 0;
+}
+.navigation .nav_text ul {margin:4px 0 0 0;}
+.navigation .nav_text .people {width:67px;}
+.navigation .nav_text .disease {width:245px;}
+.navigation .nav_text .drug {width:125px;}
+.navigation .nav_text .disease .s {width:4px;margin:5px 0 0 5px;+margin:6px 0 0 5px;}
+.navigation .nav_text .living {width:198px;}
+.navigation .nav_text .snews {width:195px;}
+.navigation .nav_text .community {width:130px;}
+.navigation .nav_text .community .q {}
+.navigation .nav_text li {margin:5px 0 1px 8px;color:#fff;display:inline;}
+.navigation .nav_text a {color:#fff;line-height:15px;}
+.navigation .nav_text a:hover {color:#fc0;}
+.navigation .nav_text .head {float:left;width:27px;height:45px;margin:0;text-indent:-3000px;background:url(http://www.120center.com/skin/images/nav_bg.gif) no-repeat 0 0;}
+.navigation .nav_text .h {margin-top:0;}
+.navigation .nav_text .disease .head {background-position:0 0;}
+.navigation .nav_text .disease .head:hover {background-position:0 -55px;}
+.navigation .nav_text .drug .head {background-position:-168px 0;}
+.navigation .nav_text .drug .head:hover {background-position:-168px -55px;}
+.navigation .nav_text .living .head {background-position:-37px 0;}
+.navigation .nav_text .living .head:hover {background-position:-37px -55px;}
+.navigation .nav_text .snews .head {background-position:-74px 0;}
+.navigation .nav_text .snews .head:hover {background-position:-74px -55px;}
+.navigation .nav_text .community .head {background-position:-111px 0;}
+.navigation .nav_text .community .head:hover {background-position:-111px -55px;}
+.navigation .nav_text .inew1{width:14px;height:15px; position:absolute;margin:-9px 0 0 -115px;*margin:-30px 0 0 -115px;background:url(http://www.120center.com/skin/images/ico_new1.gif) no-repeat 0 0;}
+.navigation .nav_text .inew2{width:14px;height:15px; position:absolute;margin:-9px 0 0 -20px;*margin:-30px 0 0 -20px;background:url(http://www.120center.com/skin/images/ico_new3.gif) no-repeat 0 0;}
+.navigation .nav_text .inew3{width:14px;height:15px;overflow:hidden; position:absolute;margin:-9px 0 0 -20px;*margin:-30px 0 0 -20px;background:url(http://www.120center.com/skin/images/ico_new1.gif) no-repeat 0 0;}
+.navigation .nav_text .inew4{width:14px;height:15px; position:absolute;margin:-9px 0 0 -148px;*margin:-30px 0 0 -148px;background:url(http://www.120center.com/skin/images/ico_new1.gif) no-repeat 0 0;}
+.navigation .nav_icon {width:968px;height:55px;border:#ddd 1px solid;}
+.navigation .nav_icon li {background:url(http://www.120center.com/skin/images/icon_ks.gif) no-repeat 0 -698px;padding:0 1px;}
+.navigation .nav_icon li a {float:left;height:13px;padding:35px 5px 0 7px;background:url(http://www.120center.com/skin/images/icon_ks.gif) no-repeat;}
+.navigation .nav_icon .i1 {background-position:2px 0;padding:35px 6px 0 8px;}
+.navigation .nav_icon .i2 {color:#f60;background-position:2px -49px;padding:35px 6px 0 8px;}
+.navigation .nav_icon .i3 {background-position:2px -97px;}
+.navigation .nav_icon .i4 {background-position:7px -145px;}
+.navigation .nav_icon .i5 {background-position:15px -193px;}
+.navigation .nav_icon .i6 {background-position:15px -242px;}
+.navigation .nav_icon .i7 {background-position:10px -289px;}
+.navigation .nav_icon .i8 {background-position:5px -335px;}
+.navigation .nav_icon .i9 {background-position:5px -379px;}
+.navigation .nav_icon .i10 {background-position:8px -426px;}
+.navigation .nav_icon .i11 {background-position:0px -470px;padding:35px 7px 0 9px;}
+.navigation .nav_icon .i12 {background-position:5px -518px;}
+.navigation .nav_icon .i13 {background-position:1px -565px;}
+.navigation .nav_icon .i14 {background-position:3px -612px;}
+.navigation .nav_icon .i15 {background-position:1px -657px;height:20px;padding:35px 7px 0 9px;}
+.navigation .nav_icon .i15 span {background:url(http://www.120center.com/skin/images/icon_ks.gif) no-repeat -7px -765px;}
+.navigation .nav_icon .i16 {background-position:3px -796px;}
+.navigation .nav_icon .i17 {background-position:5px -847px;}
+.navigation .nav_icon .i18 {background-position:7px -900px;}
+.navigation .nav_icon .i19 {background-position:7px -960px;}
+.navigation .nav_icon .i20 {background-position:7px -1015px;}
+.navigation .nav_icon .i21 {background-position:5px -1066px;}
+.navigation .nav_icon .i22 {background-position:0 -1120px;padding:35px 6px 0 8px;}
+
+#ksbox a{color:#333;}
+#ksbox a:hover{color:#f60;}
+#ksbox {position:absolute;display:none;width:425px;height:245px;margin:109px 0 0 555px;+margin:56px 0 0 -420px;background:url(http://www.120center.com/skin/images/ksboxbg.png) no-repeat 0 0;-background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='59838.cn/images/ksboxbg.png',sizingMethod='crop');}
+#ksbox .title {width:420px;height:25px;background:#8ace7d;}
+#ksbox .title .t1 {float:left;width:73px;height:17px;padding:5px 0 0 0;margin:3px 0 0 3px;font-weight:bold;text-align:center;background:url(http://www.120center.com/skin/images/ksboxbg.gif) no-repeat 0 -97px;}
+#ksbox .title .t2 {float:left;color:#fff;margin:7px 0 0 10px;}
+#ksbox .title .t3 {float:right;width:10px;height:10px;margin:7px 5px 0 0;background:url(http://www.120center.com/skin/images/ksboxbg.gif) no-repeat -404px -103px;cursor:pointer;}
+#ksbox ul {width:408px;height:204px;padding:10px 0 0 10px;border:#ddd 1px solid;border-top:none;background:#fff url(http://www.120center.com/skin/images/ksboxbg.gif) no-repeat 0 135px;}
+#ksbox li {width:68px;height:25px;color:#999;}
+#ksbox li a, #ksbox li span {padding:0 0 0 10px;background:url(http://www.120center.com/skin/images/ksboxbg.gif) no-repeat -112px -102px;}
+
+/* 底部信息 CSS */
+.bottominfo,#bottominfo {width:980px;margin:0 auto;background:#fff;text-align:center;padding:25px 0 10px 0;line-height:22px;font-family:Verdana;}
+.gshanginfo {margin:0 auto;width:980px;height:70px;background:#fff;line-height:20px;padding:0 0 15px 0;}
+.gshanginfo a{color:#666;}
+.gshanginfo .gg {float:left;height:48px;padding:10px;display:inline;border:#ddd 1px solid;border-right:none;}
+.gshanginfo .gg img {vertical-align:middle;}
+.gshanginfo .g1 {margin:0 0 0 93px;border-right:none;}
+.gshanginfo .g2 {border-left:none;padding-top:15px;height:43px;}
+.gshanginfo .g3 {border-right:#ddd 1px solid;}
+.bline {width:970px;height:15px;border-bottom:#ccc 1px solid;border-left:#fff 5px solid;border-right:#fff 5px solid;background:#fff;}
+.cooperate {width:980px;margin:0 auto;height:40px;text-align:center;background:#fff;font-family:verdana;}
+.cooperate img {float:none;padding:0 6px 4px 6px;}
+.allsite {float:left;width:970px;padding:15px 5px 0 5px;background:#fff;overflow:auto;height:1%;text-align:center;}
+
+
+/*	-------------------------------------------------------------
+	global navigation
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+	
+	.global_navi {
+		width: 970px; padding: 0 5px;
+		background: #FFF;
+	}
+	
+	.global_navi div {
+		line-height: 28px;
+		padding: 0 5px;
+	}
+	
+	.global_navi p {
+		display: inline;
+		margin: 0; padding: 0;
+		+padding-right: 6px;
+	}
+	
+	.global_navi p a {
+		padding: 2px 2px 1px 2px;
+		font-weight: bold; color: #FFF!important;
+		text-decoration: none!important;
+	}
+	
+	.global_navi p a:hover {
+		color: #FFF!important;
+	}
+	
+	.global_navi .yellow { background: #7C0; }
+	.global_navi .brown  { background: #F90; }
+	.global_navi .blue   { background: #05F; }
+	.global_navi .red    { background: #F06; }
+	
+	.global_navi span {
+		border-left: 1px solid #F90;
+		padding-left: 4px;
+	}
+	
+	.global_navi span a {
+		padding: 0 5px;
+	}
+
+.smallnav {width:980px;height:25px; background:#fff; margin:0 auto;padding:5px 0 0 0;} 
+.smallnav .logo {float:left;width:110px;margin:1px 0 0 5px;display:inline;}
+.smallnav .baby {background: #7c0; }
+.smallnav .oldman {background: #f90; }
+.smallnav .man {background: #05f; }
+.smallnav .woman {background: #f06; }
+.smallnav ul {float:left;margin:0;padding:0;display:inline;}
+.smallnav li {float:left;list-style:none;height:16px;padding:5px 7px 2px 8px;display:inline;background:url(http://www.120center.com/skin/images/smallnav_bg.gif) no-repeat 0 5px;}
+.smallnav .yline {background:url(http://www.120center.com/skin/images/smallnav_bg.gif) no-repeat 0 -28px;}
+.smallnav .people {float:left;margin:1px 0 0 5px;}
+.smallnav .people li{padding:0;background:none;}
+.smallnav .people li a {float:left;height:14px;font-weight:bold;color:#fff;padding:2px 2px 0 2px;+padding:3px 2px 0 2px;line-height:12px;}
+.smallnav .nobg {background:none!important;}
+
+/*	-------------------------------------------------------------
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/	
+	
+.zt_navi {
+	width: 970px; padding:3px 5px 5px 5px; overflow:hidden;
+	background: #FFF;
+	color:#bbb;
+	font:12px/22px Arial;
+	border-top:#f2f2f2 1px solid;
+}
+
+.zt_navi a{color:#069; padding: 0 3px 0 4px;}
+
+.zt_navi a:hover{color:#F60;}	
+
+/*	-------------------------------------------------------------
+	疾病中心各二级频道 看热点版块 更多链接
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/	
+
+	.disease_kanredian_more {
+		background: none!important;		
+		width: 35px!important;
+		text-indent: 0!important;
+		float: right;
+		margin: -25px 0 0 0;
+	}
+	
+	.disease_kanredian_more a {
+		color: #F60; text-decoration: underline;
+		padding-right: 5px;
+	}
+
+
+
+/*	-------------------------------------------------------------
+	疾病中心各二级频道 直通车 咨询按钮
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/	
+
+	.database .keyword .askbtn { width: 100%; background: none; text-align: center; }
+	.database .keyword .askbtn a {
+		display: block;
+		background: url(http://www.120center.com/skin/images/btn_ask.gif);
+		width: 180px;
+		font: bold 14px/28px Arial; color: #FFF;
+		text-indent: 16px;
+		text-align: center;
+		margin: 0 auto
+	}
+
+
+/*	-------------------------------------------------------------
+	疾病中心各二级频道 问医生部分
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+	.askArt_neo .click { width: 70px; }
+	.askArt_neo .date { width: 105px; }	
+
+
+/*	-------------------------------------------------------------
+	疾病中心各二级频道　邮件订阅
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/
+	
+	.subscribe_neo {
+		border: 1px solid #F8DEAF;
+		margin-top: 10px;
+		background: url(http://www.120center.com/skin/images/bg1.gif) 0 -50px;
+	}
+	
+	.subscribe_neo h2 {
+		font: bold 14px/35px Arial; color: #F60;
+		text-indent: 10px;
+	}
+	
+	.subscribe_neo div {
+		height: 30px;
+		padding: 0 9px;
+		color: #666;
+		line-height: 20px;
+	}
+	
+	.subscribe_neo .inputBox {
+		width: 120px; margin: 1px 0;
+		float: left;
+	}
+	
+	.subscribe_neo .submitBtn {
+		background: url(http://www.120center.com/skin/images/btn1.gif); width: 47px; height: 20px;
+		float: right;
+		border: 0;
+		font: bold 12px/20px Arial; text-align: center; color: #FFF;
+	}
+
+
+
+
+/*	-------------------------------------------------------------
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/	
+	.channelNav p { margin: 0; }
+	
+	
+/*	-------------------------------------------------------------
+	数据中心导航
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/		
+	
+	.datacenterbox{
+		width:980px;margin:0 auto;padding:5px 0 5px 0;background:#fff;overflow:hidden;clear:both;
+	}
+	.datacenter{
+		float:left;
+		width:968px;
+		margin:0 0 0 5px;
+		display:inline;
+		border:1px solid #FFDF8E;
+		background:#FFFAEB;
+	}
+	.datacenter div{
+		float:left;
+		border:1px solid #fff;
+	}
+	.datacenter span{
+		float:left;
+		width:82px;
+		height:25px;
+		margin:0 10px 0 0;
+		background:url(http://www.120center.com/skin/images/datacenterbg.gif);
+		font:bold 12px/25px verdana;
+		text-align:center;
+		color:#fff;
+	}
+	.datacenter a{
+		float:left;
+		margin:0 10px 0 0;
+		background:url(http://www.120center.com/skin/images/list_arrow.gif) no-repeat 0 10px;
+		font:14px/25px verdana;
+		padding:0 0 0 10px;
+	}
+	
+/*	-------------------------------------------------------------
+	数据库底部版权说明
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/		
+	
+	.copyrightbox{
+		width:980px;margin:0 auto;padding:5px 0 5px 0;background:#fff;overflow:hidden;clear:both;
+	}
+	.copyrightbox div{
+		float:left;
+		width:968px;
+		margin:5px 0 0 5px;
+		display:inline;
+		border:1px solid #FFE5A4;
+		background:#FFFCF5;
+	}
+	.copyrightbox span{
+		float:left;
+		width:966px;
+		border:1px solid #fff;
+		font:12px/24px verdana;
+		text-align:center;
+		color:#f60;
+	}
+
+
+
+
+
+/*	-------------------------------------------------------------
+	hack
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/	
+
+	.wrap1 iframe { display: block; }
+	.channelNav { overflow: hidden; }
+	
+	
+/*导航*/
+.new_nav .new_navlogin input,.new_askser .new_sercen input{padding-top:0;}
+.new_nav{width:970px; height:30px;padding:0 5px; background:#fff;overflow:hidden;}
+.new_nav .new_navtext{float:left;font:12px/30px "宋体"; color:#333;}
+.new_nav .new_navtext div{float:left;color:#f60;}
+.new_nav .new_navtext div a{ font:12px/30px "verdana";border-right:#d2d2d2 1px solid;}
+.new_nav .new_navtext .region{padding:0 5px 0 0;overflow:hidden;}
+.new_nav .new_navtext .region a{color:#333; text-decoration:none;padding:0 5px 0 12px;border:none;background:url(http://www.120center.com/skin/images/ksboxbg.gif) no-repeat -112px -102px;}
+.new_nav .new_navtext .region .more{background:url(http://www.120center.com/skin/images/2010_navjt.gif) no-repeat right 9px;*background-position:right 7px;color:#333; text-decoration:none;padding:3px 10px 3px 5px;border:none;}
+.new_nav .new_navtext .region .more:hover{color:#f60;}
+
+.new_nav .new_navtext .text a{ padding:0 5px; color:#333; text-decoration:none;}
+.new_nav .new_navtext a:hover{color:#f60; text-decoration:underline;}
+
+.new_nav .new_navlogin{float:right;margin:0;+margin:5px 0 0 0;-margin:0;padding:0 5px 0 0;}
+
+/* 更多弹出窗口 */
+#morebox a{color:#333;}
+#morebox a:hover{color:#f60;}
+#morebox {position:absolute;display:none;width:425px;height:245px;margin:-6px 0 0 -220px;*margin:18px 0 0 -265px;background:url(http://www.120center.com/skin/images/ksboxbg.png) no-repeat 0 0;-background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/skin/images/ksboxbg.png',sizingMethod='crop');}
+#morebox .title {float:left;width:420px;height:25px;background:#8ace7d;}
+#morebox .title .t1 {float:left;width:73px;height:17px;padding:5px 0 0 0;margin:3px 0 0 3px;font:bold 12px/18px 宋体;color:#333;text-align:center;background:url(http://www.120center.com/skin/images/ksboxbg.gif) no-repeat 0 -97px;}
+#morebox .title .t2 {float:left;color:#fff;margin:7px 0 0 10px;font:12px/18px 宋体;}
+#morebox .title .t3 {float:right;width:10px;height:10px;margin:7px 5px 0 0;background:url(http://www.120center.com/skin/images/ksboxbg.gif) no-repeat -404px -103px;cursor:pointer;}
+#morebox ul {float:left;width:408px;height:204px;margin:0;padding:10px 0 0 10px;border:#ddd 1px solid;border-top:none;background:#fff url(http://www.120center.com/skin/images/ksboxbg.gif) no-repeat 0 135px;}
+#morebox li {float:left;width:68px;height:25px;display:block;font:12px/22px 宋体;color:#999; list-style:none;}
+#morebox li a, #morebox li span {padding:0 0 0 10px;font:12px/22px 宋体;background:url(http://www.120center.com/skin/images/ksboxbg.gif) no-repeat -112px -100px; *background-position:-112px -102px;}
+	
+/* 登录前 */
+.new_nav .new_navlogin .new_btn{margin:5px 0 0 5px;+margin:0 0 0 5px;-margin:5px 0 0 5px;width:50px; height:21px; background:url(http://www.120center.com/skin/images/2010_userbtn.gif) no-repeat;border:0; cursor:pointer; font:12px/21px "宋体";}
+
+#top_loginbox{position: absolute;width:202px;margin:25px 0 0 -82px;+margin:20px 0 0 -82px;-margin:25px 0 0 -82px;padding:0 4px 0 0;z-index:1000;display:none;background:url(http://www.120center.com/skin/images/loginboxbg_l.png) no-repeat 0 0;-background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/skin/images/loginboxbg_l.png',sizingMethod='crop');}
+#top_loginbox ul{float:left;width:177px;margin:0;padding:10px 8px 15px 15px;-padding:5px 8px 15px 15px;border:1px solid #cbdcdc;border-top:none;background:#fff;}
+#top_loginbox ul li{float:left;width:177px;margin:0;padding:9px 0 0 0;font:12px/20px 宋体;list-style:none;}
+#top_loginbox ul li input{width:130px;height:18px;margin:0 0 0 6px;padding:2px 0 0 2px;font:12px verdana;vertical-align: middle;}
+#top_loginbox ul li .loginbtn{width:54px;height:24px;margin:0 0 0 30px;padding:0 0 2px 0;*padding:2px 0 1px 0;font:bold 12px verdana;vertical-align: middle;border:none;cursor:pointer;background:url(http://www.120center.com/skin/images/2010_channelico.gif) no-repeat 0 -352px;}
+#top_loginbox ul li a{margin:0 0 0 10px;color:#069;}
+#top_loginbox ul li a:hover{color:#f60;}
+#top_loginbox iframe{top:0px;left:0px;position:absolute;visibility:inherit;z-index:-1;display:none;-display:block;}
+#top_loginbox span{width:202px;height:25px;display:block;overflow:hidden;background:#8ace7d;}
+#top_loginbox span b{float:left;width:73px;height:17px;padding:5px 0 0 0;margin:3px 0 0 3px;font:bold 12px/18px 宋体;color:#333;text-align:center;background:url(http://www.120center.com/skin/images/ksboxbg.gif) no-repeat 0 -97px;}
+#top_loginbox span cite{float:right;width:10px;height:10px;margin:7px 5px 0 0;background:url(http://www.120center.com/skin/images/ksboxbg.gif) no-repeat -404px -103px;cursor:pointer;}
+#top_loginbox ul .prompt{padding:3px 0 0 0;text-overflow:clip;white-space:pre-wrap;overflow:visible;font:12px/20px 宋体!important;font:12px/20px 宋体;color:#f60;}
+#top_loginbox div{float:left;width:100%;height:5px;display:block;overflow:hidden;background:url(http://www.120center.com/skin/images/loginboxbg_b.png) no-repeat 0 0;-background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/skin/images/loginboxbg_b.png',sizingMethod='crop');}
+/* 登录后 */
+.new_nav .new_navlogin .login_user,.new_nav .new_navlogin .quit{float:left;overflow:hidden;}
+.new_nav .new_navlogin .quit{padding:8px 0 0 0;+padding:5px 0 0 0;-padding:8px 0 0 0;}
+.new_nav .new_navlogin .login_user{margin:7px 0 0 0;+margin:4px 0 0 0;-margin:8px 0 0 0;padding:0 5px;}
+.new_nav .new_navlogin .login_user .username{background:url(http://www.120center.com/skin/images/2010_navjt.gif) no-repeat right 7px;padding:3px 10px 5px 5px;}
+#loginlist{position: absolute;width:123px;margin:0 0 0 -50px;*margin:16px 0 0 -125px;z-index:1000;display:none;}
+#loginlist ul{float:left;width:101px;margin:0;padding:5px 10px;border-left:1px solid #ff9900;border-right:1px solid #ff9900;background:#fffff7;}
+#loginlist li{width:101px;display:block;border-bottom:#ffcc66 1px solid; list-style:none;font:12px/26px 宋体!important; text-indent:5px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+#loginlist .noborder{border:none!important;}
+#loginlist li a{color:#333;}
+#loginlist li a:hover{color:#f60;}
+#loginlist iframe{top:0px;left:0px;position:absolute;visibility:inherit;z-index:-1;display:none;-display:block;}
+#loginlist span{width:123px;height:7px;display:block;overflow:hidden;background:url(http://www.120center.com/skin/images/2010_navborder.gif) 0 0;}
+#loginlist cite{width:123px;height:6px;display:block;overflow:hidden;background:url(http://www.120center.com/skin/images/2010_navborder.gif) 0 -43px;}
+	
+/*搜索条------------------------*/
+.new_search{float:right;margin:10px 5px 0 0;padding:0;height:27px;display:inline;overflow:hidden;}
+.new_search .sbox{float:left;width:176px;padding:2px 2px 0;height:25px;vertical-align:bottom;border:0;background:url(http://www.120center.com/skin/images/2010_channelico.gif) 0 -100px;}
+.new_search .sbox input{height:20px;padding:2px 0 0 0; border:0;width:100%;font:12px/20px "宋体";}
+.new_search .option{float:left;width:51px;background:#fff;height:27px;background:url(http://www.120center.com/skin/images/2010_channelico.gif) 0 0; font:12px/24px "宋体"; cursor:pointer;}
+.new_search #wn_h{display:block;width:100%;height:27px;font:12px/27px "宋体";overflow:hidden;background:url(http://www.120center.com/skin/images/2010_channelico.gif) 40px -38px;text-indent:5px;}
+.new_search #sbArea_h{clear:both;z-index:9999;position:absolute;margin:26px 0 0 0;*margin:-1px 0 0 0;padding:0;width:49px;background:#fff;border:1px solid #ffba52;font:12px/21px "宋体";opacity: 0.9;filter:alpha(opacity=90);}
+.new_search #sbArea_h a{font:12px/18px 宋体;color:#333;text-decoration:none;}
+.new_search #sbArea_h a:hover{background:url(http://www.120center.com/skin/images/sboxbg.gif) no-repeat 42px -4px #f90;color:#fff;}
+.new_search #sbArea_h div:hover{background:url(http://www.120center.com/skin/images/sboxbg.gif) no-repeat 42px -4px #f90;color:#fff;}
+.new_search #sbArea_h div{width:44px;padding:2px 0 2px 5px;-padding:3px 0 0 5px;font-size:12px;cursor:pointer;}
+.new_search .sbtn{float:left;margin-left:3px;*margin-left:1px;}
+.new_search .sbtn input{width:72px;height:27px;padding:0;*padding:1px 0 0 0;background:url(http://www.120center.com/skin/images/2010_channelico.gif) 0 -150px;font:bold 12px/26px Verdana;border:0; cursor:pointer;}
+/*	-------------------------------------------------------------
+	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -	*/	
+.new_zt_navi {
+	width: 970px; padding:3px 5px 8px 5px; overflow:hidden;
+	background: #FFF;
+	color:#bbb;
+	font:12px/22px Arial;
+	border-top:#f2f2f2 1px solid;
+}
+.new_zt_navi a{color:#069; padding: 0 3px 0 4px;}
+.new_zt_navi a:hover{color:#F60;}	
+
+/*重大专题题头------------------------*/
+.special_box{width:100%; height:100%; overflow:hidden; background:#fff; text-align:center;}
+.special_box .special_nav{width:970px;padding:0 5px; height:100%; overflow:hidden; margin:0 auto;}
+.special_box .special_nav .special_lo{float:left; width:95px; height:35px; background:url(http://www.120center.com/skin/images/sepecil_logo.gif) 0 0 no-repeat;}
+.special_box .special_nav .special_lo a{ display:block;width:100%; height:100%; text-indent:-10000px;}
+.special_box .special_nav .special_text{float:left;width:875px; height:35px; overflow:hidden; text-align:right; color:#ccc; font:12px/35px "宋体";}
+.special_box .special_nav .special_text a{color:#333; text-decoration:none;}
+.special_box .special_nav .special_text a:hover{color:#069; text-decoration:underline;}
+.narrow_nav {width:980px;}
+
+
+* {margin:0; padding:0;} img {border:none;} li {list-style:none;} .clearer {clear:both; height:0; overflow:hidden;}
+.guanzhu {display:block; width:540px; height:16px; overflow:hidden; font:12px/16px SimSun;}
+.guanzhu span {float:left; width:30px; height:16px; overflow:hidden; padding-left:6px; background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 33px -31px; color:#999;}
+.guanzhu ul {float:left; width:504px; height:16px; overflow:hidden;}
+.guanzhu ul li {float:left; margin:0 10px; display:inline;}
+.guanzhu ul li a {color:#999; text-decoration:none;} .guanzhu ul li a:hover{color:#f60; text-decoration:underline;}
+
+/* 2012 02 21 - ggad box*/
+.d960{border:1px #B8D5E8 solid; width:968px; text-align:center;}
+.dl728{float:left; width:728px;}
+.dr200{float:right; width:200px;}
+.fqmid {width:728px;overflow:hidden;border:1px solid #B8D5E8;}

@@ -1,0 +1,39 @@
+{template header}
+<div class="box">
+	<div class="box_left_nav font_gray">→ <a href="{SITE_URL}">{$setting['site_name']}</a> &gt; 精彩分类词条</div>
+
+	<div class="box_allwidth">
+		<div class="box_allwidth_top">
+			<div class="boxtop1_title"><strong>精彩问题推荐</strong></div>
+		</div>
+		<div class="clear">
+		</div>
+
+		<div class="jc_list">
+			<ul>
+                <!--{loop $recommendlist $recommend}-->
+				<li class="listb">
+				<div style class="ct_left_pic">
+					<img src="{$recommend['image']}" alt="{$recommend['title']}"  width="67" height="44"></div>
+				<div class="ct_right_txt blue">
+					<dl>
+						<dt class="ct_title"><span class="font_gray2">[<a target="_blank" href="#">{$recommend['category_name']}</a>]</span>
+						<a href="{$recommend['url']}" target="_blank">{$recommend['title']}</a></dt>
+						<dd class="ct_text">{$recommend['description']}
+						<a href="{$recommend['url']}" target="_blank">详情&gt;&gt;</a></dd>
+					</dl>
+				</div>
+				</li>
+				 <!--{/loop}-->
+			</ul>
+			<!--页码 begin-->
+			<div id="pg_center">
+				<div id="ask_page" style="padding: 5px 0pt;">
+					<span id="pg_right">{$departstr}</span>
+                                </div>
+			</div>
+		</div>
+   </div>
+</div>
+<div class="clear"></div>
+{template footer}

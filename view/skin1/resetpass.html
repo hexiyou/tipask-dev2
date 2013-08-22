@@ -1,0 +1,45 @@
+{template header}
+
+<div id="content">
+	<div  id="loginForm">
+		<div class="block">
+ 
+        <div class="boxtop2_title boxtop1">
+            <strong>重置密码</strong>
+        </div>
+		<br/><br/><br/>
+                
+		<div class="tips">
+			<ul>
+		      <li>重新设置新密码。</li>
+		  </ul>
+		</div>
+		
+		
+		<form name="loginform"  action="{url user/resetpass}" method="post" >
+		<div class="formItem">
+		<ul>
+		
+			<li>
+				重置新密码：<input type="password" size="42"  maxlength="18" class="txt" id="password" name="password">
+				<span id="usernametip"></span>
+			</li>
+
+	      	<li>
+				确认新密码：<input type="password" size="42" maxlength="18" class="txt" id="repassword" name="repassword" >
+				<span id="passwordtip"></span>
+	      	</li>
+
+			<li class="btns">
+				<input type="hidden" value="$authstr" name="authstr">
+				<input type="submit" value="重设密码" name="submit" class="btn">
+			</li>
+			
+		</ul>
+		</div>
+		</form>
+		<br/>
+	</div>
+</div>
+
+{template footer}

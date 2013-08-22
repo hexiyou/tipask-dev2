@@ -1,0 +1,93 @@
+{eval global $starttime,$querynum;$mtime = explode(' ', microtime());$runtime=number_format($mtime[1] + $mtime[0] - $starttime,6); $setting=$this->setting;$user=$this->user;$headernavlist=$this->nav;$regular=$this->regular;}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={TIPASK_CHARSET}"/>
+<title>{$navtitle} {$setting['site_name']} {$setting['seo_title']}</title>
+<meta name="keywords" content="{$metakeywords}{$setting['seo_keywords']}" />
+<meta name="description" content="$metadescription {$setting['site_name']} {$setting['seo_description']}" />
+<link href="{SITE_URL}skin/css/base.css" rel="stylesheet" type="text/css" />
+<link href="{SITE_URL}skin/css/ask_base.css" type="text/css" rel="stylesheet" />
+<link href="{SITE_URL}skin/css/list.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="{SITE_URL}skin/js/ask_function.js"></script>
+<script type="text/javascript">g_site_url='{SITE_URL}';g_suffix='{$setting['seo_suffix']}';</script>
+</head>
+<body>
+{template headers}
+<div class="wrap1">
+  <div class="wrap1 ask-sub"> <span class="subleft margintop10 color06b">
+  <!--{loop $navlist $nav}--> 
+  &gt;<a href="{url category/view/$nav['id']}/all/2.html"> {$nav['name']}</a> 
+  <!--{/loop}--> </span> <span class="subright margintop10 color666"> </span> </div>
+  <div class="list-left">
+    <div class="lefttop margintop10"> <span class="kebt">
+      <h1>{$category['name']}处方咨询</h1>
+      <span class="you"> <a href="" class="a1" target="_blank" title="咨询专家">咨询专家</a> <a href="" class="a2" target="_blank" title="留言">留言区</a> </span> <span class="jiahao" onclick="openShutManager(this,'showulbox')" title="点击展开"></span> </span> <span class="showul" id="showulbox" style="display:block;">
+      <ul class="color06b uls">
+        <!--{loop $sublist $index $sub}-->
+        <li> 
+          <!--{if $sub['id']==$cid}--> 
+          <font style="color: black; font-size: 14px;">{$sub['name']}</font> 
+          <!--{else}--> 
+        <a href="index.php?c-{$sub['id']}/all/{$ask_area}.html">{eval echo cutstr($sub['name'],10,'');}</a>
+          <!--{/if}--> 
+        </li>
+        <!--{/loop}-->
+      </ul>
+      <span class="jianhao" onclick="openShutManager(this,'showulbox')" title="点击关闭"></span> </span> </div>
+    <!--广告冠名-->
+    
+    <div class="chongxin"> <span class="tw"><a href="/?question/add.html" title="点击进行提问" target="_blank" ></a></span> <span class="bz color06b">想了解提问步骤？请查看　 　<a href="{url index/help}#如何提问" target="_blank" title="点击查看提问帮助">提问帮助</a></span> </div>
+    <div class="list"> <span class="limenu"> 
+      <!--{if all==$status}--><a class="now">全部问题</a><!--{else}--><a href="{url category/view/$cid/all/2.html}">全部问题</a><!--{/if}-->
+      </h3>
+      <!--{if 4==$status}--><a class="now">悬赏处方</a><!--{else}--><a href="{url category/view/$cid/4/2.html}">悬赏处方</a><!--{/if}--> 
+      <!--{if 1==$status}--><a class="now"><font color="#ff6600">？</font>待解决</a><!--{else}--><a href="{url category/view/$cid/1/2.html}"><font color="#ff6600">？</font>待解决</a><!--{/if}--> 
+      <!--{if 2==$status}--><a class="now"><font color="#1bbf00">√ </font>已解决</a><!--{else}--><a href="{url category/view/$cid/2/2.html}"><font color="#1bbf00">√ </font>已解决</a><!--{/if}--> 
+      </span> 
+      <!--冠名广告--> 
+      
+      <span class="lititle"><span>回复/点击</span><span>状态</span><span>最后回复</span></span>
+      <ul class="color06b">
+        <!--{loop $questionlist $question}-->
+        <li class=" " onmouseover="this.className='bg9fc'" onmouseout="this.className=' '"> <span class="tit"> <a href="{$question['url']}" class="bt" title="{$question['title']}" target="_blank">{$question['title']}</a> [<a href="{url category/view/$question['cid']}/all/2.html" target="_blank" class="ks">{$question['category_name']}</a>] </span> <span class="huifu">{$question['answers']}/6</span> <span class="zhuan"><img src="{SITE_URL}css/common/icn_{$question['status']}.gif" /></span> <span class="zuiho">{$question['format_time']}</span> </li>
+        <!--{/loop}-->
+      </ul>
+      <span class="pages"> <span class="pgleft">{$departstr}</span> <span class="pgright"> </span> </span> </div>
+    <div class="lisearch margintop10">    <form name="searchform"  action="{url question/search/3}" method="post">
+      <input id="kw" type="text" class="inputtext"  value="请在此提交您的问题，即有万名医生10分钟内为您解答" onfocus="if (this.value=='请在此提交您的问题，即有万名医生10分钟内为您解答'){this.value='';}; this.style.color='#333';" onblur="if (this.value==''){this.value='请在此提交您的问题，即有万名医生10分钟内为您解答';this.style.color='#bbb';}" style="color:#bbb;" name="word" />
+      <input type="button" class="inputbut inputbut1" onmouseover="this.className='inputbut inputbut2'" onmouseout="this.className='inputbut inputbut1'" value="提 问" onclick="ask_submit();" />
+            <input type="submit" class="inputbut inputbut1" onmouseover="this.className='inputbut inputbut2'" onmouseout="this.className='inputbut inputbut1'" value="搜 索"  >
+    </form>
+      <span class="leftbg"></span> <span class="rightbg"></span> </div>
+  </div>
+  <div class="list-right"> <span id="minyi"> </span><span class="liboxs color06b"> <strong>推荐医生</strong> <span class="cons"> 
+    <!--{eval $famouslist=$this->fromcache('famouslist');}--> 
+    <!--{loop $famouslist $famous}--> 
+    <span class="banzhu banzhu2">
+    <p class="p1"> <span class="imgbox"><a href="{url user/space/$famous['uid']}" target="_blank"><img src="{$famous['avatar']}" /></a></span> <span class="name"><a href="{url user/space/$famous['uid']}" title="{$famous['username']}" target="_blank">{$famous['username']}</a></span> <span class="jj">{$expert['categoryname']}</span> <span class="tiwen"><a href="#" title="向该医生提问" target="_blank"></a></span> <span class="clearer"></span> </p>
+    <p class="p2">已回答问题数：<b><a href="{url user/space/$famous['uid']}" target="_blank">{$questiontotal}</a></b> 条</p>
+    </span> 
+    <!--{/loop}--> 
+    </span> </span> <span class="liboxs color06b"> <strong>特约专家</strong> <span class="cons"> 
+    <!--{eval $expertlist=$this->fromcache('expertlist');}--> 
+    <!--{loop $expertlist $expert}--> 
+    <span class="banzhu">
+    <p class="p1"> <span class="imgbox"><a href="{url user/space/$expert['uid']}" target="_blank"><img src="{$expert['avatar']}" /></a></span> <span class="name"><a href="{url user/space/$expert['uid']}" target="_blank">{$expert['username']}</a></span> <span class="jj">擅长：{$expert['categoryname']}</span> <span class="zixun"><a href="#" title="在线咨询" target="_blank"></a></span> <span class="clearer"></span> </p>
+    <p class="p2 p3">已获得积分：<b><a href="#">{$expert['credit1']}</a></b>分</p>
+    </span> 
+    <!--{/loop}--> 
+    </span> </span> <span class="liboxs"> <strong>本科室最热帖子排行</strong> <span class="cons">
+    <ul class="uls">
+      {eval $recommendlist=$this->fromcache('recommendlist');} 
+      <!--{loop $recommendlist $index $recommend}-->
+      <li><a href="{url question/view/$recommend['qid']}"  title="$recommend['title']" target="_blank">{eval echo cutstr($recommend['title'],30);}</a></li>
+      <!--{/loop}-->
+    </ul>
+    </span> </span> <span class="liboxs"> <strong>疾病大全</strong> <span class="cons cons1"> <span class="abox"> <!--{loop $wordslist $hotword}-->
+           <a {if $hotword['qid']}href="{url question/view/$hotword['qid']}" {else}href="{url question/search/3/{$hotword['w']}}"{/if}>{$hotword['w']}</a>
+          <!--{/loop}--> </span> <span class="noline"></span> </span> </span> </div>
+</div>
+{template footers}
+</body>
+</html>

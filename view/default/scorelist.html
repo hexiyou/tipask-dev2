@@ -1,0 +1,39 @@
+{template header}
+<div class="content">
+    <div class="dh">用户排行榜Top 100</div>
+    <div class="title">
+        <ul>
+            <!--{if $type==1}--><li class="on"><a href="{url user/scorelist/1}">一周积分排行</a></li><!--{else}--><li class="current_none"><a href="{url user/scorelist/1}">一周积分排行</a></li><!--{/if}-->    
+            <!--{if $type==0}--><li class="on"><a href="{url user/scorelist/0}">总积分排行</a></li><!--{else}--><li class="current_none"><a href="{url user/scorelist/0}">总积分排行</a></li><!--{/if}-->    
+        </ul>
+        <div class="blank0"> </div>
+    </div>
+
+    <div class="clist">
+        <ul>
+            <li class="li2">排名</li>
+            <li class="li4">用户</li>
+            <li class="li3">经验</li>
+            <li class="li3">提问数</li>
+            <li class="li3">回答数</li>
+            <li class="li4">被采纳回答数</li>
+            <li class="li4">最后登录</li>
+        </ul>
+        <!--{loop $userlist $index $user}-->
+        <ul>
+            <li class="li2">{eval echo(++$index);}</li>
+            <li class="li4"><a href="{url user/space/$user['uid']}" target="_blank">{$user['username']}</a></li>
+            <li class="li3">{$user['credit1']}</li>
+            <li class="li3">{$user['questions']}</li>
+            <li class="li3">{$user['answers']}</li>
+            <li class="li4">{$user['adopts']}</li>
+            <li class="li4">{$user['lastlogin']}</li>
+        </ul>
+        <!--{/loop}-->
+    </div>
+    <div class="blank20"></div>
+    <div class="pages"><div class="scott">{$departstr}</div></div>
+</div>
+</div>
+<div class="clr"></div>
+{template footer}
