@@ -1,9 +1,14 @@
 <?php
 session_start();
 /*the tipask entrance */
-ini_set("display_errors","ON");
-//error_reporting(0);
-error_reporting(E_ERROR|E_WARNING);
+define('DEBUG', true);
+if(DEBUG){
+    ini_set("display_errors", "ON");
+    error_reporting(E_ERROR|E_WARNING);
+    //error_reporting(E_ALL);
+}else{
+    error_reporting(0);
+}
 //set_magic_quotes_runtime(0);
 ini_set("magic_quotes_runtime",0);
 $mtime = explode(' ', microtime());

@@ -1,18 +1,4 @@
-<? if(!defined('IN_TIPASK')) exit('Access Denied'); global $starttime,$querynum;$mtime = explode(' ', microtime());$runtime=number_format($mtime['1'] + $mtime['0'] - $starttime,6); $setting=$this->setting;$user=$this->user;$headernavlist=$this->nav;$regular=$this->regular; ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=<?=TIPASK_CHARSET?>"/>
-<title><?=$navtitle?>咨询|<?=$navtitle?>处方分享|<?=$navtitle?>偏方|<?=$navtitle?>病案讨论|<?=$navtitle?>处方咨询 <?=$setting['site_name']?> <?=$setting['seo_title']?></title>
-<meta name="keywords" content="<?=$metakeywords?><?=$setting['seo_keywords']?>" />
-<meta name="description" content="<?=$metadescription?> <?=$setting['site_name']?> <?=$setting['seo_description']?>" />
-<link href="<?=SITE_URL?>skin/css/base.css" rel="stylesheet" type="text/css" />
-<link href="<?=SITE_URL?>skin/css/ask_base.css" type="text/css" rel="stylesheet" />
-<link href="<?=SITE_URL?>skin/css/list.css" type="text/css" rel="stylesheet" />
-<script src="<?=SITE_URL?>skin/js/ask_function.js" type="text/javascript"></script>
-<script type="text/javascript">g_site_url='<?=SITE_URL?>';g_suffix='<?=$setting['seo_suffix']?>';</script>
-</head>
-<body>
-<? include template('header'); ?>
+<? if(!defined('IN_TIPASK')) exit('Access Denied'); include template('header'); ?>
 <div class="wrap1">
   <div class="wrap1 ask-sub"> <span class="subleft margintop10 color06b">
   
@@ -42,7 +28,7 @@
       <span class="jianhao" onclick="openShutManager(this,'showulbox')" title="点击关闭"></span> </span> </div>
     <!--广告冠名-->
     
-    <div class="chongxin"> <span class="tw"><a href="/?question/add.html" title="点击进行提问" target="_blank" ></a></span> <span class="bz color06b">想了解提问步骤？请查看　 　<a href="<?=SITE_URL?>?index/help.html#如何提问" target="_blank" title="点击查看提问帮助">提问帮助</a></span> </div>
+    <div class="chongxin"> <span class="tw"><a href="/?question/add.html" title="点击进行提问" target="_blank" ></a></span> <span class="bz color06b">想了解提问步骤？请查看　 　<a href="<?=SITE_URL?>index/help.html#如何提问" target="_blank" title="点击查看提问帮助">提问帮助</a></span> </div>
     <div class="list"> <span class="limenu"> 
       <? if(all==$status) { ?><a class="now">全部问题</a><? } else { ?><a href="<?=SITE_URL?>c-<?=$cid?>/all/1.html.html">全部问题</a><? } ?>      </h3>
       <? if(4==$status) { ?><a class="now">悬赏问题</a><? } else { ?><a href="<?=SITE_URL?>c-<?=$cid?>/4/1.html.html">悬赏问题</a><? } ?> 
@@ -62,7 +48,7 @@
 <? } } ?>
       </ul>
       <span class="pages"> <span class="pgleft"><?=$departstr?></span> <span class="pgright"> </span> </span> </div>
-    <div class="lisearch margintop10">    <form name="searchform"  action="<?=SITE_URL?>?question/search/3.html" method="post">
+    <div class="lisearch margintop10">    <form name="searchform"  action="<?=SITE_URL?>question/search/3.html" method="post">
       <input id="kw" type="text" class="inputtext"  value="请在此提交您的问题，即有万名医生10分钟内为您解答" onfocus="if (this.value=='请在此提交您的问题，即有万名医生10分钟内为您解答'){this.value='';}; this.style.color='#333';" onblur="if (this.value==''){this.value='请在此提交您的问题，即有万名医生10分钟内为您解答';this.style.color='#bbb';}" style="color:#bbb;" name="word" />
       <input type="button" class="inputbut inputbut1" onmouseover="this.className='inputbut inputbut2'" onmouseout="this.className='inputbut inputbut1'" value="提 问" onclick="ask_submit();" />
             <input type="submit" class="inputbut inputbut1" onmouseover="this.className='inputbut inputbut2'" onmouseout="this.className='inputbut inputbut1'" value="搜 索"  >
@@ -104,7 +90,7 @@
     </ul>
     </span> </span> <span class="liboxs"> <strong>疾病大全</strong> <span class="cons cons1"> <span class="abox"> 
 <? if(is_array($wordslist)) { foreach($wordslist as $hotword) { ?>
-           <a <? if($hotword['qid']) { ?>href="<?=SITE_URL?>q-<?=$hotword['qid']?>.html" <? } else { ?>href="<?=SITE_URL?>?question/search/3/<?=$hotword['w']?>.html"<? } ?>><?=$hotword['w']?></a>
+           <a <? if($hotword['qid']) { ?>href="<?=SITE_URL?>q-<?=$hotword['qid']?>.html" <? } else { ?>href="<?=SITE_URL?>question/search/3/<?=$hotword['w']?>.html"<? } ?>><?=$hotword['w']?></a>
           
 <? } } ?>
  </span> <span class="noline"></span> </span> </span> </div>

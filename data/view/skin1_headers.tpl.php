@@ -10,14 +10,15 @@ g_site_url='<?=SITE_URL?>';g_prefix='<?=$setting['seo_prefix']?>';g_suffix='<?=$
 </script> 
 <script src="<?=SITE_URL?>js/jquery.js" type="text/javascript"></script>
 <script src="<?=SITE_URL?>js/dialog.js" type="text/javascript"></script>
-<script src="<?=SITE_URL?>js/common.js" type="text/javascript"></script><? $toolbars="'".str_replace(",", "','", $setting['editor_toolbars'])."'"; if(strpos($this->regular,"add")==false) $toolbars=str_replace("'insertbuy','insertreply',",'',$toolbars); ?><script type="text/javascript">
+<script src="<?=SITE_URL?>js/common.js" type="text/javascript"></script>
+<!--ÈÕÀúJSEND-->
+<script src="<?=SITE_URL?>js/calendar.js" type="text/javascript"></script><? $toolbars="'".str_replace(",", "','", $setting['editor_toolbars'])."'"; if(strpos($this->regular,"add")==false) $toolbars=str_replace("'insertbuy','insertreply',",'',$toolbars); ?><script type="text/javascript">
       g_site_url='<?=SITE_URL?>';g_prefix='<?=$setting['seo_prefix']?>';g_suffix='<?=$setting['seo_suffix']?>';editor_options={toolbars:[[<?=$toolbars?>]],wordCount:<?=$setting['editor_wordcount']?>,elementPathEnabled:<?=$setting['editor_elementpath']?>};messcode='<?=$setting['code_message']?>';</script>
 <link href="<?=SITE_URL?>css/default/ask2.css" rel="stylesheet" type="text/css">
 <link href="<?=SITE_URL?>skin/css/base.css" rel="stylesheet" type="text/css" />
 <link href="<?=SITE_URL?>skin/css/ask_base.css" type="text/css" rel="stylesheet" />
 <link href="<?=SITE_URL?>skin/css/tiezi.css" type="text/css" rel="stylesheet" />
 <?=$setting['seo_headers']?>
-</head>
 <script type="text/javascript">
 function setSearcharea(obj) {
   $('#searchipt').val($(obj).text());
@@ -49,6 +50,7 @@ function showAreaSelect(obj){
   $('#searchType').fadeIn('fast');
 }
 </script>
+</head>
 <body>
 <div class="wrap">
   <DIV id=userbar class=new_nav>

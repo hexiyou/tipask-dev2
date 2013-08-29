@@ -29,8 +29,10 @@ $.dialog.setConfig('base', g_site_url+'css/common/dialog');
 function ask_submit(){
     // document.searchform.action=g_site_url+'?question/add'+g_suffix;
     // document.searchform.submit();
-    $('form[name="searchform"]').attr('action','/?question/add');
-    $('form[name="searchform"]').submit();
+    var form = $('form[name="searchform"]');
+    if($(form).size()>1) form = $(form).eq(1);
+    $(form).attr('action',g_site_url+'/?question/add'+g_suffix);
+    $(form).submit();
 }
 
 function search_submit(){
@@ -174,10 +176,10 @@ function getposition(obj) {
     var r = new Array();
     r['x'] = obj.offsetLeft;
     r['y'] = obj.offsetTop;
-    while(obj = obj.offsetParent) {
-        r['x'] += obj.offsetLeft;
-        r['y'] += obj.offsetTop;
-    }
+//    while(obj = obj.offsetParent) {
+//        r['x'] += obj.offsetLeft;
+//        r['y'] += obj.offsetTop;
+//    }
     return r;
 }
 
