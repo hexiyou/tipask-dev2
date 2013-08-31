@@ -367,6 +367,11 @@ class questionmodel {
     function change_recommend($qids, $status1, $status2) {
         $this->db->query("UPDATE `" . DB_TABLEPRE . "question` SET `status`=$status1 WHERE `status`=$status2 AND `id` in ($qids)");
     }
+    
+    //取消置顶
+    function change_istop($qids, $status1) {
+        $this->db->query("UPDATE `" . DB_TABLEPRE . "question` SET `istop`=$status1 WHERE `id` in ($qids)");
+    }
 
     //根据标题搜索问题的结果数
 	function search_title_num($title, $status='1,2,6',$ask_area='') {
