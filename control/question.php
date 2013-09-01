@@ -20,13 +20,29 @@ class questioncontrol extends base {
     /* 提交问题 */
 
     function onadd() {
-        $navtitle = "提出问题";
+          $navtitle = "提出问题";
         if (isset($this->post['submit'])) {
             $title = $this->post['title'];
-		$ask_area = $this->post['ask_area'];
-		if (empty($ask_area)) {
-				$ask_area = '';
-			}
+            $ask_area = $this->post['ask_area'];
+            
+            $toparr=array();
+            // 如果购买了置顶
+            if(isset($this->post['istop'])&&$this->post['istop']==1){
+                $toparr['istop']=1;
+                $toparr['toptype']=$this->post['toptype'];
+                //时间格式检查
+                if(!preg_match("#^20\d{2}\-[0|1]{1}\d\-[0-4]{1}\d$#is", array($this->post['topstart'],$this->post['topend']))){
+                    $this->message('置顶时间或置顶结束时间设置不正确，请重新试',"BACK");
+                    exit;
+                }
+                $toparr['topstart'] = strtotime($this->post['topstart']);
+                $toparr['topend'] = strtotime($this->post['topstart']);
+                //扣除提问用户置顶消费
+                $_ENV['question']->topspend($toparr['toptype'],$toparr['topstart'],$toparr['topend']);
+            }
+            if (empty($ask_area)) {
+                $ask_area = '';
+            }
             $description = $this->post['description'];
             $cid1 = $this->post['classlevel1'];
             $cid2 = $this->post['classlevel2'];
@@ -68,7 +84,7 @@ class questioncontrol extends base {
             ($this->user['questionlimits'] && ($_ENV['userlog']->rownum_by_time('ask') >= $this->user['questionlimits'])) &&
                     $this->message("你已超过每小时最大提问数" . $this->user['questionlimits'] . ',请稍后再试！', 'BACK');
 
-            $qid = $_ENV['question']->add($title, $description, $hidanswer, $price, $cid, $cid1, $cid2, $cid3, $status,$ask_area);
+            $qid = $_ENV['question']->add($title, $description, $hidanswer, $price, $cid, $cid1, $cid2, $cid3, $status, $ask_area);
             $tags && $_ENV['tag']->multi_add($tags, $qid);
 
             //增加用户积分，扣除用户悬赏的财富
@@ -177,53 +193,51 @@ class questioncontrol extends base {
             $seo_keywords = str_replace("{flmc}", $curnavname, $seo_keywords);
         }
         //++++++
-		//
+        //
 		//是否有销售内容
-		$is_sell = false;
-		$question['islookquestion'] = 0;
-		$question['issell'] = 0;
-		if (strpos($question['description'],"[sell")!==false && strpos($question['description'],"[/sell]")!==false) {
-			$question['issell'] = 1;
-			$question['sellednum'] = $_ENV['question']->countSellRenShuo($qid);
-			if ($this->user['groupid']==1 || $this->user['username']==$question['author'] || $_ENV['question']->isoklookquestion($qid,$this->user['uid'])) {
-				$code_num = 0;
-				$question['islookquestion'] = 1;
-				$question['description'] = preg_replace("/\[sell=(.+?)\](.+?)\[\/sell\]/eis","sell('\\1','\\2',1,$qid)",$question['description']);
-			}else{
-				$code_num = 0;
-				$question['description'] = preg_replace("/\[sell=(.+?)\](.+?)\[\/sell\]/eis","sell('\\1','\\2',0,$qid)",$question['description']);
-			}
-		}
-		//是否有隐藏内容
-		
-		
-		if (strpos($question['description'],"[post]")!==false && strpos($question['description'],"[/post]")!==false) {
-			if ($this->user['groupid']==1 || $this->user['username']==$question['author'] || $_ENV['question']->isReQuestion($qid,$this->user['username'])) {
-				$question['description']=preg_replace("/\[post\](.+?)\[\/post\]/eis","post('\\1',1)",$question['description']);
-			}else{
-				$question['description']=preg_replace("/\[post\](.+?)\[\/post\]/eis","post('\\1',0)",$question['description']);
+        $is_sell = false;
+        $question['islookquestion'] = 0;
+        $question['issell'] = 0;
+        if (strpos($question['description'], "[sell") !== false && strpos($question['description'], "[/sell]") !== false) {
+            $question['issell'] = 1;
+            $question['sellednum'] = $_ENV['question']->countSellRenShuo($qid);
+            if ($this->user['groupid'] == 1 || $this->user['username'] == $question['author'] || $_ENV['question']->isoklookquestion($qid, $this->user['uid'])) {
+                $code_num = 0;
+                $question['islookquestion'] = 1;
+                $question['description'] = preg_replace("/\[sell=(.+?)\](.+?)\[\/sell\]/eis", "sell('\\1','\\2',1,$qid)", $question['description']);
+            } else {
+                $code_num = 0;
+                $question['description'] = preg_replace("/\[sell=(.+?)\](.+?)\[\/sell\]/eis", "sell('\\1','\\2',0,$qid)", $question['description']);
+            }
+        }
+        //是否有隐藏内容
 
-			}
-		}
+        if (strpos($question['description'], "[post]") !== false && strpos($question['description'], "[/post]") !== false) {
+            if ($this->user['groupid'] == 1 || $this->user['username'] == $question['author'] || $_ENV['question']->isReQuestion($qid, $this->user['username'])) {
+                $question['description'] = preg_replace("/\[post\](.+?)\[\/post\]/eis", "post('\\1',1)", $question['description']);
+            } else {
+                $question['description'] = preg_replace("/\[post\](.+?)\[\/post\]/eis", "post('\\1',0)", $question['description']);
+            }
+        }
 
-		//$question['description'] = convert($question['description']);
-
-		//print_r($question['description']);
+        //$question['description'] = convert($question['description']);
+        //print_r($question['description']);
         //++++++
         //echo $dirction;
-        if ($question['ask_area']==1){
-        }elseif ($question['ask_area']==2){
-        	if ($dirction=='nosolve') {
-        		$dirction = "nosolve_cf_zhixun";
-        	}
-        }elseif ($question['ask_area']==3){
-         	if ($dirction=='nosolve') {
-        		$dirction = "nosolve_cf_gongxiang";
-        	}
-        }elseif ($question['ask_area']==4){
-        	if ($dirction=='nosolve') {
-        		$dirction = "nosolve_taolun";
-        	}
+        if ($question['ask_area'] == 1) {
+            
+        } elseif ($question['ask_area'] == 2) {
+            if ($dirction == 'nosolve') {
+                $dirction = "nosolve_cf_zixun";
+            }
+        } elseif ($question['ask_area'] == 3) {
+            if ($dirction == 'nosolve') {
+                $dirction = "nosolve_cf_gongxiang";
+            }
+        } elseif ($question['ask_area'] == 4) {
+            if ($dirction == 'nosolve') {
+                $dirction = "nosolve_taolun";
+            }
         }
         include template($dirction);
     }
@@ -236,10 +250,10 @@ class questioncontrol extends base {
          *  统一判断是不是灌水模块，是否提交灌水答案
          * 
          */
-        if((isset($this->post['mulitanswer'])&&$this->post['mulitanswer']==1)||in_array($this->post['ask_area'], array(3,4))){
+        if ((isset($this->post['mulitanswer']) && $this->post['mulitanswer'] == 1) || in_array($this->post['ask_area'], array(3, 4))) {
             $this->onmulitanswer();
             return true;
-        }else{
+        } else {
 
             print_r($this->post);
             exit;
@@ -300,8 +314,7 @@ class questioncontrol extends base {
         }
     }
 
-
-     /* 提交灌水性质的回答 */
+    /* 提交灌水性质的回答 */
 
     function onmulitanswer() {
         //魅力值检查
@@ -510,9 +523,9 @@ class questioncontrol extends base {
         //获取记录问题检索区域
         $ask_area = intval($_POST['ask_area']);
         $startindex = ($page - 1) * $pagesize;
-         $rownum = $_ENV['question']->search_title_num($word, $qstatus,$ask_area); //获取总的记录数
-        $questionlist = $_ENV['question']->search_title($word, $qstatus, 0, $startindex, $pagesize,$ask_area); //问题列表数据
-         $departstr = page($rownum, $pagesize, $page, "question/search/$status/$word/$ask_area"); //得到分页字符串
+        $rownum = $_ENV['question']->search_title_num($word, $qstatus, $ask_area); //获取总的记录数
+        $questionlist = $_ENV['question']->search_title($word, $qstatus, 0, $startindex, $pagesize, $ask_area); //问题列表数据
+        $departstr = page($rownum, $pagesize, $page, "question/search/$status/$word/$ask_area"); //得到分页字符串
         $wordslist = unserialize($this->setting['hot_words']);
         include template('search');
     }
@@ -589,6 +602,21 @@ class questioncontrol extends base {
             $this->message('问题编辑成功!', $viewurl);
         }
         include template("editquestion");
+    }
+
+    /**
+     * 
+     *  变更问题置顶状态
+     */
+    public function onchangetop() {
+      if(!empty($this->get[2]))
+        $viewurl = urlmap("question/view/$qid", 2);
+        if ($_ENV['question']->changetop($qid)) {
+            $message = '变更置顶状态成功!';
+        } else {
+            $message = '变更置顶状态失败!';
+        }
+        $this->message($message, $viewurl);
     }
 
     //编辑标签
@@ -668,21 +696,20 @@ class questioncontrol extends base {
         $this->message("回答审核完成!", $viewurl);
     }
 
-/**
- * 编辑问题标题
- * @return [type] [description]
- */
-    public function onedittitle(){
-       $qid=intval($this->post['qid']);
-       $title=addslashes($this->post['title']);
-       $query=$_ENV['question']->db->query('update '.DB_TABLEPRE.'question Set title=\''.$title.'\' Where id='.$qid);
-       $viewurl = urlmap('question/view/' . $qid, 2);
-       if($query){
-            $this->message('成功编辑问题标题',$viewurl);
-       }else{
-            $this->message('编辑问题标题失败',$viewurl);
-
-       }
+    /**
+     * 编辑问题标题
+     * @return [type] [description]
+     */
+    public function onedittitle() {
+        $qid = intval($this->post['qid']);
+        $title = addslashes($this->post['title']);
+        $query = $_ENV['question']->db->query('update ' . DB_TABLEPRE . 'question Set title=\'' . $title . '\' Where id=' . $qid);
+        $viewurl = urlmap('question/view/' . $qid, 2);
+        if ($query) {
+            $this->message('成功编辑问题标题', $viewurl);
+        } else {
+            $this->message('编辑问题标题失败', $viewurl);
+        }
     }
 
     function onanswercomment() {

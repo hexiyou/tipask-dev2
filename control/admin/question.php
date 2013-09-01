@@ -30,6 +30,12 @@ class admin_questioncontrol extends base {
         $departstr = page($rownum, $pagesize, $page, "admin_question/searchquestion/$srchtitle/$srchauthor/$srchdatestart/$srchdateend/$srchstatus");
         $msg && $message = $msg;
         $ty && $type = $ty;
+        $toptypearr = array(
+            '1'=>'全局置顶',
+            '2'=>'区域置顶',
+            '3'=>'分类置顶'
+        );
+        
         $catetree = $_ENV['category']->get_categrory_tree($_ENV['category']->get_list());
         include template('questionlist', 'admin');
     }
@@ -147,6 +153,17 @@ class admin_questioncontrol extends base {
             exit;
         }
     }
+    //取消置顶
+    function oncanceltop() {
+        if (isset($this->post['qid'])) {
+            $qids = implode(",", $this->post['qid']);
+            $_ENV['question']->change_istop($qids, 0);
+            $this->onsearchquestion('取消问题置顶成功!');
+            exit;
+        }
+    }
+    
+    
 
     //关闭问题
     function onclose() {
@@ -290,6 +307,11 @@ class admin_questioncontrol extends base {
         $rownum = $this->db->fetch_total('answer', ' `status`=0');
         $departstr = page($rownum, $pagesize, $page, "admin_question/examineanswer");
         include template("verifyanswers", "admin");
+    }
+    
+     
+    public function get_cat_by_id($catid){
+        return $_ENV['category']->get($catid);
     }
 
 }

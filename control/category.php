@@ -13,36 +13,41 @@ class categorycontrol extends base {
     //category/view/1/2/10
     //cid，status,第几页？
     function onview() {
-
         $this->load("expert");
         $cid = $this->get[2];
         $status = isset($this->get[3]) ? $this->get[3] : 'all';
-		//++++++++++++++
-		$ask_area = '';
-		if (isset($this->get[4]) && $this->get[4]!='') {
-			$ask_area = intval($this->get[4]);
-		}
-		//++++++++++++++
-		@$page = max(1, intval($this->get[5]));
+        //++++++++++++++
+        $ask_area_array=array(
+             '1'=>'普通咨询',
+             '2'=>'处方咨询',
+             '3'=>'处方分享',
+             '4'=>'病例讨论'
+        );
+    
+        if (isset($this->get[4]) && $this->get[4] != '') {
+            $ask_area = intval($this->get[4]);
+        }
+        //++++++++++++++
+        @$page = max(1, intval($this->get[5]));
         $pagesize = $this->setting['list_default'];
         $startindex = ($page - 1) * $pagesize; //每页面显示$pagesize条
         if ($cid != 'all') {
             $category = $this->category[$cid]; //得到分类信息
-            $navtitle = $category['name'];
+            $navtitle = $category['name'].'——';
             $cfield = 'cid' . $category['grade'];
         } else {
             $category = $this->category;
-            $navtitle = '';
+            $navtitle = $ask_area_array[$ask_area].'——';
             $cfield = '';
             //$ask_area = isset($this->get[4])?intval($this->get[4]):1;
             $category['pid'] = 0;
         }
-		$rownum = $_ENV['question']->rownum_by_cfield_cvalue_status($cfield, $cid, $status,$ask_area); //获取总的记录数
-		$questionlist = $_ENV['question']->list_by_cfield_cvalue_status($cfield, $cid, $status, $startindex, $pagesize,$ask_area); //问题列表数据
-		$departstr = page($rownum, $pagesize, $page, "category/view/$cid/$status/$ask_area"); //得到分页字符串
+        $rownum = $_ENV['question']->rownum_by_cfield_cvalue_status($cfield, $cid, $status, $ask_area); //获取总的记录数
+        $questionlist = $_ENV['question']->list_by_cfield_cvalue_status($cfield, $cid, $status, $startindex, $pagesize, $ask_area); //问题列表数据
+        $departstr = page($rownum, $pagesize, $page, "category/view/$cid/$status/$ask_area"); //得到分页字符串
         $navlist = $_ENV['category']->get_navigation($cid); //获取导航
         $sublist = $_ENV['category']->list_by_cid_pid($cid, $category['pid']); //获取子分类
-         $expertlist = $_ENV['expert']->get_by_cid($cid); //分类专家
+        $expertlist = $_ENV['expert']->get_by_cid($cid); //分类专家
         /* SEO */
         if ($this->setting['seo_category_title']) {
             $seo_title = str_replace("{wzmc}", $this->setting['site_name'], $this->setting['seo_category_title']);
@@ -56,21 +61,19 @@ class categorycontrol extends base {
             $seo_keywords = str_replace("{wzmc}", $this->setting['site_name'], $this->setting['seo_category_keywords']);
             $seo_keywords = str_replace("{flmc}", $navtitle, $seo_keywords);
         }
-        //exit($ask_area.'kkk');
-       		//
-		if ($ask_area==0) {
-			include template('category');
-		}elseif ($ask_area==1){
-			include template('category');
-		}elseif ($ask_area==2){
-			include template('category_cf_zhixun');
-		}elseif ($ask_area==3){
-			include template('category_cf_gongxiang');
-		}elseif ($ask_area==4){
-			include template('category_taolun');
-		}else{
-			include template('category');
-		}
+        if ($ask_area == 0) {
+            include template('category');
+        } elseif ($ask_area == 1) {
+            include template('category');
+        } elseif ($ask_area == 2) {
+            include template('category_cf_zixun');
+        } elseif ($ask_area == 3) {
+            include template('category_cf_gongxiang');
+        } elseif ($ask_area == 4) {
+            include template('category_taolun');
+        } else {
+            include template('category');
+        }
     }
 
     //category/list/1/10
@@ -96,7 +99,7 @@ class categorycontrol extends base {
         $pagesize = $this->setting['list_default'];
         $startindex = ($page - 1) * $pagesize;
         $rownum = $this->db->fetch_total('topic');
-        $topiclist = $_ENV['topic']->get_list(2,$startindex, $pagesize);
+        $topiclist = $_ENV['topic']->get_list(2, $startindex, $pagesize);
         $departstr = page($rownum, $pagesize, $page, "category/recommend");
         $metakeywords = $navtitle;
         $metadescription = '精彩推荐列表';

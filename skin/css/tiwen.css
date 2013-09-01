@@ -32,7 +32,7 @@ li {
 	width:968px;
 	height:31px;
 	overflow:hidden;
-	background:url(http://www.120center.com/skin/images/ask_tie_tboxs.png) repeat-x 0 -129px;
+	background:url(../images/ask_tie_tboxs.png) repeat-x 0 -129px;
 }
 .ask-tiwen .twtop .kebt .dabiaoti {
 	float:left;
@@ -51,7 +51,7 @@ li {
 	display:inline;
 	padding-left:22px;
 	font:12px/21px SimSun;
-	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -928px;
+	background:url(../images/ask_points.gif) no-repeat 0 -928px;
 }
 .ask-tiwen .twtop .kebt .you a {
 	color:#06b;
@@ -66,7 +66,7 @@ li {
 	width:16px;
 	height:16px;
 	overflow:hidden;
-	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -1030px;
+	background:url(../images/ask_points.gif) no-repeat 0 -1030px;
 	position:absolute;
 	top:7px;
 	left:10px;
@@ -78,7 +78,7 @@ li {
 	width:18px;
 	height:15px;
 	overflow:hidden;
-	background:url(http://www.120center.com/skin/images/ask_points.gif) no-repeat 0 -216px;
+	background:url(../images/ask_points.gif) no-repeat 0 -216px;
 	position:absolute;
 	top:8px;
 	left:10px;
@@ -146,7 +146,7 @@ li {
 	overflow:hidden;
 	padding:0 0 0 25px;
 	border:1px solid #FFD0C9;
-	background:#FFF9F8 url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat 5px -176px;
+	background:#FFF9F8 url(../images/ask_mail.gif) no-repeat 5px -176px;
 	font:12px/22px SimSun;
 	color:#f20;
 }
@@ -201,7 +201,7 @@ li {
 	overflow:hidden;
 	padding:0px 0 0px 25px;
 	border:1px solid #FFD0C9;
-	background:#FFF9F8 url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat 5px -177px;
+	background:#FFF9F8 url(../images/ask_mail.gif) no-repeat 5px -177px;
 	font:12px/20px SimSun;
 	color:#f20;
 	position:absolute;
@@ -287,7 +287,7 @@ li {
 	overflow:hidden;
 	padding:0 0 0 25px;
 	border:1px solid #FFD0C9;
-	background:#FFF9F8 url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat 5px -177px;
+	background:#FFF9F8 url(../images/ask_mail.gif) no-repeat 5px -177px;
 	font:12px/20px SimSun;
 	color:#f20;
 	position:absolute;
@@ -327,7 +327,7 @@ li {
 	width:7px;
 	height:12px;
 	overflow:hidden;
-	background:url(http://www.120center.com/skin/images/ask_tie_spans.gif) no-repeat 0 -260px;
+	background:url(../images/ask_tie_spans.gif) no-repeat 0 -260px;
 	position:absolute;
 	top:18px;
 	left:-7px;
@@ -337,7 +337,7 @@ li {
 	width:11px;
 	height:10px;
 	overflow:hidden;
-	background:url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat 0 -58px;
+	background:url(../images/ask_mail.gif) no-repeat 0 -58px;
 	position:absolute;
 	top:4px;
 	right:4px;
@@ -378,7 +378,7 @@ li {
 	height:30px;
 	padding-left:22px;
 	font:14px/30px SimSun;
-	background:url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat -443px -47px;
+	background:url(../images/ask_mail.gif) no-repeat -443px -47px;
 }
 .ask-tiwen .cons .shangchuan .sc a {
 	color:#06b;
@@ -455,7 +455,7 @@ li {
 	height:28px;
 	font:12px/28px SimSun;
 	text-align:center;
-	background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat -170px -364px;
+	background:url(../images/ask_tie_bgs.png) no-repeat -170px -364px;
 	color:#333;
 	text-decoration:none;
 }
@@ -524,7 +524,7 @@ li {
 	margin-top:12px;
 	line-height:25px;
 	border:none;
-	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat -83px -79px;
+	background:url(../images/ask_tc.gif) no-repeat -83px -79px;
 	cursor:pointer;
 }
 .ask-tiwen .cons .jibin .jbright .jbbox .xuan .annu .inbht2 {
@@ -570,7 +570,7 @@ li {
 	overflow:hidden;
 	font:bold 14px Verdana;
 	text-align:center;
-	background:url(http://www.120center.com/skin/images/ask_mail.gif) no-repeat -440px -140px;
+	background:url(../images/ask_mail.gif) no-repeat -440px -140px;
 	position:absolute;
 	top:0;
 	left:6px;
@@ -626,7 +626,7 @@ li {
 	display:inline;
 	line-height:25px;
 	border:none;
-	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat -83px -79px;
+	background:url(../images/ask_tc.gif) no-repeat -83px -79px;
 	cursor:pointer;
 }
 .ask-tiwen .cons .gdjibin .jbbox .annu .inbht2 {
@@ -661,7 +661,7 @@ li {
 	width:143px;
 	height:42px;
 	border:none;
-	background:url(http://www.120center.com/skin/images/ask_tie_bgs.png) no-repeat 0 -330px;
+	background:url(../images/ask_tie_bgs.png) no-repeat 0 -330px;
 	cursor:pointer;
 }
 .ask-tiwen .cons .tijiao .insub2 {
@@ -692,7 +692,7 @@ li {
 .ts9 .ts9-top {
 	width:395px;
 	height:29px;
-	background:url(http://www.120center.com/skin/images/ask_tc.gif) repeat-x;
+	background:url(../images/ask_tc.gif) repeat-x;
 }
 .ts9 .ts9-top strong {
 	float:left;
@@ -710,10 +710,10 @@ li {
 	display:block;
 	width:17px;
 	height:16px;
-	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -100px;
+	background:url(../images/ask_tc.gif) no-repeat 0 -100px;
 }
 .ts9 .ts9-top span a:hover {
-	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat 0 -116px;
+	background:url(../images/ask_tc.gif) no-repeat 0 -116px;
 }
 .ts9 .ts9-down {
 	width:395px;
@@ -771,7 +771,7 @@ li {
 	padding-bottom:1px;
 	line-height:28px;
 	border:none;
-	background:url(http://www.120center.com/skin/images/ask_tc.gif) no-repeat;
+	background:url(../images/ask_tc.gif) no-repeat;
 	cursor:pointer;
 }
 .ts9 .ts9-down .anniu .buts1 {

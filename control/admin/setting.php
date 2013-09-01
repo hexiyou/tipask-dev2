@@ -397,6 +397,33 @@ class admin_settingcontrol extends base {
         include template("setting_top", "admin");
 
     }
+    /**
+     *
+     * 货币类型设置
+     */
+
+    function onhuobiset(){
+        if (isset($this->post['submit'])) {
+            foreach ($this->post as $key => $value) {
+                if ('top' == substr($key, 0, 3)) {
+                    $this->setting[$key] = $value;
+                }
+            }
+            $_ENV['setting']->update($this->setting);
+            $message = '置顶消费规则设置更新成功！';
+        }
+        
+        if(isset($this->get[2])&&$this->get[2]=='add'){
+            include template("huobi_add", "admin");
+            
+        } 
+        
+        if(isset($this->get[2])&&$this->get[2]=='edit'){
+            include template("huobi_edit", "admin");   
+        } 
+        include template("huobilist", "admin");
+
+    }
 
 }
 

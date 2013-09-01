@@ -14,7 +14,7 @@ var lastcheckedmonth = false;
 
 function loadcalendar() {
 	s = '';
-	s += '<div id="calendar" style="display:none; position:absolute;z-index:100;" onclick="_cancelBubble(event)">';
+	s += '<div id="calendar" style="display:none; position:absolute;z-index:1000;" onclick="_cancelBubble(event)">';
 	s += '<iframe id="calendariframe" frameborder="0" style="height:200px; z-index: 110; position:absolute;filter:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)"></iframe>';
 	s += '<div style="padding:5px; width: 210px; border: 1px solid #B5CFD9; background:#F2F9FD; position: absolute; z-index: 120">';
 	s += '<table cellspacing="0" cellpadding="0" width="100%" style="text-align: center;" class="table1">';
@@ -172,7 +172,12 @@ function zerofill(s) {
 	s = isNaN(s) ? 0 : s;
 	return (s < 10 ? '0' : '') + s.toString();
 }
-
-window.onload = function() {
-	loadcalendar();
+//
+//window.onload = function() {
+//	loadcalendar();
+//}
+if(document.all){
+    window.attachEvent('onload',loadcalendar);
+}else{
+    window.addEventListener('load', loadcalendar, true);
 }
